@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISLAM: MORE THAN YOU THINK 🕋☪️🕌</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: beige;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background-color: #f0e6d2;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    /* CONTENITORE 2 RIGHE DI LINK */
+    .links-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .nav-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .nav-row a {
+      color: green;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* HAMBURGER MENU */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 15px;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: green;
+      margin: 4px 0;
+    }
+
+    /* --- MOBILE --- */
+    @media (max-width: 600px) {
+      .links-wrapper {
+        display: none;
+        background-color: #f0e6d2;
+        padding: 10px 0;
+      }
+
+      .links-wrapper.active {
+        display: flex;
+      }
+
+      .nav-row {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    /* INTRO CONTENT */
+    .content {
+      padding: 20px;
+      text-align: center;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="links-wrapper">
+      <div class="nav-row">
+        <a href="whatisislam.html">📘 What Is Islam</a>
+        <a href="thehistoryoftheprofetMuhammad(S.A.W).html">🕋 Prophet Muhammad (S.A.W)</a>
+        <a href="thehistoryofprofetIbrahim(R.A).html">🔥 Prophet Ibrahim (A.S)</a>
+        <a href="thehistoryofprofetAdam(A.S).html">🌱 Prophet Adam (A.S)</a>
+      </div>
+
+      <div class="nav-row">
+        <a href="thehistoryofprofetMusa(A.S).html">🌊 Prophet Musa (A.S)</a>
+        <a href="thehistoryofprofetIsa(A.S).html">🕊️ Prophet Isa (A.S)</a>
+        <a href="thehistoryofprofetYusuf(A.S).html">🌙 Prophet Yusuf (A.S)</a>
+        <a href="thehistoryofprofetNuh(A.S).html">🛶 Prophet Nuh (A.S)</a>
+      </div>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div><div></div><div></div>
+    </div>
+  </nav>
+
+  <!-- INTRO SECTION -->
+  <div class="content">
+    <h1>🕌 Islam: Beyond What You Know 🕋☪️</h1>
+    <p>
+      Welcome to <strong>Beyond Islam</strong>, a space created to share knowledge, history, and inspiration.  
+      Islam is not only a religion, but also a way of life that has shaped cultures, sciences, and societies across centuries.  
+      Here you will find stories of the Prophets, reflections on faith, and insights into values that continue to guide millions of people today.
+    </p>
+    <p>
+      Our goal is to help you discover Islam beyond stereotypes — to see its depth, wisdom, and beauty.  
+      Whether you are curious, learning, or seeking to deepen your understanding, this journey is open to everyone.
+    </p>
+    <p style="font-style: italic; color:green;">
+      🌙 From Adam (A.S) to Muhammad (S.A.W), explore timeless lessons that speak to the heart and mind.
+    </p>
+    <p>
+      <a href="whatisislam.html" style="color:green; font-weight:bold; text-decoration:none;">Start Exploring ➝</a>
+    </p>
+    <p style="margin-top:30px; color:green;">
+      ✨ More content will be added soon — stay tuned for new pages and insights!
+    </p>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector(".links-wrapper").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+
