@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://7mohamed777.github.io/beyond-islam/sitemap.xml
