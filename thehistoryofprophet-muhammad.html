@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prophet Muhammad (S.A.W) - The Final Messenger & Mercy to Mankind</title>
+  
+  <meta name="description" content="Discover the complete life of Prophet Muhammad (S.A.W): his birth, prophethood, migration, battles, character, teachings, and eternal legacy as the final messenger and mercy to all worlds.">
+  <meta name="keywords" content="Prophet Muhammad, Final Messenger, Islam, Quran, Hadith, Islamic history, Mecca, Medina, Hijrah, Islamic prophet">
+
+  <!-- AdSense Friendly Structure -->
+  <style>
+    /* RESET & BASE STYLES */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: beige;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: green;
+      line-height: 1.6;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    /* NAVBAR - FIXED FOR BETTER UX */
+    .navbar {
+      background-color: #f0e6d2;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid #d4c7a1;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .links-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .nav-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px 20px;
+    }
+
+    .nav-row a {
+      color: green;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95em;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .nav-row a:hover {
+      color: #006400;
+      background-color: rgba(0, 100, 0, 0.08);
+      transform: translateY(-1px);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1001;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: green;
+      margin: 3px 0;
+      transition: 0.3s;
+    }
+
+    /* MOBILE OPTIMIZATION */
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 10px 15px;
+      }
+      
+      .links-wrapper {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f0e6d2;
+        padding: 15px 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid #d4c7a1;
+      }
+
+      .links-wrapper.active {
+        display: flex;
+      }
+
+      .nav-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+      }
+
+      .nav-row a {
+        padding: 10px 15px;
+        font-size: 1em;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+      
+      .hamburger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      
+      .hamburger.active div:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburger.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    }
+
+    /* MAIN CONTENT - AD-FRIENDLY LAYOUT */
+    main.content {
+      padding: 30px 20px;
+      text-align: center;
+      color: green;
+    }
+
+    h1 {
+      color: green;
+      margin: 20px 0 30px;
+      font-size: 2.2em;
+      line-height: 1.3;
+      text-align: center;
+      padding-bottom: 15px;
+      border-bottom: 2px solid rgba(0, 100, 0, 0.15);
+    }
+
+    h2 {
+      color: green;
+      margin: 35px 0 20px;
+      text-align: center;
+      font-size: 1.6em;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    h3 {
+      color: #006400;
+      margin: 25px 0 15px;
+      font-size: 1.3em;
+    }
+
+    p {
+      margin: 18px auto;
+      text-align: center;
+      max-width: 800px;
+      line-height: 1.7;
+      font-size: 1.05em;
+      color: #2d5016;
+    }
+
+    /* QURAN VERSES - OPTIMIZED FOR READABILITY - INGRANDITE */
+    .quran-box {
+      background-color: #f0e6d2;
+      padding: 25px;
+      margin: 30px auto;
+      width: 90%;
+      border-left: 5px solid green;
+      border-radius: 8px;
+      text-align: center;
+      max-width: 900px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .quran-box strong {
+      color: #006400;
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 15px;
+      font-weight: 700;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(0, 100, 0, 0.2);
+    }
+
+    .arabic-verse {
+      font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+      font-size: 1.8em;
+      margin: 20px 0;
+      text-align: center;
+      direction: rtl;
+      line-height: 2.2;
+      color: #1a4508;
+      font-weight: 600;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    .verse-translation {
+      font-style: italic;
+      margin-top: 20px;
+      color: green;
+      text-align: center;
+      font-size: 1.15em;
+      line-height: 1.7;
+      padding: 15px 20px;
+      background-color: rgba(240, 230, 210, 0.4);
+      border-radius: 5px;
+      border-left: 3px solid #006400;
+    }
+
+    /* Aggiunta: numero del versetto */
+    .verse-number {
+      display: inline-block;
+      background-color: #006400;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* AD-FRIENDLY SECTIONS */
+    .section-divider {
+      height: 2px;
+      background: linear-gradient(to right, transparent, rgba(0, 100, 0, 0.3), transparent);
+      margin: 40px auto;
+      width: 85%;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, rgba(240, 230, 210, 0.6), rgba(240, 230, 210, 0.3));
+      padding: 30px 25px;
+      border-radius: 10px;
+      margin: 0 auto 40px;
+      max-width: 900px;
+      text-align: center;
+      border: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin: 35px auto;
+      max-width: 950px;
+    }
+
+    .feature-card {
+      background-color: #f0e6d2;
+      padding: 25px 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+      border: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-icon {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+      display: block;
+      color: #006400;
+    }
+
+    .feature-card strong {
+      color: #006400;
+      display: block;
+      margin-bottom: 12px;
+      font-size: 1.15em;
+      font-weight: 600;
+    }
+
+    /* CONTENT SECTIONS WITH AD SPACE */
+    .content-block {
+      margin-bottom: 45px;
+      padding: 0 15px;
+    }
+
+    .lesson-box {
+      background-color: rgba(240, 230, 210, 0.4);
+      padding: 22px;
+      border-radius: 8px;
+      margin: 25px auto;
+      max-width: 800px;
+      border-left: 4px solid #006400;
+    }
+
+    .lesson-box strong {
+      color: #006400;
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    /* LISTS STYLING */
+    ul {
+      list-style-position: inside;
+      max-width: 750px;
+      margin: 20px auto;
+      text-align: left;
+      display: inline-block;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 10px 0;
+      line-height: 1.6;
+      color: #2d5016;
+      font-size: 1.05em;
+    }
+
+    /* AD SPACE INDICATORS (Replace with actual AdSense code) */
+    .ad-space {
+      background: linear-gradient(135deg, rgba(240, 230, 210, 0.2), rgba(240, 230, 210, 0.1));
+      border: 2px dashed rgba(0, 100, 0, 0.3);
+      border-radius: 8px;
+      padding: 25px;
+      margin: 30px auto;
+      text-align: center;
+      color: #006400;
+      font-style: italic;
+      max-width: 728px;
+      min-height: 90px;
+    }
+
+    /* RESPONSIVE IMAGE CONTAINER */
+    .image-container {
+      max-width: 600px;
+      margin: 25px auto;
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* FOOTER STYLING */
+    .page-footer {
+      text-align: center;
+      padding: 25px 20px;
+      margin-top: 40px;
+      border-top: 2px solid rgba(0, 100, 0, 0.2);
+      color: #2d5016;
+      font-size: 0.95em;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeIn 0.6s ease-out;
+    }
+
+    /* PRINT STYLES */
+    @media print {
+      .navbar, .ad-space, .hamburger {
+        display: none;
+      }
+      
+      body {
+        color: #000;
+        background: white;
+      }
+      
+      .quran-box {
+        border: 2px solid #000;
+        background: #fff;
+      }
+      
+      .arabic-verse {
+        font-size: 1.5em;
+        color: #000;
+      }
+    }
+
+    /* MOBILE ADJUSTMENTS FOR LARGER TEXT */
+    @media (max-width: 768px) {
+      .arabic-verse {
+        font-size: 1.6em;
+        line-height: 2;
+        padding: 12px;
+      }
+      
+      .quran-box {
+        padding: 20px 15px;
+        margin: 25px auto;
+      }
+      
+      .verse-translation {
+        font-size: 1.1em;
+        padding: 12px 15px;
+      }
+    }
+
+    /* DARK MODE SUPPORT */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #1a1a1a;
+        color: #90ee90;
+      }
+      
+      .navbar {
+        background-color: #2a2a2a;
+        border-bottom-color: #444;
+      }
+      
+      .quran-box, .feature-card {
+        background-color: #2a2a2a;
+        border-color: #90ee90;
+      }
+      
+      .hero-section {
+        background: rgba(42, 42, 42, 0.6);
+        border-color: #444;
+      }
+      
+      .arabic-verse {
+        color: #c8ffc8;
+        background-color: rgba(42, 42, 42, 0.5);
+      }
+      
+      .verse-translation {
+        color: #90ee90;
+        background-color: rgba(42, 42, 42, 0.5);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- OPTIMIZED NAVBAR -->
+<nav class="navbar">
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="links-wrapper" id="menu">
+    <div class="nav-row">
+      <a href="whatisislam.html">📘 What Is Islam</a>
+      <a href="islammorethanyouthink.html">🌟 Islam: More Than You Think</a>
+      <a href="thehistoryofprophet-ibrahim.html">🔥 Prophet Ibrahim (A.S)</a>
+      <a href="thehistoryofprophet-adam.html">🌱 Prophet Adam (A.S)</a>
+      <a href="thehistoryofprophet-sulayman.html">👑 Prophet Sulayman (A.S)</a>
+      <a href="thehistoryofprophet-ismail.html">💧 Prophet Ismail (A.S)</a>
+    </div>
+
+    <div class="nav-row">
+      <a href="thehistoryofprophet-musa.html">🌊 Prophet Musa (A.S)</a>
+      <a href="thehistoryofprophet-isa.html">🕊️ Prophet Isa (A.S)</a>
+      <a href="thehistoryofprophet-yusuf.html">🌙 Prophet Yusuf (A.S)</a>
+      <a href="thehistoryofprophet-nuh.html">🛶 Prophet Nuh (A.S)</a>
+      <a href="thehistoryofprophet-dawud.html">👑 Prophet Dawud (A.S)</a>
+      <a href="thehistoryofprophet-lut.html">🌋 Prophet Lut (A.S)</a>
+      <a href="thehistoryofprophet-zakaria.html">🌿 Prophet Zakaria (A.S)</a>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="content">
+  
+  <!-- HERO SECTION -->
+  <div class="hero-section fade-in">
+    <h1>🌟 Prophet Muhammad (S.A.W) - The Final Messenger and Mercy to Mankind</h1>
+    <p>Discover the complete life of Prophet Muhammad (S.A.W) - from his miraculous birth in the Year of the Elephant to receiving the final revelation, establishing the first Islamic state, and transforming humanity with a message of monotheism, justice, and compassion that continues to guide billions today.</p>
+  </div>
+
+  <!-- FEATURE HIGHLIGHTS -->
+  <div class="feature-grid">
+    <div class="feature-card">
+      <span class="feature-icon">📖</span>
+      <strong>Final Revelation</strong>
+      Quran preserved for eternity
+    </div>
+    
+    <div class="feature-card">
+      <span class="feature-icon">🕋</span>
+      <strong>Universal Message</strong>
+      For all humanity until Judgment Day
+    </div>
+    
+    <div class="feature-card">
+      <span class="feature-icon">🤲</span>
+      <strong>Perfect Example</strong>
+      Living embodiment of Quranic teachings
+    </div>
+  </div>
+
+  <!-- SECTION 1: MIRACULOUS BIRTH AND EARLY LIFE -->
+  <div class="content-block fade-in">
+    <h2>👶 Birth in the Year of the Elephant</h2>
+    <p>Born in Mecca in 570 CE during the Year of the Elephant when Allah miraculously protected the Kaaba from destruction, Muhammad (S.A.W) was orphaned early but protected and prepared by Allah for his prophetic mission.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Fil 105:1-5</strong>
+      <div class="arabic-verse">أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَابِ الْفِيلِ  أَلَمْ يَجْعَلْ كَيْدَهُمْ فِي تَضْلِيلٍ  وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ  تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ  فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍ</div>
+      <div class="verse-translation">"Have you not seen how your Lord dealt with the companions of the elephant? Did He not make their plan go astray? And He sent against them birds in flocks, striking them with stones of baked clay, and made them like eaten straw."</div>
+      <div class="verse-number">Verses 1-5</div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">👶</span>
+        <strong>Orphaned Early</strong>
+        Father died before birth, mother at 6
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">👴</span>
+        <strong>Raised by Grandfather</strong>
+        Abdul Muttalib, then uncle Abu Talib
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">✅</span>
+        <strong>Al-Amin</strong>
+        The Trustworthy in Mecca
+      </div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>Divine Preparation:</strong>
+      <p>Allah prepared Muhammad (S.A.W) through early hardships - orphanhood, shepherd life, trade journeys - developing empathy, patience, and integrity that would characterize his prophethood.</p>
+    </div>
+  </div>
+  <div class="ad-space">
+  <!-- AdSense Code Here -->
+  Advertisement Space: Responsive Banner (728x90 on desktop, 320x50 on mobile)
+    </div>
+  <div class="section-divider"></div>
+
+  <!-- SECTION 2: THE FIRST REVELATION -->
+  <div class="content-block fade-in">
+    <h2>🌌 The Divine Call in Cave Hira</h2>
+    <p>At age 40, while meditating in Cave Hira during Ramadan, Angel Jibril appeared with the first revelation, initiating 23 years of Quranic revelation that would transform the world.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Alaq 96:1-5</strong>
+      <div class="arabic-verse">اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ  خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ  اقْرَأْ وَرَبُّكَ الْأَكْرَمُ  الَّذِي عَلَّمَ بِالْقَلَمِ  عَلَّمَ الْإِنسَانَ مَا لَمْ يَعْلَمْ</div>
+      <div class="verse-translation">"Read in the name of your Lord who created. Created man from a clinging substance. Read, and your Lord is the Most Generous, Who taught by the pen, taught man that which he knew not."</div>
+      <div class="verse-number">Verses 1-5</div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🕋</span>
+        <strong>Khadijah's Support</strong>
+        First believer and constant support
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">👨‍👩‍👧‍👦</span>
+        <strong>Believers</strong>
+        Ali, Abu Bakr, Zayd, and others
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📜</span>
+        <strong>Gradual Revelation</strong>
+        23 years of divine guidance
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: MECCAN PERIOD - PERSECUTION AND PATIENCE -->
+  <div class="content-block fade-in">
+    <h2>🕋 Thirteen Years of Meccan Persecution</h2>
+    <p>For 13 years, Prophet Muhammad (S.A.W) and early Muslims endured increasing persecution while calling Meccans to worship Allah alone, reject idolatry, and establish justice.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Hijr 15:94-95</strong>
+      <div class="arabic-verse">فَاصْدَعْ بِمَا تُؤْمَرُ وَأَعْرِضْ عَنِ الْمُشْرِكِينَ  إِنَّا كَفَيْنَاكَ الْمُسْتَهْزِئِينَ</div>
+      <div class="verse-translation">"Then declare what you are commanded and turn away from the polytheists. Indeed, We are sufficient for you against the mockers."</div>
+      <div class="verse-number">Verses 94-95</div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>Key Events in Mecca:</strong>
+      <ul>
+        <li><strong>Public Declaration:</strong> Calling his tribe on Mount Safa</li>
+        <li><strong>Boycott:</strong> Three-year economic and social siege</li>
+        <li><strong>Year of Sorrow:</strong> Death of Khadijah and Abu Talib</li>
+        <li><strong>Migration to Abyssinia:</strong> Protection under Christian king</li>
+        <li><strong>Night Journey:</strong> Isra and Mi'raj spiritual journey</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 4: THE MIGRATION (HIJRAH) -->
+  <div class="content-block fade-in">
+    <h2>🏃 The Hijrah: Foundation of Islamic State</h2>
+    <p>In 622 CE, Prophet Muhammad (S.A.W) migrated to Medina, establishing the first Islamic community based on the Constitution of Medina - a revolutionary social contract ensuring rights for all citizens.</p>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🗓️</span>
+        <strong>Islamic Calendar</strong>
+        Hijrah marks Year 1 AH
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🤝</span>
+        <strong>Constitution of Medina</strong>
+        First written constitution
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🕌</span>
+        <strong>First Mosque</strong>
+        Quba Mosque established
+      </div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>Medina Achievements:</strong>
+      <p>Transformed Medina from warring tribes into "Al-Madinah Al-Munawwarah" (The Illuminated City) based on brotherhood between Muhajireen (migrants) and Ansar (helpers), justice, and mutual cooperation.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 5: MAJOR BATTLES AND DIPLOMACY -->
+  <div class="content-block fade-in">
+    <h2>⚔️ Defensive Battles for Survival</h2>
+    <p>The Muslim community faced existential threats from Meccan polytheists, leading to defensive battles that established Islam's right to exist and spread peacefully.</p>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🛡️</span>
+        <strong>Battle of Badr</strong>
+        313 Muslims vs 1000 Meccans
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🏔️</span>
+        <strong>Battle of Uhud</strong>
+        Lesson in discipline and patience
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🛡️</span>
+        <strong>Battle of Trench</strong>
+        Ingenious defense strategy
+      </div>
+    </div>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Anfal 8:17</strong>
+      <div class="arabic-verse">وَمَا رَمَيْتَ إِذْ رَمَيْتَ وَلَٰكِنَّ اللَّهَ رَمَىٰ</div>
+      <div class="verse-translation">"And you did not throw when you threw, but it was Allah who threw."</div>
+      <div class="verse-number">Verse 17</div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>Treaty of Hudaybiyyah:</strong>
+      <p>A seemingly unfavorable peace treaty in 628 CE that proved to be a strategic victory, allowing Islam to spread peacefully and leading to mass conversions, including Khalid ibn al-Walid and Amr ibn al-As.</p>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 6: CONQUEST OF MECCA AND FINAL YEARS -->
+  <div class="content-block fade-in">
+    <h2>🕋 The Peaceful Conquest of Mecca</h2>
+    <p>In 630 CE, Prophet Muhammad (S.A.W) returned to Mecca not as conqueror but liberator, offering general amnesty to all his former enemies and cleansing the Kaaba of idols.</p>
+    
+    <div class="quran-box">
+      <strong>Surah An-Nasr 110:1-3</strong>
+      <div class="arabic-verse">إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ  وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا  فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ ۚ إِنَّهُ كَانَ تَوَّابًا</div>
+      <div class="verse-translation">"When the victory of Allah has come and the conquest, and you see the people entering into the religion of Allah in multitudes, then exalt [Him] with praise of your Lord and ask forgiveness of Him. Indeed, He is ever Accepting of repentance."</div>
+      <div class="verse-number">Verses 1-3</div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🕊️</span>
+        <strong>General Amnesty</strong>
+        "Go, you are free" to all enemies
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🕋</span>
+        <strong>Cleansing Kaaba</strong>
+        Destroyed 360 idols
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🤲</span>
+        <strong>Universal Message</strong>
+        Sent letters to world leaders
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 7: FAREWELL PILGRIMAGE AND FINAL SERMON -->
+  <div class="content-block fade-in">
+    <h2>📜 The Farewell Sermon: Eternal Guidance</h2>
+    <p>In 632 CE, during his only Hajj, Prophet Muhammad (S.A.W) delivered his historic farewell sermon to 100,000+ companions, establishing eternal principles of human rights and justice.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Ma'idah 5:3</strong>
+      <div class="arabic-verse">الْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ وَأَتْمَمْتُ عَلَيْكُمْ نِعْمَتِي وَرَضِيتُ لَكُمُ الْإِسْلَامَ دِينًا</div>
+      <div class="verse-translation">"This day I have perfected for you your religion and completed My favor upon you and have approved for you Islam as religion."</div>
+      <div class="verse-number">Verse 3</div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>Key Teachings from Farewell Sermon:</strong>
+      <ul>
+        <li>All humanity comes from Adam and Eve - no racial superiority</li>
+        <li>Protection of life, property, and honor</li>
+        <li>Women's rights established and protected</li>
+        <li>Interest (riba) forbidden</li>
+        <li>Quran and Sunnah as guidance after him</li>
+        <li>Accountability before Allah on Judgment Day</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 8: CHARACTER AND LEGACY -->
+  <div class="content-block fade-in">
+    <h2>💖 The Perfect Character and Example</h2>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Ahzab 33:21</strong>
+      <div class="arabic-verse">لَّقَدْ كَانَ لَكُمْ فِي رَسُولِ اللَّهِ أُسْوَةٌ حَسَنَةٌ لِّمَن كَانَ يَرْجُو اللَّهَ وَالْيَوْمَ الْآخِرَ وَذَكَرَ اللَّهَ كَثِيرًا</div>
+      <div class="verse-translation">"There has certainly been for you in the Messenger of Allah an excellent pattern for anyone whose hope is in Allah and the Last Day and who remembers Allah often."</div>
+      <div class="verse-number">Verse 21</div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">✅</span>
+        <strong>Al-Amin</strong>
+        The Trustworthy
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">❤️</span>
+        <strong>Rahmatul-lil-Alameen</strong>
+        Mercy to all worlds
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🤲</span>
+        <strong>Ultimate Forgiveness</strong>
+        Pardoned all enemies
+      </div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">👨‍👩‍👧‍👦</span>
+        <strong>Family Man</strong>
+        Loving husband and father
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">⚖️</span>
+        <strong>Justice for All</strong>
+        Applied laws equally
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🌱</span>
+        <strong>Environmental Care</strong>
+        Protected nature and animals
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 9: COMPANIONS AND SUCCESS -->
+  <div class="content-block fade-in">
+    <h2>🤝 The Blessed Companions (Sahabah)</h2>
+    <p>Prophet Muhammad (S.A.W) was surrounded by extraordinary companions who preserved and transmitted his teachings, establishing the foundation for Islamic civilization.</p>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">💖</span>
+        <strong>Khadijah (R.A)</strong>
+        First believer and supporter
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">📚</span>
+        <strong>Aisha (R.A)</strong>
+        Scholar who taught thousands
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🤲</span>
+        <strong>Abu Bakr (R.A)</strong>
+        Closest companion and first caliph
+      </div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🗡️</span>
+        <strong>Umar (R.A)</strong>
+        Implementer of justice
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">📖</span>
+        <strong>Uthman (R.A)</strong>
+        Preserved Quran in written form
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🦁</span>
+        <strong>Ali (R.A)</strong>
+        Gate of knowledge and bravery
+      </div>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 10: ETERNAL LEGACY -->
+  <div class="content-block fade-in">
+    <h2>🌍 Timeless Legacy for Humanity</h2>
+    
+    <div class="lesson-box">
+      <strong>Prophet Muhammad's (S.A.W) Transformative Achievements:</strong>
+      <ul>
+        <li>Established pure monotheism in place of 360 idols</li>
+        <li>Liberated women from pre-Islamic oppression</li>
+        <li>Abolished tribal racism and established human equality</li>
+        <li>Created first welfare state with zakah system</li>
+        <li>Established rights for minorities through dhimmi system</li>
+        <li>Promoted scientific inquiry and learning</li>
+        <li>Protected environment and animal rights</li>
+        <li>Established principles of international relations</li>
+      </ul>
+    </div>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Anbiya 21:107</strong>
+      <div class="arabic-verse">وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِّلْعَالَمِينَ</div>
+      <div class="verse-translation">"And We have not sent you, [O Muhammad], except as a mercy to the worlds."</div>
+      <div class="verse-number">Verse 107</div>
+    </div>
+  </div>
+
+  <!-- FINAL REFLECTION -->
+  <div class="hero-section" style="margin-top: 40px;">
+    <h3>🌟 The Seal of Prophets - Perfect Model for All Time</h3>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">📖</span>
+        <strong>Preserved Revelation</strong>
+        Quran unchanged for 1400+ years
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🔄</span>
+        <strong>Complete Way of Life</strong>
+        Guidance for all aspects of life
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🌍</span>
+        <strong>Global Impact</strong>
+        1.8+ billion followers today
+      </div>
+    </div>
+    
+    <p style="margin-top: 20px; font-style: italic; font-size: 1.1em;">
+      Prophet Muhammad (S.A.W) transformed Arabia from a land of tribal warfare, female infanticide, and idol worship into the center of a civilization that preserved knowledge, established justice, and spread monotheism across continents. His life remains the perfect example for anyone seeking to worship Allah sincerely, treat others with compassion, and establish justice in society. As the final messenger, his teachings continue to guide humanity toward peace, purpose, and eternal success.
+    </p>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="page-footer">
+  <p>© Islamic Stories Collection | Exploring the Lives of Prophets Through Quranic Narratives</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    const hamburger = document.querySelector('.hamburger');
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  }
+
+  // Smooth scrolling for better UX
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Highlight Quran boxes on hover
+  document.addEventListener('DOMContentLoaded', function() {
+    const quranBoxes = document.querySelectorAll('.quran-box');
+    quranBoxes.forEach(box => {
+      box.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.02)';
+        this.style.boxShadow = '0 5px 20px rgba(0, 100, 0, 0.15)';
+      });
+      
+      box.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1)';
+        this.style.boxShadow = '0 3px 15px rgba(0, 0, 0, 0.08)';
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Islam: Beyond What You Know - Complete Guide to Islamic Teachings & Prophets</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The History of Prophet Dawud (A.S) – Islamic Story</title>
 
-  <meta name="description" content="Explore Islam through comprehensive educational content. Learn about beliefs, values, and lives of Prophets from Adam to Muhammad. Respectful guide for understanding Islam.">
-  <meta name="keywords" content="Islam guide, Islamic teachings, Prophet stories, Muslim beliefs, Islamic values, Quran teachings, Prophet Muhammad, Islamic education">
+  <!-- SEO + ADSENSE FRIENDLY -->
+  <meta name="description" content="Learn the inspiring Islamic story of Prophet Dawud (A.S): his victory over Jalut, kingship, justice, miracles, devotion, and timeless lessons of faith." />
+  <meta name="keywords" content="Prophet Dawud, Islam, Zabur, Goliath, Jalut, Islamic history, Quran stories, prophets in Islam" />
 
   <style>
     /* RESET & BASE STYLES */
@@ -136,7 +137,7 @@
       }
     }
 
-    /* MAIN CONTENT - AD-FRIENDLY LAYOUT */
+    /* MAIN CONTENT */
     main.content {
       padding: 30px 20px;
       text-align: center;
@@ -163,6 +164,7 @@
     }
 
     h3 {
+      text-align: center;
       color: #006400;
       margin: 25px 0 15px;
       font-size: 1.3em;
@@ -317,29 +319,36 @@
       font-weight: 600;
     }
 
-    /* CTA BUTTONS */
-    .cta-button {
-      display: inline-block;
-      background: linear-gradient(135deg, #006400, #004d00);
-      color: white;
-      padding: 15px 30px;
+    /* TIMELINE */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 800px;
+      margin: 30px auto;
+    }
+
+    .timeline-item {
+      background-color: rgba(240, 230, 210, 0.5);
+      padding: 20px;
       border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1em;
-      margin: 20px 10px;
-      border: 2px solid rgba(0, 100, 0, 0.3);
+      text-align: left;
+      border-left: 4px solid green;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0, 100, 0, 0.2);
     }
 
-    .cta-button:hover {
-      background: linear-gradient(135deg, #008000, #006400);
-      transform: translateY(-3px);
-      box-shadow: 0 6px 12px rgba(0, 100, 0, 0.3);
+    .timeline-item:hover {
+      background-color: #f0e6d2;
+      transform: translateX(5px);
     }
 
-    /* AD SPACE INDICATORS */
+    .timeline-item h3 {
+      color: #006400;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    /* AD SPACE */
     .ad-space {
       background: linear-gradient(135deg, rgba(240, 230, 210, 0.2), rgba(240, 230, 210, 0.1));
       border: 2px dashed rgba(0, 100, 0, 0.3);
@@ -353,27 +362,7 @@
       min-height: 90px;
     }
 
-    /* MISSION HIGHLIGHT */
-    .mission-box {
-      background: linear-gradient(135deg, #f0e6d2, #e8dcc0);
-      padding: 25px;
-      border-radius: 10px;
-      margin: 30px auto;
-      max-width: 900px;
-      text-align: center;
-      border: 2px solid rgba(0, 100, 0, 0.2);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .mission-box strong {
-      color: #006400;
-      font-size: 1.3em;
-      display: block;
-      margin-bottom: 15px;
-      font-weight: 700;
-    }
-
-    /* FOOTER STYLING */
+    /* FOOTER */
     .page-footer {
       text-align: center;
       padding: 25px 20px;
@@ -395,14 +384,6 @@
 
     /* MOBILE ADJUSTMENTS */
     @media (max-width: 768px) {
-      h1 {
-        font-size: 2em;
-      }
-      
-      h2 {
-        font-size: 1.4em;
-      }
-      
       .arabic-verse {
         font-size: 1.6em;
         line-height: 2;
@@ -418,20 +399,9 @@
         font-size: 1.1em;
         padding: 12px 15px;
       }
-      
-      .feature-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-      
-      .cta-button {
-        padding: 12px 25px;
-        font-size: 1em;
-        margin: 10px 5px;
-      }
     }
 
-    /* DARK MODE SUPPORT */
+    /* DARK MODE */
     @media (prefers-color-scheme: dark) {
       body {
         background-color: #1a1a1a;
@@ -443,12 +413,12 @@
         border-bottom-color: #444;
       }
       
-      .feature-card, .mission-box, .quran-box {
+      .quran-box, .feature-card {
         background-color: #2a2a2a;
         border-color: #90ee90;
       }
       
-      .hero-section {
+      .hero-section, .timeline-item {
         background: rgba(42, 42, 42, 0.6);
         border-color: #444;
       }
@@ -462,20 +432,12 @@
         color: #90ee90;
         background-color: rgba(42, 42, 42, 0.5);
       }
-      
-      .cta-button {
-        background: linear-gradient(135deg, #004d00, #003300);
-      }
-      
-      .cta-button:hover {
-        background: linear-gradient(135deg, #006600, #004d00);
-      }
     }
   </style>
 </head>
+
 <body>
 
-  <!-- OPTIMIZED NAVBAR -->
   <nav class="navbar">
     <div class="hamburger" onclick="toggleMenu()">
       <div></div>
@@ -483,7 +445,7 @@
       <div></div>
     </div>
 
-    <div class="links-wrapper" id="menu">
+    <div class="links-wrapper" id="linksWrapper">
       <div class="nav-row">
         <a href="whatisislam.html">📘 What Is Islam</a>
         <a href="islammorethanyouthink.html">🌟 Islam: More Than You Think</a>
@@ -499,214 +461,190 @@
         <a href="thehistoryofprophet-isa.html">🕊️ Prophet Isa (A.S)</a>
         <a href="thehistoryofprophet-yusuf.html">🌙 Prophet Yusuf (A.S)</a>
         <a href="thehistoryofprophet-nuh.html">🛶 Prophet Nuh (A.S)</a>
-        <a href="thehistoryofprophet-dawud.html">👑 Prophet Dawud (A.S)</a>
         <a href="thehistoryofprophet-lut.html">🌋 Prophet Lut (A.S)</a>
         <a href="thehistoryofprophet-zakaria.html">🌿 Prophet Zakaria (A.S)</a>
       </div>
     </div>
   </nav>
 
-  <!-- MAIN CONTENT -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('linksWrapper').classList.toggle('active');
+    }
+  </script>
+
   <main class="content">
     
-    <!-- HERO SECTION -->
     <div class="hero-section fade-in">
-      <h1>🕌 Islam: Beyond What You Know 🕋☪️</h1>
-      <p>Welcome to <strong>Beyond Islam</strong> – your comprehensive gateway to understanding one of the world's great spiritual traditions through authentic, educational, and respectful content.</p>
-      
-      <div class="mission-box">
-        <strong>More Than a Religion</strong>
-        <p>Islam is a complete way of life that has shaped civilizations, advanced sciences, and inspired millions for over fourteen centuries. Discover the depth beyond the surface.</p>
-      </div>
+      <h1>🛡️ The Story of Prophet Dawud (A.S)</h1>
+      <p>This page presents an educational and respectful overview of the life of Prophet Dawud (A.S), focusing on his faith, leadership, miracles, and legacy.</p>
     </div>
 
-    <!-- FEATURE HIGHLIGHTS -->
     <div class="feature-grid">
       <div class="feature-card">
-        <span class="feature-icon">📚</span>
-        <strong>Foundational Knowledge</strong>
-        Clear explanations of Islamic beliefs, practices, and core values
+        <span class="feature-icon">🌿</span>
+        <strong>Humble Shepherd</strong>
+        Known for spirituality and courage
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">⚔️</span>
+        <strong>Defeated Jalut</strong>
+        With faith and a sling
       </div>
       
       <div class="feature-card">
         <span class="feature-icon">👑</span>
-        <strong>Prophet Stories</strong>
-        Inspiring narratives from Adam to Muhammad (peace be upon them)
+        <strong>King & Prophet</strong>
+        Blessed with wisdom and justice
       </div>
-      
-      <div class="feature-card">
-        <span class="feature-icon">💡</span>
-        <strong>Timeless Wisdom</strong>
-        Practical lessons for modern life from Islamic teachings
+    </div>
+
+    <div class="content-block fade-in">
+      <h2>🌿 Humble Beginnings</h2>
+      <p>
+        Prophet Dawud (A.S) grew up as a shepherd, known for his spirituality, courage, and a voice so beautiful that nature itself seemed to respond to his praises.
+      </p>
+
+      <div class="quran-box">
+        <strong>Surah Sad 38:17</strong>
+        <div class="arabic-verse">اذْكُرْ عَبْدَنَا دَاوُودَ</div>
+        <div class="verse-translation">"Remember Our servant Dawud."</div>
+        <div class="verse-number">Verse 17</div>
       </div>
     </div>
     <div class="ad-space">
   <!-- AdSense Code Here -->
   Advertisement Space: Responsive Banner (728x90 on desktop, 320x50 on mobile)
     </div>
-    <div class="section-divider"></div>
-
-    <!-- OUR MISSION SECTION -->
     <div class="content-block fade-in">
-      <h2>🌟 Our Educational Mission</h2>
-      <p>We provide well‑structured explanations, historical insights, and authentic stories of the Prophets — from Adam (A.S) to Muhammad (S.A.W). Each resource is designed to help readers understand the principles, values, and wisdom that continue to inspire millions worldwide.</p>
-      
-      <div class="quran-box">
-        <strong>Quranic Guidance</strong>
-        <div class="arabic-verse">يَا أَيُّهَا النَّاسُ إِنَّا خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا</div>
-        <div class="verse-translation">"O mankind, indeed We have created you from male and female and made you peoples and tribes that you may know one another."</div>
-        <div class="verse-number">Surah Al-Hujurat 49:13</div>
-      </div>
-      
-      <div class="lesson-box">
-        <strong>Why Understanding Matters:</strong>
-        <p>In a world filled with misconceptions, authentic knowledge bridges gaps, fosters respect, and reveals the beauty of Islamic teachings that emphasize peace, justice, and compassion.</p>
-      </div>
-    </div>
-
-    <div class="section-divider"></div>
-
-    <!-- WHAT YOU'LL DISCOVER -->
-    <div class="content-block fade-in">
-      <h2>🔍 What You'll Discover Here</h2>
-      
-      <div class="feature-grid">
-        <div class="feature-card">
-          <span class="feature-icon">🕋</span>
-          <strong>Core Beliefs</strong>
-          Understanding Tawheed, prophethood, and Islamic theology
-        </div>
-        
-        <div class="feature-card">
-          <span class="feature-icon">🙏</span>
-          <strong>Daily Practices</strong>
-          The Five Pillars and spiritual development
-        </div>
-        
-        <div class="feature-card">
-          <span class="feature-icon">📜</span>
-          <strong>Prophetic Legacy</strong>
-          Complete stories of all major prophets
-        </div>
-        
-        <div class="feature-card">
-          <span class="feature-icon">⚖️</span>
-          <strong>Islamic Ethics</strong>
-          Moral framework for personal and social life
-        </div>
-        
-        <div class="feature-card">
-          <span class="feature-icon">🌍</span>
-          <strong>Global Perspective</strong>
-          Islam's contributions to civilization
-        </div>
-        
-        <div class="feature-card">
-          <span class="feature-icon">🤝</span>
-          <strong>Interfaith Insights</strong>
-          Building bridges of understanding
-        </div>
-      </div>
-    </div>
-
-    <div class="section-divider"></div>
-
-    <!-- OUR APPROACH -->
-    <div class="content-block fade-in">
-      <h2>🎯 Our Educational Approach</h2>
-      <p>We present Islam through a balanced, accessible, and academically sound approach, going beyond stereotypes to reveal the rich intellectual and spiritual tradition that has nurtured scholars, scientists, and saints throughout history.</p>
-      
-      <div class="mission-box">
-        <strong>Three Guiding Principles</strong>
-        <p>1. <strong>Authenticity:</strong> Based on Quran and authentic Hadith<br>
-           2. <strong>Clarity:</strong> Simplified without oversimplifying<br>
-           3. <strong>Respect:</strong> Honoring all seekers of knowledge</p>
-      </div>
-    </div>
-
-    <div class="section-divider"></div>
-
-    <!-- START YOUR JOURNEY -->
-    <div class="content-block fade-in">
-      <h2>🚀 Begin Your Learning Journey</h2>
-      <p>Whether you're curious about Islam, beginning your learning journey, or seeking to deepen your understanding, this platform welcomes everyone with open arms and clear guidance.</p>
-      
-      <a href="whatisislam.html" class="cta-button">Start Exploring Islam Now ➝</a>
-      
-      <div class="feature-grid">
-        <div class="feature-card">
-          <span class="feature-icon">🌱</span>
-          <strong>For Beginners</strong>
-          Start with basics and build solid foundation
-        </div>
-        
-        <div class="feature-card">
-          <span class="feature-icon">📈</span>
-          <strong>Intermediate Learners</strong>
-          Deepen understanding of concepts
-        </div>
-        
-        <div class="feature-card">
-          <span class="feature-icon">🎓</span>
-          <strong>Advanced Study</strong>
-          Explore deeper theological discussions
-        </div>
-      </div>
-    </div>
-
-    <div class="section-divider"></div>
-
-    <!-- QURANIC WISDOM -->
-    <div class="content-block fade-in">
-      <h2>📖 Timeless Quranic Wisdom</h2>
-      
-      <div class="quran-box">
-        <strong>Surah Al-Baqarah 2:256</strong>
-        <div class="arabic-verse">لَا إِكْرَاهَ فِي الدِّينِ ۖ قَد تَّبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ</div>
-        <div class="verse-translation">"There shall be no compulsion in [acceptance of] the religion. The right course has become clear from the wrong."</div>
-        <div class="verse-number">Verse 256</div>
-      </div>
-      
-      <div class="lesson-box">
-        <strong>Freedom of Belief:</strong>
-        <p>This profound verse establishes the Islamic principle of religious freedom - faith must come from conviction, not coercion. It reflects Islam's respect for human conscience and intellectual freedom.</p>
-      </div>
-    </div>
-
-    <!-- FINAL CTA -->
-    <div class="hero-section" style="margin-top: 40px;">
-      <h3>✨ Continue Your Journey of Discovery</h3>
-      <p style="font-style: italic; margin-top: 15px; font-size: 1.15em;">
-        <strong>Beyond Islam</strong> is more than a website—it's a gateway to understanding one of humanity's great spiritual traditions with clarity, depth, and genuine respect. New content added regularly to support your learning journey.
+      <h2>⚔️ The Battle Against Jalut (Goliath)</h2>
+      <p>
+        With unwavering faith, Dawud (A.S) faced the mighty warrior Jalut using only a sling and complete trust in Allah.
       </p>
-      
-      <div style="margin-top: 25px;">
-        <a href="whatisislam.html" class="cta-button">Start Learning</a>
-        <a href="thehistoryofprophet-muhammad.html" class="cta-button">Meet the Prophets</a>
-      </div>
-      
-      <div class="mission-box" style="margin-top: 30px;">
-        <p>💫 "Seeking knowledge is obligatory upon every Muslim." - Prophet Muhammad (S.A.W)</p>
+
+      <div class="quran-box">
+        <strong>Surah Al-Baqarah 2:251</strong>
+        <div class="arabic-verse">فَقَتَلَ دَاوُودُ جَالُوتَ وَآتَاهُ اللَّهُ الْمُلْكَ وَالْحِكْمَةَ</div>
+        <div class="verse-translation">"And Dawud killed Jalut, and Allah gave him kingship and wisdom."</div>
+        <div class="verse-number">Verse 251</div>
       </div>
     </div>
 
+    <div class="section-divider"></div>
+
+    <div class="content-block fade-in">
+      <h2>📜 Major Life Events</h2>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>👑 Becoming King</h3>
+          <p>After his victory, Allah granted Dawud (A.S) kingship and prophethood, blessing him with wisdom and justice.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <h3>📖 Revelation of the Zabur</h3>
+          <p>Allah revealed the holy scripture, the Zabur, to Dawud (A.S), filled with hymns and spiritual guidance.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <h3>🎶 Beautiful Voice</h3>
+          <p>His recitation was so moving that birds and mountains joined him in praise of Allah.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <h3>⚖️ Justice and Wisdom</h3>
+          <p>Dawud (A.S) was known for fair judgment and humility, always seeking Allah's guidance in his rulings.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <h3>🛡️ Crafting Armor</h3>
+          <p>Allah softened iron for him, allowing him to create flexible chainmail armor—an innovation of his time.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <h3>🤲 Worship and Devotion</h3>
+          <p>Dawud (A.S) prayed extensively and practiced the best voluntary fast: fasting every other day.</p>
+        </div>
+      </div>
+
+      <div class="quran-box">
+        <strong>Surah Sad 38:20</strong>
+        <div class="arabic-verse">وَشَدَدْنَا مُلْكَهُ وَآتَيْنَاهُ الْحِكْمَةَ وَفَصْلَ الْخِطَابِ</div>
+        <div class="verse-translation">"We strengthened his kingdom and gave him wisdom and decisive speech."</div>
+        <div class="verse-number">Verse 20</div>
+      </div>
+
+      <div class="quran-box">
+        <strong>Surah An-Nisa 4:163</strong>
+        <div class="arabic-verse">وَآتَيْنَا دَاوُودَ زَبُورًا</div>
+        <div class="verse-translation">"And We gave Dawud the Zabur."</div>
+        <div class="verse-number">Verse 163</div>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <div class="content-block fade-in">
+      <h2>🌟 Key Qualities and Legacy</h2>
+      
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-icon">🛡️</span>
+          <strong>Faith in Battle</strong>
+          Defeated Jalut through complete trust
+        </div>
+        
+        <div class="feature-card">
+          <span class="feature-icon">👑</span>
+          <strong>Righteous Leadership</strong>
+          Ruled with justice and compassion
+        </div>
+        
+        <div class="feature-card">
+          <span class="feature-icon">📖</span>
+          <strong>Recipient of Revelation</strong>
+          Received the Zabur
+        </div>
+        
+        <div class="feature-card">
+          <span class="feature-icon">⚒️</span>
+          <strong>Divine Skill</strong>
+          Worked with softened iron
+        </div>
+        
+        <div class="feature-card">
+          <span class="feature-icon">🎵</span>
+          <strong>Beautiful Recitation</strong>
+          Voice that moved creation
+        </div>
+        
+        <div class="feature-card">
+          <span class="feature-icon">🧘</span>
+          <strong>Deep Devotion</strong>
+          Extensive prayer and fasting
+        </div>
+      </div>
+
+      <div class="lesson-box">
+        <strong>Key Lessons:</strong>
+        <p>True strength comes from faith in Allah. Leadership is a trust to be exercised with justice. Devotion combined with action creates lasting legacies.</p>
+      </div>
+    </div>
+
+    <div class="hero-section" style="margin-top: 40px;">
+      <h3>🕊️ Final Reflection</h3>
+      <p style="font-style: italic; margin-top: 15px; font-size: 1.1em;">
+        Prophet Dawud (A.S) passed away peacefully, leaving behind a legacy of justice, worship, and devotion that continues to inspire believers to this day.
+      </p>
+    </div>
   </main>
 
-  <!-- FOOTER -->
   <footer class="page-footer">
-    <p>© Beyond Islam Educational Platform | Comprehensive Guide to Understanding Islam Through Authentic Sources</p>
-    <p style="margin-top: 10px; font-size: 0.9em; color: #2d5016;">Knowledge • Understanding • Respect • Wisdom</p>
+    <p>© Islamic Stories Collection | Exploring the Lives of Prophets Through Quranic Narratives</p>
   </footer>
 
   <script>
-    function toggleMenu() {
-      const menu = document.getElementById('menu');
-      const hamburger = document.querySelector('.hamburger');
-      menu.classList.toggle('active');
-      hamburger.classList.toggle('active');
-    }
-
-    // Highlight Quran boxes on hover
     document.addEventListener('DOMContentLoaded', function() {
       const quranBoxes = document.querySelectorAll('.quran-box');
       quranBoxes.forEach(box => {
@@ -722,70 +660,6 @@
       });
     });
   </script>
-  <style>
-  /* SOCIAL BAR FISSA IN BASSO */
-  .social-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(135deg, #006400, #004d00);
-    color: white;
-    padding: 12px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    z-index: 9999;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
-    border-top: 2px solid rgba(255, 255, 255, 0.1);
-  }
 
-  .social-bar a {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-weight: 600;
-    font-size: 0.95em;
-    padding: 6px 12px;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-  }
-
-  .social-bar a:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-    transform: translateY(-2px);
-  }
-
-  .social-icon {
-    font-size: 1.2em;
-  }
-
-  /* Nascondi su mobile se necessario */
-  @media (max-width: 768px) {
-    .social-bar {
-      gap: 15px;
-      padding: 10px 15px;
-    }
-    
-    .social-bar a span:not(.social-icon) {
-      display: none; /* Nasconde il testo su mobile, mostra solo icone */
-    }
-    
-    .social-bar a {
-      padding: 8px;
-      font-size: 1.1em;
-    }
-  }
-
-  /* Regola per stampa */
-  @media print {
-    .social-bar {
-      display: none;
-    }
-  }
-</style> 
 </body>
 </html>

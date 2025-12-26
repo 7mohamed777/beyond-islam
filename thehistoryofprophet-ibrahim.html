@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prophet Ibrahim (A.S) - Father of Prophets and Champion of Tawheed</title>
+  
+  <meta name="description" content="Discover Prophet Ibrahim's revolutionary journey: from rejecting idolatry to becoming Allah's Khalil, building the Kaaba, and fathering the prophetic lineage in Islam.">
+  <meta name="keywords" content="Prophet Ibrahim, Prophet Abraham, Kaaba builder, father of prophets, Islamic monotheism, sacrifice, Hajj, Islamic prophets">
+
+  <!-- AdSense Friendly Structure -->
+  <style>
+    /* RESET & BASE STYLES */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: beige;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: green;
+      line-height: 1.6;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    /* NAVBAR - FIXED FOR BETTER UX */
+    .navbar {
+      background-color: #f0e6d2;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid #d4c7a1;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .links-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .nav-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px 20px;
+    }
+
+    .nav-row a {
+      color: green;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95em;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .nav-row a:hover {
+      color: #006400;
+      background-color: rgba(0, 100, 0, 0.08);
+      transform: translateY(-1px);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1001;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: green;
+      margin: 3px 0;
+      transition: 0.3s;
+    }
+
+    /* MOBILE OPTIMIZATION */
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 10px 15px;
+      }
+      
+      .links-wrapper {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f0e6d2;
+        padding: 15px 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid #d4c7a1;
+      }
+
+      .links-wrapper.active {
+        display: flex;
+      }
+
+      .nav-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+      }
+
+      .nav-row a {
+        padding: 10px 15px;
+        font-size: 1em;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+      
+      .hamburger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      
+      .hamburger.active div:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburger.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    }
+
+    /* MAIN CONTENT - AD-FRIENDLY LAYOUT */
+    main.content {
+      padding: 30px 20px;
+      text-align: center;
+      color: green;
+    }
+
+    h1 {
+      color: green;
+      margin: 20px 0 30px;
+      font-size: 2.2em;
+      line-height: 1.3;
+      text-align: center;
+      padding-bottom: 15px;
+      border-bottom: 2px solid rgba(0, 100, 0, 0.15);
+    }
+
+    h2 {
+      color: green;
+      margin: 35px 0 20px;
+      text-align: center;
+      font-size: 1.6em;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    h3 {
+      color: #006400;
+      margin: 25px 0 15px;
+      font-size: 1.3em;
+    }
+
+    p {
+      margin: 18px auto;
+      text-align: center;
+      max-width: 800px;
+      line-height: 1.7;
+      font-size: 1.05em;
+      color: #2d5016;
+    }
+
+    /* QURAN VERSES - OPTIMIZED FOR READABILITY - INGRANDITE */
+    .quran-box {
+      background-color: #f0e6d2;
+      padding: 25px;
+      margin: 30px auto;
+      width: 90%;
+      border-left: 5px solid green;
+      border-radius: 8px;
+      text-align: center;
+      max-width: 900px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .quran-box strong {
+      color: #006400;
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 15px;
+      font-weight: 700;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(0, 100, 0, 0.2);
+    }
+
+    .arabic-verse {
+      font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+      font-size: 1.8em;
+      margin: 20px 0;
+      text-align: center;
+      direction: rtl;
+      line-height: 2.2;
+      color: #1a4508;
+      font-weight: 600;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    .verse-translation {
+      font-style: italic;
+      margin-top: 20px;
+      color: green;
+      text-align: center;
+      font-size: 1.15em;
+      line-height: 1.7;
+      padding: 15px 20px;
+      background-color: rgba(240, 230, 210, 0.4);
+      border-radius: 5px;
+      border-left: 3px solid #006400;
+    }
+
+    /* Aggiunta: numero del versetto */
+    .verse-number {
+      display: inline-block;
+      background-color: #006400;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* AD-FRIENDLY SECTIONS */
+    .section-divider {
+      height: 2px;
+      background: linear-gradient(to right, transparent, rgba(0, 100, 0, 0.3), transparent);
+      margin: 40px auto;
+      width: 85%;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, rgba(240, 230, 210, 0.6), rgba(240, 230, 210, 0.3));
+      padding: 30px 25px;
+      border-radius: 10px;
+      margin: 0 auto 40px;
+      max-width: 900px;
+      text-align: center;
+      border: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin: 35px auto;
+      max-width: 950px;
+    }
+
+    .feature-card {
+      background-color: #f0e6d2;
+      padding: 25px 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+      border: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-icon {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+      display: block;
+      color: #006400;
+    }
+
+    .feature-card strong {
+      color: #006400;
+      display: block;
+      margin-bottom: 12px;
+      font-size: 1.15em;
+      font-weight: 600;
+    }
+
+    /* CONTENT SECTIONS WITH AD SPACE */
+    .content-block {
+      margin-bottom: 45px;
+      padding: 0 15px;
+    }
+
+    .lesson-box {
+      background-color: rgba(240, 230, 210, 0.4);
+      padding: 22px;
+      border-radius: 8px;
+      margin: 25px auto;
+      max-width: 800px;
+      border-left: 4px solid #006400;
+    }
+
+    .lesson-box strong {
+      color: #006400;
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    /* LISTS STYLING */
+    ul {
+      list-style-position: inside;
+      max-width: 750px;
+      margin: 20px auto;
+      text-align: left;
+      display: inline-block;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 10px 0;
+      line-height: 1.6;
+      color: #2d5016;
+      font-size: 1.05em;
+    }
+
+    /* AD SPACE INDICATORS (Replace with actual AdSense code) */
+    .ad-space {
+      background: linear-gradient(135deg, rgba(240, 230, 210, 0.2), rgba(240, 230, 210, 0.1));
+      border: 2px dashed rgba(0, 100, 0, 0.3);
+      border-radius: 8px;
+      padding: 25px;
+      margin: 30px auto;
+      text-align: center;
+      color: #006400;
+      font-style: italic;
+      max-width: 728px;
+      min-height: 90px;
+    }
+
+    /* RESPONSIVE IMAGE CONTAINER */
+    .image-container {
+      max-width: 600px;
+      margin: 25px auto;
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* FOOTER STYLING */
+    .page-footer {
+      text-align: center;
+      padding: 25px 20px;
+      margin-top: 40px;
+      border-top: 2px solid rgba(0, 100, 0, 0.2);
+      color: #2d5016;
+      font-size: 0.95em;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeIn 0.6s ease-out;
+    }
+
+    /* PRINT STYLES */
+    @media print {
+      .navbar, .ad-space, .hamburger {
+        display: none;
+      }
+      
+      body {
+        color: #000;
+        background: white;
+      }
+      
+      .quran-box {
+        border: 2px solid #000;
+        background: #fff;
+      }
+      
+      .arabic-verse {
+        font-size: 1.5em;
+        color: #000;
+      }
+    }
+
+    /* MOBILE ADJUSTMENTS FOR LARGER TEXT */
+    @media (max-width: 768px) {
+      .arabic-verse {
+        font-size: 1.6em;
+        line-height: 2;
+        padding: 12px;
+      }
+      
+      .quran-box {
+        padding: 20px 15px;
+        margin: 25px auto;
+      }
+      
+      .verse-translation {
+        font-size: 1.1em;
+        padding: 12px 15px;
+      }
+    }
+
+    /* DARK MODE SUPPORT */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #1a1a1a;
+        color: #90ee90;
+      }
+      
+      .navbar {
+        background-color: #2a2a2a;
+        border-bottom-color: #444;
+      }
+      
+      .quran-box, .feature-card {
+        background-color: #2a2a2a;
+        border-color: #90ee90;
+      }
+      
+      .hero-section {
+        background: rgba(42, 42, 42, 0.6);
+        border-color: #444;
+      }
+      
+      .arabic-verse {
+        color: #c8ffc8;
+        background-color: rgba(42, 42, 42, 0.5);
+      }
+      
+      .verse-translation {
+        color: #90ee90;
+        background-color: rgba(42, 42, 42, 0.5);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- OPTIMIZED NAVBAR -->
+<nav class="navbar">
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="links-wrapper" id="menu">
+    <div class="nav-row">
+      <a href="whatisislam.html">📘 What Is Islam</a>
+      <a href="islammorethanyouthink.html">🌟 Islam: More Than You Think</a>
+      <a href="thehistoryofprophet-muhammad.html">🕋 Prophet Muhammad (S.A.W)</a>
+      <a href="thehistoryofprophet-adam.html">🌱 Prophet Adam (A.S)</a>
+      <a href="thehistoryofprophet-sulayman.html">👑 Prophet Sulayman (A.S)</a>
+      <a href="thehistoryofprophet-ismail.html">💧 Prophet Ismail (A.S)</a>
+    </div>
+
+    <div class="nav-row">
+      <a href="thehistoryofprophet-musa.html">🌊 Prophet Musa (A.S)</a>
+      <a href="thehistoryofprophet-isa.html">🕊️ Prophet Isa (A.S)</a>
+      <a href="thehistoryofprophet-yusuf.html">🌙 Prophet Yusuf (A.S)</a>
+      <a href="thehistoryofprophet-nuh.html">🛶 Prophet Nuh (A.S)</a>
+      <a href="thehistoryofprophet-dawud.html">👑 Prophet Dawud (A.S)</a>
+      <a href="thehistoryofprophet-lut.html">🌋 Prophet Lut (A.S)</a>
+      <a href="thehistoryofprophet-zakaria.html">🌿 Prophet Zakaria (A.S)</a>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="content">
+  
+  <!-- HERO SECTION -->
+  <div class="hero-section fade-in">
+    <h1>🔥 Prophet Ibrahim (A.S) - Father of Prophets and Champion of Tawheed</h1>
+    <p>Discover the revolutionary journey of Prophet Ibrahim (A.S) - from questioning idolatry to becoming Allah's Khalil (close friend), building the Kaaba, and establishing the foundation of monotheistic faith for generations to come.</p>
+  </div>
+
+  <!-- FEATURE HIGHLIGHTS -->
+  <div class="feature-grid">
+    <div class="feature-card">
+      <span class="feature-icon">🛐</span>
+      <strong>Revolutionary Monotheist</strong>
+      Rejected centuries of idol worship
+    </div>
+    
+    <div class="feature-card">
+      <span class="feature-icon">🔥</span>
+      <strong>Miraculous Survival</strong>
+      Saved from fire by Allah's command
+    </div>
+    
+    <div class="feature-card">
+      <span class="feature-icon">🕋</span>
+      <strong>Kaaba Builder</strong>
+      Established Islam's spiritual center
+    </div>
+  </div>
+
+  <!-- SECTION 1: EARLY LIFE & SEARCH FOR TRUTH -->
+  <div class="content-block fade-in">
+    <h2>🌟 Birth and Early Revelation</h2>
+    <p>Born in ancient Ur (Mesopotamia) to an idol-making family, Ibrahim (A.S) questioned the worship of stars, moon, sun, and man-made idols from childhood. Through logical reasoning, he concluded that only the Eternal Creator deserved worship.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Al-An'am 6:74-75</strong>
+      <div class="arabic-verse">وَإِذْ قَالَ إِبْرَاهِيمُ لِأَبِيهِ آزَرَ أَتَتَّخِذُ أَصْنَامًا آلِهَةً إِنِّي أَرَاكَ وَقَوْمَكَ فِي ضَلَالٍ مُّبِينٍ</div>
+      <div class="verse-translation">"And when Ibrahim said to his father Azar: 'Do you take idols as gods? Indeed, I see you and your people in manifest error.'"</div>
+      <div class="verse-number">Verse 74</div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>Key Insight:</strong>
+      <p>Ibrahim's (A.S) intellectual journey demonstrates that true faith is compatible with reason and logical inquiry, not blind following of tradition.</p>
+    </div>
+  </div>
+  <div class="ad-space">
+  <!-- AdSense Code Here -->
+  Advertisement Space: Responsive Banner (728x90 on desktop, 320x50 on mobile)
+    </div>
+  <div class="section-divider"></div>
+
+  <!-- SECTION 2: DESTROYING THE IDOLS -->
+  <div class="content-block fade-in">
+    <h2>🪓 The Great Idol-Shattering Demonstration</h2>
+    <p>To expose the falsehood of idolatry, Ibrahim (A.S) destroyed all idols except the largest, placing the axe around its neck. When the angry mob confronted him, he suggested they ask the remaining idol who had done this.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Anbiya 21:62-63</strong>
+      <div class="arabic-verse">قَالُوا أَأَنتَ فَعَلْتَ هَٰذَا بِآلِهَتِنَا يَا إِبْرَاهِيمُ  قَالَ بَلْ فَعَلَهُ كَبِيرُهُمْ هَٰذَا فَاسْأَلُوهُمْ إِن كَانُوا يَنطِقُونَ</div>
+      <div class="verse-translation">"They said, 'Have you done this to our gods, O Ibrahim?' He said, 'Rather, this - the largest of them - did it. So ask them, if they should be able to speak.'"</div>
+      <div class="verse-number">Verses 62-63</div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: THE FIERY TRIAL -->
+  <div class="content-block fade-in">
+    <h2>🔥 Miraculous Protection in the Fire</h2>
+    <p>Enraged by his destruction of their idols, the people threw Ibrahim (A.S) into a massive fire. But Allah commanded the fire to be cool and safe, showcasing divine protection for His sincere servant.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Anbiya 21:69</strong>
+      <div class="arabic-verse">قُلْنَا يَا نَارُ كُونِي بَرْدًا وَسَلَامًا عَلَىٰ إِبْرَاهِيمَ</div>
+      <div class="verse-translation">"We said, 'O fire, be coolness and safety upon Ibrahim.'"</div>
+      <div class="verse-number">Verse 69</div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🙌</span>
+        <strong>Ultimate Trust</strong>
+        Complete reliance on Allah alone
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">✨</span>
+        <strong>Divine Intervention</strong>
+        Natural laws submit to Allah's command
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🛡️</span>
+        <strong>Protected Messenger</strong>
+        Allah defends His chosen servants
+      </div>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 4: MIGRATION & FAMILY -->
+  <div class="content-block fade-in">
+    <h2>🏃 Migration and Establishing a Righteous Family</h2>
+    <p>Ibrahim (A.S) migrated with his wife Sarah to Palestine, Egypt, and finally Arabia. Through Allah's promise, he was blessed with two righteous sons: Ismail from Hajar and Ishaq from Sarah - both becoming prophets.</p>
+    
+    <div class="quran-box">
+      <strong>Surah As-Saffat 37:100-101</strong>
+      <div class="arabic-verse">رَبِّ هَبْ لِي مِنَ الصَّالِحِينَ  فَبَشَّرْنَاهُ بِغُلَامٍ حَلِيمٍ</div>
+      <div class="verse-translation">"'My Lord, grant me [a child] from among the righteous.' So We gave him good tidings of a forbearing boy."</div>
+      <div class="verse-number">Verses 100-101</div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>The Ultimate Test:</strong>
+      <p>Leaving Hajar and infant Ismail in the barren valley of Mecca with only dates and water, Ibrahim (A.S) demonstrated absolute trust that Allah would provide for his family.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 5: THE ULTIMATE SACRIFICE -->
+  <div class="content-block fade-in">
+    <h2>🐑 The Supreme Test of Submission</h2>
+    <p>In a dream, Ibrahim (A.S) was commanded to sacrifice his beloved son Ismail. Both father and son demonstrated ultimate submission to Allah's will, preparing for the sacrifice before Allah replaced Ismail with a ram.</p>
+    
+    <div class="quran-box">
+      <strong>Surah As-Saffat 37:102-107</strong>
+      <div class="arabic-verse">فَلَمَّا بَلَغَ مَعَهُ السَّعْيَ قَالَ يَا بُنَيَّ إِنِّي أَرَىٰ فِي الْمَنَامِ أَنِّي أَذْبَحُكَ فَانظُرْ مَاذَا تَرَىٰ ۚ قَالَ يَا أَبَتِ افْعَلْ مَا تُؤْمَرُ ۖ سَتَجِدُنِي إِن شَاءَ اللَّهُ مِنَ الصَّابِرِينَ</div>
+      <div class="verse-translation">"And when he reached with him [the age of] exertion, he said, 'O my son, I see in a dream that I am sacrificing you, so see what you think.' He said, 'O my father, do as you are commanded. You will find me, if Allah wills, of the steadfast.'"</div>
+      <div class="verse-number">Verses 102-103</div>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 6: BUILDING THE KAABA -->
+  <div class="content-block fade-in">
+    <h2>🕋 Establishing the House of Allah</h2>
+    <p>Ibrahim (A.S) and Ismail (A.S) built the Kaaba in Mecca as the first house of worship dedicated to Allah alone. This sacred structure would become the spiritual center for all humanity and the direction of Muslim prayer.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Baqarah 2:127</strong>
+      <div class="arabic-verse">وَإِذْ يَرْفَعُ إِبْرَاهِيمُ الْقَوَاعِدَ مِنَ الْبَيْتِ وَإِسْمَاعِيلُ رَبَّنَا تَقَبَّلْ مِنَّا ۖ إِنَّكَ أَنتَ السَّمِيعُ الْعَلِيمُ</div>
+      <div class="verse-translation">"And when Ibrahim was raising the foundations of the House and Ismail, [they prayed], 'Our Lord, accept [this] from us. Indeed, You are the Hearing, the Knowing.'"</div>
+      <div class="verse-number">Verse 127</div>
+    </div>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Baqarah 2:129</strong>
+      <div class="arabic-verse">رَبَّنَا وَابْعَثْ فِيهِمْ رَسُولًا مِّنْهُمْ يَتْلُو عَلَيْهِمْ آيَاتِكَ وَيُعَلِّمُهُمُ الْكِتَابَ وَالْحِكْمَةَ وَيُزَكِّيهِمْ ۚ إِنَّكَ أَنتَ الْعَزِيزُ الْحَكِيمُ</div>
+      <div class="verse-translation">"'Our Lord, send among them a Messenger from themselves who will recite to them Your verses and teach them the Book and wisdom and purify them. Indeed, You are the Exalted in Might, the Wise.'"</div>
+      <div class="verse-number">Verse 129</div>
+    </div>
+  </div>
+
+  <!-- SECTION 7: NOBLE TITLES & LEGACY -->
+  <div class="content-block fade-in">
+    <h2>👑 Noble Titles and Eternal Legacy</h2>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🤝</span>
+        <strong>Khalilullah</strong>
+        The Close Friend of Allah
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🕌</span>
+        <strong>Imam an-Nas</strong>
+        Leader for All Humanity
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">📜</span>
+        <strong>Hanif</strong>
+        Pure Monotheist
+      </div>
+    </div>
+    
+    <div class="quran-box">
+      <strong>Surah An-Nahl 16:120-123</strong>
+      <div class="arabic-verse">إِنَّ إِبْرَاهِيمَ كَانَ أُمَّةً قَانِتًا لِّلَّهِ حَنِيفًا وَلَمْ يَكُ مِنَ الْمُشْرِكِينَ  شَاكِرًا لِّأَنْعُمِهِ ۚ اجْتَبَاهُ وَهَدَاهُ إِلَىٰ صِرَاطٍ مُّسْتَقِيمٍ</div>
+      <div class="verse-translation">"Indeed, Ibrahim was a [comprehensive] leader, devoutly obedient to Allah, inclining toward truth, and he was not of those who associate others with Allah. [He was] grateful for His favors. He chose him and guided him to a straight path."</div>
+      <div class="verse-number">Verses 120-121</div>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 8: SUPPLICATIONS AND BLESSINGS -->
+  <div class="content-block fade-in">
+    <h2>🤲 Timeless Supplications of Ibrahim</h2>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🙏</span>
+        <strong>For Righteous Offspring</strong>
+        "My Lord, make me an establisher of prayer, and [many] from my descendants."
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🕋</span>
+        <strong>For Mecca's Sanctity</strong>
+        "My Lord, make this city secure and provide its people with fruits."
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">📚</span>
+        <strong>For Future Guidance</strong>
+        "Our Lord, send among them a Messenger from themselves..."
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 9: KEY LESSONS -->
+  <div class="content-block fade-in">
+    <h2>📚 Timeless Lessons from Ibrahim's Journey</h2>
+    
+    <div class="lesson-box">
+      <strong>Core Principles for Today:</strong>
+      <ul>
+        <li>Question inherited beliefs and seek truth through reason and revelation</li>
+        <li>Stand firm for monotheism even when facing persecution</li>
+        <li>Trust Allah completely in all circumstances - He replaces hardship with ease</li>
+        <li>Sacrifice what you love most for Allah's pleasure</li>
+        <li>Establish places of worship and communities based on pure Tawheed</li>
+        <li>Pray for future generations to remain on the straight path</li>
+      </ul>
+    </div>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Baqarah 2:130</strong>
+      <div class="arabic-verse">وَمَن يَرْغَبُ عَن مِّلَّةِ إِبْرَاهِيمَ إِلَّا مَن سَفِهَ نَفْسَهُ ۚ وَلَقَدِ اصْطَفَيْنَاهُ فِي الدُّنْيَا ۖ وَإِنَّهُ فِي الْآخِرَةِ لَمِنَ الصَّالِحِينَ</div>
+      <div class="verse-translation">"And who would be averse to the religion of Ibrahim except one who makes a fool of himself. And We had chosen him in this world, and indeed he, in the Hereafter, will be among the righteous."</div>
+      <div class="verse-number">Verse 130</div>
+    </div>
+  </div>
+
+  <!-- FINAL REFLECTION -->
+  <div class="hero-section" style="margin-top: 40px;">
+    <h3>🕋 Ibrahim: The Father of Prophetic Lineage</h3>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">👑</span>
+        <strong>Ancestor of Muhammad</strong>
+        Final prophet from his lineage
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🕋</span>
+        <strong>Hajj Rituals</strong>
+        His legacy continues in pilgrimage
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🌍</span>
+        <strong>Universal Message</strong>
+        Father of prophets for all humanity
+      </div>
+    </div>
+    
+    <p style="margin-top: 20px; font-style: italic; font-size: 1.1em;">
+      Prophet Ibrahim's (A.S) life represents the perfect balance between intellectual inquiry and complete submission to divine will. His legacy continues through billions who follow the path of pure monotheism he established.
+    </p>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="page-footer">
+  <p>© Islamic Stories Collection | Exploring the Lives of Prophets Through Quranic Narratives</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    const hamburger = document.querySelector('.hamburger');
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  }
+
+  // Smooth scrolling for better UX
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Highlight Quran boxes on hover
+  document.addEventListener('DOMContentLoaded', function() {
+    const quranBoxes = document.querySelectorAll('.quran-box');
+    quranBoxes.forEach(box => {
+      box.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.02)';
+        this.style.boxShadow = '0 5px 20px rgba(0, 100, 0, 0.15)';
+      });
+      
+      box.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1)';
+        this.style.boxShadow = '0 3px 15px rgba(0, 0, 0, 0.08)';
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
