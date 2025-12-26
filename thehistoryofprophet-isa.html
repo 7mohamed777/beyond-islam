@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prophet Isa (A.S) - The Miraculous Messiah & Servant of Allah</title>
+  
+  <meta name="description" content="Discover Prophet Isa's miraculous story: virgin birth, speaking in cradle, healing miracles, and his message of pure monotheism as the Messiah and servant of Allah in Islam.">
+  <meta name="keywords" content="Prophet Isa, Jesus in Islam, Messiah, Maryam mother of Jesus, Islamic prophets, Quran miracles, monotheism in Islam">
+
+  <!-- AdSense Friendly Structure -->
+  <style>
+    /* RESET & BASE STYLES */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: beige;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: green;
+      line-height: 1.6;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    /* NAVBAR - FIXED FOR BETTER UX */
+    .navbar {
+      background-color: #f0e6d2;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid #d4c7a1;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .links-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .nav-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px 20px;
+    }
+
+    .nav-row a {
+      color: green;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95em;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .nav-row a:hover {
+      color: #006400;
+      background-color: rgba(0, 100, 0, 0.08);
+      transform: translateY(-1px);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1001;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: green;
+      margin: 3px 0;
+      transition: 0.3s;
+    }
+
+    /* MOBILE OPTIMIZATION */
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 10px 15px;
+      }
+      
+      .links-wrapper {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f0e6d2;
+        padding: 15px 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid #d4c7a1;
+      }
+
+      .links-wrapper.active {
+        display: flex;
+      }
+
+      .nav-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+      }
+
+      .nav-row a {
+        padding: 10px 15px;
+        font-size: 1em;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+      
+      .hamburger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      
+      .hamburger.active div:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburger.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    }
+
+    /* MAIN CONTENT - AD-FRIENDLY LAYOUT */
+    main.content {
+      padding: 30px 20px;
+      text-align: center;
+      color: green;
+    }
+
+    h1 {
+      color: green;
+      margin: 20px 0 30px;
+      font-size: 2.2em;
+      line-height: 1.3;
+      text-align: center;
+      padding-bottom: 15px;
+      border-bottom: 2px solid rgba(0, 100, 0, 0.15);
+    }
+
+    h2 {
+      color: green;
+      margin: 35px 0 20px;
+      text-align: center;
+      font-size: 1.6em;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    h3 {
+      color: #006400;
+      margin: 25px 0 15px;
+      font-size: 1.3em;
+    }
+
+    p {
+      margin: 18px auto;
+      text-align: center;
+      max-width: 800px;
+      line-height: 1.7;
+      font-size: 1.05em;
+      color: #2d5016;
+    }
+
+    /* QURAN VERSES - OPTIMIZED FOR READABILITY - INGRANDITE */
+    .quran-box {
+      background-color: #f0e6d2;
+      padding: 25px;
+      margin: 30px auto;
+      width: 90%;
+      border-left: 5px solid green;
+      border-radius: 8px;
+      text-align: center;
+      max-width: 900px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .quran-box strong {
+      color: #006400;
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 15px;
+      font-weight: 700;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(0, 100, 0, 0.2);
+    }
+
+    .arabic-verse {
+      font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+      font-size: 1.8em;
+      margin: 20px 0;
+      text-align: center;
+      direction: rtl;
+      line-height: 2.2;
+      color: #1a4508;
+      font-weight: 600;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    .verse-translation {
+      font-style: italic;
+      margin-top: 20px;
+      color: green;
+      text-align: center;
+      font-size: 1.15em;
+      line-height: 1.7;
+      padding: 15px 20px;
+      background-color: rgba(240, 230, 210, 0.4);
+      border-radius: 5px;
+      border-left: 3px solid #006400;
+    }
+
+    /* Aggiunta: numero del versetto */
+    .verse-number {
+      display: inline-block;
+      background-color: #006400;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* AD-FRIENDLY SECTIONS */
+    .section-divider {
+      height: 2px;
+      background: linear-gradient(to right, transparent, rgba(0, 100, 0, 0.3), transparent);
+      margin: 40px auto;
+      width: 85%;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, rgba(240, 230, 210, 0.6), rgba(240, 230, 210, 0.3));
+      padding: 30px 25px;
+      border-radius: 10px;
+      margin: 0 auto 40px;
+      max-width: 900px;
+      text-align: center;
+      border: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin: 35px auto;
+      max-width: 950px;
+    }
+
+    .feature-card {
+      background-color: #f0e6d2;
+      padding: 25px 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+      border: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-icon {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+      display: block;
+      color: #006400;
+    }
+
+    .feature-card strong {
+      color: #006400;
+      display: block;
+      margin-bottom: 12px;
+      font-size: 1.15em;
+      font-weight: 600;
+    }
+
+    /* CONTENT SECTIONS WITH AD SPACE */
+    .content-block {
+      margin-bottom: 45px;
+      padding: 0 15px;
+    }
+
+    .lesson-box {
+      background-color: rgba(240, 230, 210, 0.4);
+      padding: 22px;
+      border-radius: 8px;
+      margin: 25px auto;
+      max-width: 800px;
+      border-left: 4px solid #006400;
+    }
+
+    .lesson-box strong {
+      color: #006400;
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    /* LISTS STYLING */
+    ul {
+      list-style-position: inside;
+      max-width: 750px;
+      margin: 20px auto;
+      text-align: left;
+      display: inline-block;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 10px 0;
+      line-height: 1.6;
+      color: #2d5016;
+      font-size: 1.05em;
+    }
+
+    /* AD SPACE INDICATORS (Replace with actual AdSense code) */
+    .ad-space {
+      background: linear-gradient(135deg, rgba(240, 230, 210, 0.2), rgba(240, 230, 210, 0.1));
+      border: 2px dashed rgba(0, 100, 0, 0.3);
+      border-radius: 8px;
+      padding: 25px;
+      margin: 30px auto;
+      text-align: center;
+      color: #006400;
+      font-style: italic;
+      max-width: 728px;
+      min-height: 90px;
+    }
+
+    /* RESPONSIVE IMAGE CONTAINER */
+    .image-container {
+      max-width: 600px;
+      margin: 25px auto;
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* FOOTER STYLING */
+    .page-footer {
+      text-align: center;
+      padding: 25px 20px;
+      margin-top: 40px;
+      border-top: 2px solid rgba(0, 100, 0, 0.2);
+      color: #2d5016;
+      font-size: 0.95em;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeIn 0.6s ease-out;
+    }
+
+    /* PRINT STYLES */
+    @media print {
+      .navbar, .ad-space, .hamburger {
+        display: none;
+      }
+      
+      body {
+        color: #000;
+        background: white;
+      }
+      
+      .quran-box {
+        border: 2px solid #000;
+        background: #fff;
+      }
+      
+      .arabic-verse {
+        font-size: 1.5em;
+        color: #000;
+      }
+    }
+
+    /* MOBILE ADJUSTMENTS FOR LARGER TEXT */
+    @media (max-width: 768px) {
+      .arabic-verse {
+        font-size: 1.6em;
+        line-height: 2;
+        padding: 12px;
+      }
+      
+      .quran-box {
+        padding: 20px 15px;
+        margin: 25px auto;
+      }
+      
+      .verse-translation {
+        font-size: 1.1em;
+        padding: 12px 15px;
+      }
+    }
+
+    /* DARK MODE SUPPORT */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #1a1a1a;
+        color: #90ee90;
+      }
+      
+      .navbar {
+        background-color: #2a2a2a;
+        border-bottom-color: #444;
+      }
+      
+      .quran-box, .feature-card {
+        background-color: #2a2a2a;
+        border-color: #90ee90;
+      }
+      
+      .hero-section {
+        background: rgba(42, 42, 42, 0.6);
+        border-color: #444;
+      }
+      
+      .arabic-verse {
+        color: #c8ffc8;
+        background-color: rgba(42, 42, 42, 0.5);
+      }
+      
+      .verse-translation {
+        color: #90ee90;
+        background-color: rgba(42, 42, 42, 0.5);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- OPTIMIZED NAVBAR -->
+<nav class="navbar">
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="links-wrapper" id="menu">
+    <div class="nav-row">
+      <a href="whatisislam.html">📘 What Is Islam</a>
+      <a href="islammorethanyouthink.html">🌟 Islam: More Than You Think</a>
+      <a href="thehistoryofprophet-muhammad.html">🕋 Prophet Muhammad (S.A.W)</a>
+      <a href="thehistoryofprophet-ibrahim.html">🔥 Prophet Ibrahim (A.S)</a>
+      <a href="thehistoryofprophet-adam.html">🌱 Prophet Adam (A.S)</a>
+      <a href="thehistoryofprophet-sulayman.html">👑 Prophet Sulayman (A.S)</a>
+      <a href="thehistoryofprophet-ismail.html">💧 Prophet Ismail (A.S)</a>
+    </div>
+
+    <div class="nav-row">
+      <a href="thehistoryofprophet-musa.html">🌊 Prophet Musa (A.S)</a>
+      <a href="thehistoryofprophet-yusuf.html">🌙 Prophet Yusuf (A.S)</a>
+      <a href="thehistoryofprophet-nuh.html">🛶 Prophet Nuh (A.S)</a>
+      <a href="thehistoryofprophet-dawud.html">👑 Prophet Dawud (A.S)</a>
+      <a href="thehistoryofprophet-lut.html">🌋 Prophet Lut (A.S)</a>
+      <a href="thehistoryofprophet-zakaria.html">🌿 Prophet Zakaria (A.S)</a>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="content">
+  
+  <!-- HERO SECTION -->
+  <div class="hero-section fade-in">
+    <h1>🕊️ Prophet Isa (A.S) - The Miraculous Messiah & Servant of Allah</h1>
+    <p>Discover the miraculous story of Prophet Isa (A.S) - born without a father, speaking from the cradle, healing the blind and lepers by Allah's permission, and affirming his role as a servant and messenger of the One True God.</p>
+  </div>
+
+  <!-- FEATURE HIGHLIGHTS -->
+  <div class="feature-grid">
+    <div class="feature-card">
+      <span class="feature-icon">🌟</span>
+      <strong>Miraculous Birth</strong>
+      Born to virgin Maryam by Allah's command
+    </div>
+    
+    <div class="feature-card">
+      <span class="feature-icon">👶</span>
+      <strong>Spoke in Cradle</strong>
+      Defended his mother as an infant
+    </div>
+    
+    <div class="feature-card">
+      <span class="feature-icon">🕊️</span>
+      <strong>Messiah</strong>
+      Al-Masih, the anointed prophet
+    </div>
+  </div>
+
+  <!-- SECTION 1: MIRACULOUS ANNUNCIATION -->
+  <div class="content-block fade-in">
+    <h2>✨ The Divine Annunciation to Maryam</h2>
+    <p>Allah sent angels to the righteous Maryam (A.S) with glad tidings of a pure son who would be a sign for all humanity and a prophet to the Children of Israel.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Aal-Imran 3:45-46</strong>
+      <div class="arabic-verse">إِذْ قَالَتِ الْمَلَائِكَةُ يَا مَرْيَمُ إِنَّ اللَّهَ يُبَشِّرُكِ بِكَلِمَةٍ مِّنْهُ اسْمُهُ الْمَسِيحُ عِيسَى ابْنُ مَرْيَمَ وَجِيهًا فِي الدُّنْيَا وَالْآخِرَةِ وَمِنَ الْمُقَرَّبِينَ</div>
+      <div class="verse-translation">"When the angels said, 'O Mary, indeed Allah gives you good tidings of a word from Him, whose name will be the Messiah, Isa, the son of Mary - distinguished in this world and the Hereafter and among those brought near [to Allah].'"</div>
+      <div class="verse-number">Verse 45</div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>Key Insight:</strong>
+      <p>Isa (A.S) is described as a "word from Allah" - created by Allah's command "Be!" without a father, demonstrating Allah's absolute power to create as He wills.</p>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 2: THE VIRGIN BIRTH -->
+  <div class="content-block fade-in">
+    <h2>👶 The Miraculous Virgin Birth</h2>
+    <p>Maryam withdrew to a remote place where she gave birth to Isa (A.S) under a palm tree. Allah provided her with dates and water, showing His care for His righteous servants.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Maryam 19:22-23</strong>
+      <div class="arabic-verse">فَحَمَلَتْهُ فَانتَبَذَتْ بِهِ مَكَانًا قَصِيًّا  فَأَجَاءَهَا الْمَخَاضُ إِلَىٰ جِذْعِ النَّخْلَةِ قَالَتْ يَا لَيْتَنِي مِتُّ قَبْلَ هَٰذَا وَكُنتُ نَسْيًا مَّنسِيًّا</div>
+      <div class="verse-translation">"So she conceived him and withdrew with him to a remote place. And the pains of childbirth drove her to the trunk of a palm tree. She said, 'Oh, I wish I had died before this and was in oblivion, forgotten.'"</div>
+      <div class="verse-number">Verses 22-23</div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: THE SPEAKING INFANT -->
+  <div class="content-block fade-in">
+    <h2>🗣️ The Infant Who Spoke in Defense</h2>
+    <p>When Maryam returned to her people carrying the infant, they accused her of immorality. Allah made the baby Isa speak from the cradle to defend his mother and declare his prophethood.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Maryam 19:30-33</strong>
+      <div class="arabic-verse">قَالَ إِنِّي عَبْدُ اللَّهِ آتَانِيَ الْكِتَابَ وَجَعَلَنِي نَبِيًّا  وَجَعَلَنِي مُبَارَكًا أَيْنَ مَا كُنتُ وَأَوْصَانِي بِالصَّلَاةِ وَالزَّكَاةِ مَا دُمْتُ حَيًّا</div>
+      <div class="verse-translation">"He said, 'Indeed, I am the servant of Allah. He has given me the Scripture and made me a prophet. And He has made me blessed wherever I am and has enjoined upon me prayer and zakah as long as I remain alive.'"</div>
+      <div class="verse-number">Verses 30-31</div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">📜</span>
+        <strong>Declared Servanthood</strong>
+        Identified himself as Allah's servant
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">📖</span>
+        <strong>Scripture Recipient</strong>
+        Given the Injil (Gospel)
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🙏</span>
+        <strong>Prayer & Charity</strong>
+        Commanded to worship and give
+      </div>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 4: PROPHETIC MISSION -->
+  <div class="content-block fade-in">
+    <h2>📢 Messenger to the Children of Israel</h2>
+    <p>Isa (A.S) was sent to confirm the Torah that came before him and to bring the Injil (Gospel) as guidance and light. He called his people back to worship of Allah alone.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Aal-Imran 3:49-50</strong>
+      <div class="arabic-verse">وَرَسُولًا إِلَىٰ بَنِي إِسْرَائِيلَ أَنِّي قَدْ جِئْتُكُم بِآيَةٍ مِّن رَّبِّكُمْ ۖ أَنِّي أَخْلُقُ لَكُم مِّنَ الطِّينِ كَهَيْئَةِ الطَّيْرِ فَأَنفُخُ فِيهِ فَيَكُونُ طَيْرًا بِإِذْنِ اللَّهِ ۖ وَأُبْرِئُ الْأَكْمَهَ وَالْأَبْرَصَ وَأُحْيِي الْمَوْتَىٰ بِإِذْنِ اللَّهِ</div>
+      <div class="verse-translation">"And [make him] a messenger to the Children of Israel, [who will say], 'Indeed I have come to you with a sign from your Lord in that I design for you from clay [what is] like the form of a bird, then I breathe into it and it becomes a bird by permission of Allah. And I cure the blind and the leper, and I give life to the dead - by permission of Allah.'"</div>
+      <div class="verse-number">Verses 49-50</div>
+    </div>
+  </div>
+
+  <!-- SECTION 5: MIRACLES BY ALLAH'S PERMISSION -->
+  <div class="content-block fade-in">
+    <h2>✨ Miracles Demonstrating Allah's Power</h2>
+    <p>Allah granted Isa (A.S) clear miracles to prove his prophethood, always emphasizing that these occurred "by Allah's permission" - affirming divine power over all creation.</p>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🐦</span>
+        <strong>Creating Birds</strong>
+        Formed birds from clay that flew by Allah's will
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">👁️</span>
+        <strong>Healing the Blind</strong>
+        Restored sight to those born blind
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🦠</span>
+        <strong>Curing Leprosy</strong>
+        Healed incurable skin diseases
+      </div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">💀</span>
+        <strong>Reviving the Dead</strong>
+        Brought deceased back to life
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🍽️</span>
+        <strong>Heavenly Table</strong>
+        Descended a table spread from heaven
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🔮</span>
+        <strong>Knowledge of Hidden</strong>
+        Revealed what people stored in homes
+      </div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>Important Distinction:</strong>
+      <p>Every miracle of Isa (A.S) was explicitly "by Allah's permission" - establishing that prophets have no power of their own, but only what Allah grants them as signs.</p>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 6: TEACHINGS AND MESSAGE -->
+  <div class="content-block fade-in">
+    <h2>📜 Core Teachings of Prophet Isa</h2>
+    <p>Isa (A.S) taught the same essential message of all prophets: worship Allah alone, follow His guidance, practice compassion, and prepare for the Hereafter.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Aal-Imran 3:51</strong>
+      <div class="arabic-verse">إِنَّ اللَّهَ رَبِّي وَرَبُّكُمْ فَاعْبُدُوهُ ۗ هَٰذَا صِرَاطٌ مُّسْتَقِيمٌ</div>
+      <div class="verse-translation">"'Indeed, Allah is my Lord and your Lord, so worship Him. This is a straight path.'"</div>
+      <div class="verse-number">Verse 51</div>
+    </div>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Ma'idah 5:72</strong>
+      <div class="arabic-verse">لَقَدْ كَفَرَ الَّذِينَ قَالُوا إِنَّ اللَّهَ هُوَ الْمَسِيحُ ابْنُ مَرْيَمَ ۖ وَقَالَ الْمَسِيحُ يَا بَنِي إِسْرَائِيلَ اعْبُدُوا اللَّهَ رَبِّي وَرَبَّكُمْ ۖ إِنَّهُ مَن يُشْرِكْ بِاللَّهِ فَقَدْ حَرَّمَ اللَّهُ عَلَيْهِ الْجَنَّةَ وَمَأْوَاهُ النَّارُ ۖ وَمَا لِلظَّالِمِينَ مِنْ أَنصَارٍ</div>
+      <div class="verse-translation">"They have certainly disbelieved who say, 'Allah is the Messiah, the son of Mary.' But the Messiah said, 'O Children of Israel, worship Allah, my Lord and your Lord.' Indeed, he who associates others with Allah - Allah has forbidden him Paradise, and his refuge is the Fire."</div>
+      <div class="verse-number">Verse 72</div>
+    </div>
+  </div>
+
+  <!-- SECTION 7: DIVINE PROTECTION AND ASCENSION -->
+  <div class="content-block fade-in">
+    <h2>🛡️ Allah's Protection and Ascension</h2>
+    <p>When enemies plotted to kill Isa (A.S), Allah protected him and raised him to the heavens. He was not crucified, though it was made to appear so to the people.</p>
+    
+    <div class="quran-box">
+      <strong>Surah An-Nisa 4:157-158</strong>
+      <div class="arabic-verse">وَقَوْلِهِمْ إِنَّا قَتَلْنَا الْمَسِيحَ عِيسَى ابْنَ مَرْيَمَ رَسُولَ اللَّهِ وَمَا قَتَلُوهُ وَمَا صَلَبُوهُ وَلَٰكِن شُبِّهَ لَهُمْ ۚ وَإِنَّ الَّذِينَ اخْتَلَفُوا فِيهِ لَفِي شَكٍّ مِّنْهُ ۚ مَا لَهُم بِهِ مِنْ عِلْمٍ إِلَّا اتِّبَاعَ الظَّنِّ ۚ وَمَا قَتَلُوهُ يَقِينًا  بَل رَّفَعَهُ اللَّهُ إِلَيْهِ ۚ وَكَانَ اللَّهُ عَزِيزًا حَكِيمًا</div>
+      <div class="verse-translation">"And for their saying, 'We killed the Messiah, Isa, son of Mary, the messenger of Allah.' But they did not kill him, nor did they crucify him; but it was made to appear so to them. And those who differ over it are in doubt about it. They have no knowledge of it except the following of assumption. And they did not kill him, for certain. Rather, Allah raised him to Himself. And Allah is Exalted in Might and Wise."</div>
+      <div class="verse-number">Verses 157-158</div>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 8: THE SECOND COMING -->
+  <div class="content-block fade-in">
+    <h2>🌠 The Return Before Judgment Day</h2>
+    <p>Isa (A.S) will return before the Day of Judgment to establish justice, defeat the false messiah (Dajjal), and affirm his true role as Allah's servant and messenger.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Az-Zukhruf 43:61</strong>
+      <div class="arabic-verse">وَإِنَّهُ لَعِلْمٌ لِّلسَّاعَةِ فَلَا تَمْتَرُنَّ بِهَا وَاتَّبِعُونِ ۚ هَٰذَا صِرَاطٌ مُّسْتَقِيمٌ</div>
+      <div class="verse-translation">"And indeed, he will be a sign for the Hour. So do not doubt it and follow Me. This is a straight path."</div>
+      <div class="verse-number">Verse 61</div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">⚖️</span>
+        <strong>Establish Justice</strong>
+        Will rule with fairness and equity
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🛡️</span>
+        <strong>Defeat Dajjal</strong>
+        Will overcome the false messiah
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🕌</span>
+        <strong>Follow Muhammad</strong>
+        Will pray behind Mahdi and follow Quran
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 9: CLARIFICATION OF STATUS -->
+  <div class="content-block fade-in">
+    <h2>🙏 Servant of Allah, Not Divine</h2>
+    <p>On the Day of Judgment, Allah will question Isa (A.S) about those who worshipped him as divine, and he will affirm that he never commanded such deviation from pure monotheism.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Ma'idah 5:116-117</strong>
+      <div class="arabic-verse">وَإِذْ قَالَ اللَّهُ يَا عِيسَى ابْنَ مَرْيَمَ أَأَنتَ قُلْتَ لِلنَّاسِ اتَّخِذُونِي وَأُمِّيَ إِلَٰهَيْنِ مِن دُونِ اللَّهِ ۖ قَالَ سُبْحَانَكَ مَا يَكُونُ لِي أَنْ أَقُولَ مَا لَيْسَ لِي بِحَقٍّ ۚ إِن كُنتُ قُلْتُهُ فَقَدْ عَلِمْتَهُ ۚ تَعْلَمُ مَا فِي نَفْسِي وَلَا أَعْلَمُ مَا فِي نَفْسِكَ ۚ إِنَّكَ أَنتَ عَلَّامُ الْغُيُوبِ</div>
+      <div class="verse-translation">"And when Allah will say, 'O Isa, son of Mary, did you say to the people, "Take me and my mother as deities besides Allah"?' He will say, 'Exalted are You! It was not for me to say that to which I have no right. If I had said it, You would have known it. You know what is within myself, and I do not know what is within Yourself. Indeed, it is You who is Knower of the unseen.'"</div>
+      <div class="verse-number">Verses 116-117</div>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 10: KEY LESSONS -->
+  <div class="content-block fade-in">
+    <h2>📚 Timeless Lessons from Isa's Story</h2>
+    
+    <div class="lesson-box">
+      <strong>Essential Teachings for Today:</strong>
+      <ul>
+        <li>Allah's power is absolute - He creates as He wills without limitations</li>
+        <li>Miracles are signs from Allah, not evidence of divinity</li>
+        <li>All prophets taught the same core message: worship Allah alone</li>
+        <li>Righteousness and piety matter more than lineage or status</li>
+        <li>Allah protects His sincere messengers from harm</li>
+        <li>The true Messiah is a servant of Allah, not Allah Himself</li>
+        <li>Compassion and healing are central to prophetic missions</li>
+      </ul>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🕊️</span>
+        <strong>Spirit from Allah</strong>
+        Strengthened with the Holy Spirit
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">📖</span>
+        <strong>Injil Recipient</strong>
+        Given the Gospel as guidance
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🕌</span>
+        <strong>Prophetic Lineage</strong>
+        Last prophet before Muhammad
+      </div>
+    </div>
+  </div>
+
+  <!-- FINAL REFLECTION -->
+  <div class="hero-section" style="margin-top: 40px;">
+    <h3>✨ Isa (A.S): A Sign for All Humanity</h3>
+    
+    <div class="quran-box">
+      <strong>Surah Maryam 19:33-34</strong>
+      <div class="arabic-verse">وَالسَّلَامُ عَلَيَّ يَوْمَ وُلِدتُّ وَيَوْمَ أَمُوتُ وَيَوْمَ أُبْعَثُ حَيًّا  ذَٰلِكَ عِيسَى ابْنُ مَرْيَمَ ۚ قَوْلَ الْحَقِّ الَّذِي فِيهِ يَمْتَرُونَ</div>
+      <div class="verse-translation">"'And peace is on me the day I was born and the day I will die and the day I am raised alive.' That is Isa, the son of Mary - the word of truth about which they are in dispute."</div>
+      <div class="verse-number">Verses 33-34</div>
+    </div>
+    
+    <p style="margin-top: 20px; font-style: italic; font-size: 1.1em;">
+      Prophet Isa (A.S) stands as one of the greatest signs of Allah's power and mercy - a miraculous birth, extraordinary miracles, and a clear message of pure monotheism that continues to inspire billions across the world.
+    </p>
+  </div>
+  
+  <!-- AD SPACE -->
+  <div class="ad-space">
+    <!-- AdSense Code Here -->
+    Advertisement Space: 728x90
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="page-footer">
+  <p>© Islamic Stories Collection | Exploring the Lives of Prophets Through Quranic Narratives</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    const hamburger = document.querySelector('.hamburger');
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  }
+
+  // Smooth scrolling for better UX
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Highlight Quran boxes on hover
+  document.addEventListener('DOMContentLoaded', function() {
+    const quranBoxes = document.querySelectorAll('.quran-box');
+    quranBoxes.forEach(box => {
+      box.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.02)';
+        this.style.boxShadow = '0 5px 20px rgba(0, 100, 0, 0.15)';
+      });
+      
+      box.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1)';
+        this.style.boxShadow = '0 3px 15px rgba(0, 0, 0, 0.08)';
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

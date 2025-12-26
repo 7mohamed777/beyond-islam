@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – Beyond Islam</title>
+  
+  <meta name="description" content="Privacy Policy for Beyond Islam. Learn how we collect, use, and protect information on our educational Islamic website.">
+  <meta name="keywords" content="Privacy Policy, Beyond Islam, data protection, Islamic website privacy, cookie policy">
+
+  <style>
+    /* RESET & BASE STYLES */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: beige;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: green;
+      line-height: 1.6;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    /* NAVBAR - FIXED FOR BETTER UX */
+    .navbar {
+      background-color: #f0e6d2;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid #d4c7a1;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .links-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .nav-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px 20px;
+    }
+
+    .nav-row a {
+      color: green;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95em;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .nav-row a:hover {
+      color: #006400;
+      background-color: rgba(0, 100, 0, 0.08);
+      transform: translateY(-1px);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1001;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: green;
+      margin: 3px 0;
+      transition: 0.3s;
+    }
+
+    /* MOBILE OPTIMIZATION */
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 10px 15px;
+      }
+      
+      .links-wrapper {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f0e6d2;
+        padding: 15px 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid #d4c7a1;
+      }
+
+      .links-wrapper.active {
+        display: flex;
+      }
+
+      .nav-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+      }
+
+      .nav-row a {
+        padding: 10px 15px;
+        font-size: 1em;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+      
+      .hamburger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      
+      .hamburger.active div:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburger.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    }
+
+    /* MAIN CONTENT */
+    main.content {
+      padding: 40px 20px;
+      text-align: center;
+      color: green;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: green;
+      margin: 30px 0;
+      font-size: 2.2em;
+      line-height: 1.3;
+      text-align: center;
+      padding-bottom: 15px;
+      border-bottom: 2px solid rgba(0, 100, 0, 0.15);
+    }
+
+    h2 {
+      color: #006400;
+      margin: 35px 0 20px;
+      text-align: center;
+      font-size: 1.6em;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    h3 {
+      color: #006400;
+      margin: 25px 0 15px;
+      font-size: 1.3em;
+      text-align: left;
+    }
+
+    p {
+      margin: 18px auto;
+      text-align: left;
+      line-height: 1.7;
+      font-size: 1.05em;
+      color: #2d5016;
+      max-width: 800px;
+    }
+
+    /* LEGAL SECTIONS */
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(0, 100, 0, 0.2), transparent);
+      margin: 35px auto;
+      width: 85%;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, rgba(240, 230, 210, 0.6), rgba(240, 230, 210, 0.3));
+      padding: 30px 25px;
+      border-radius: 10px;
+      margin: 0 auto 40px;
+      max-width: 900px;
+      text-align: center;
+      border: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    .legal-box {
+      background-color: #f0e6d2;
+      padding: 25px;
+      margin: 25px auto;
+      width: 90%;
+      border-left: 5px solid green;
+      border-radius: 6px;
+      text-align: left;
+      max-width: 850px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .legal-box strong {
+      color: #006400;
+      font-size: 1.1em;
+      display: block;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    /* LISTS STYLING */
+    ul {
+      list-style-position: outside;
+      margin: 20px 0 20px 30px;
+      text-align: left;
+      display: block;
+    }
+
+    li {
+      margin: 12px 0;
+      line-height: 1.6;
+      color: #2d5016;
+      padding-left: 5px;
+    }
+
+    /* FEATURE CARDS */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin: 35px auto;
+      max-width: 950px;
+    }
+
+    .feature-card {
+      background-color: #f0e6d2;
+      padding: 25px 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+      border: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-icon {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+      display: block;
+      color: #006400;
+    }
+
+    .feature-card strong {
+      color: #006400;
+      display: block;
+      margin-bottom: 12px;
+      font-size: 1.15em;
+      font-weight: 600;
+    }
+
+    /* FOOTER STYLING */
+    .page-footer {
+      text-align: center;
+      padding: 25px 20px;
+      margin-top: 40px;
+      border-top: 1px solid rgba(0, 100, 0, 0.2);
+      color: #2d5016;
+      font-size: 0.9em;
+    }
+
+    /* BACK LINK */
+    .back-link {
+      display: inline-block;
+      margin: 30px 0;
+      padding: 12px 25px;
+      background: linear-gradient(135deg, #006400, #004d00);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: 2px solid rgba(0, 100, 0, 0.3);
+      box-shadow: 0 4px 8px rgba(0, 100, 0, 0.2);
+    }
+
+    .back-link:hover {
+      background: linear-gradient(135deg, #008000, #006400);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 100, 0, 0.3);
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeIn 0.6s ease-out;
+    }
+
+    /* DARK MODE SUPPORT */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #1a1a1a;
+        color: #90ee90;
+      }
+      
+      .navbar {
+        background-color: #2a2a2a;
+        border-bottom-color: #444;
+      }
+      
+      .legal-box, .feature-card {
+        background-color: #2a2a2a;
+        border-color: #90ee90;
+      }
+      
+      .hero-section {
+        background: rgba(42, 42, 42, 0.6);
+        border-color: #444;
+      }
+      
+      .back-link {
+        background: linear-gradient(135deg, #004d00, #003300);
+      }
+      
+      .back-link:hover {
+        background: linear-gradient(135deg, #006600, #004d00);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="links-wrapper" id="menu">
+      <div class="nav-row">
+        <a href="whatisislam.html">📘 What Is Islam</a>
+        <a href="islammorethanyouthink.html">🌟 Islam: More Than You Think</a>
+        <a href="thehistoryofprophet-muhammad.html">🕋 Prophet Muhammad (S.A.W)</a>
+        <a href="thehistoryofprophet-ibrahim.html">🔥 Prophet Ibrahim (A.S)</a>
+        <a href="thehistoryofprophet-adam.html">🌱 Prophet Adam (A.S)</a>
+        <a href="thehistoryofprophet-sulayman.html">👑 Prophet Sulayman (A.S)</a>
+        <a href="thehistoryofprophet-ismail.html">💧 Prophet Ismail (A.S)</a>
+      </div>
+
+      <div class="nav-row">
+        <a href="thehistoryofprophet-musa.html">🌊 Prophet Musa (A.S)</a>
+        <a href="thehistoryofprophet-isa.html">🕊️ Prophet Isa (A.S)</a>
+        <a href="thehistoryofprophet-yusuf.html">🌙 Prophet Yusuf (A.S)</a>
+        <a href="thehistoryofprophet-nuh.html">🛶 Prophet Nuh (A.S)</a>
+        <a href="thehistoryofprophet-dawud.html">👑 Prophet Dawud (A.S)</a>
+        <a href="thehistoryofprophet-lut.html">🌋 Prophet Lut (A.S)</a>
+        <a href="thehistoryofprophet-zakaria.html">🌿 Prophet Zakaria (A.S)</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="content">
+    
+    <!-- HERO SECTION -->
+    <div class="hero-section fade-in">
+      <h1>🔒 Privacy Policy</h1>
+      <p><strong>Last Updated:</strong> December 2023</p>
+      <p>At <strong>Beyond Islam</strong>, we are committed to providing educational content about Islam in a respectful and transparent manner. Your privacy is important to us, and we strive to handle all information responsibly and ethically, in shā' Allāh.</p>
+    </div>
+
+    <!-- DATA COLLECTION -->
+    <div class="feature-grid">
+      <div class="feature-card fade-in">
+        <span class="feature-icon">📊</span>
+        <strong>Minimal Data</strong>
+        We collect only essential information for website operation
+      </div>
+      
+      <div class="feature-card fade-in">
+        <span class="feature-icon">🔐</span>
+        <strong>Data Protection</strong>
+        Your information is secure and never sold
+      </div>
+      
+      <div class="feature-card fade-in">
+        <span class="feature-icon">👶</span>
+        <strong>Children's Privacy</strong>
+        We protect young visitors' privacy
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="legal-box fade-in">
+      <strong>1. Information We Collect</strong>
+      <p>We do not collect personal information unless you voluntarily provide it. Like most websites, we may automatically collect non‑personal data such as:</p>
+      <ul>
+        <li>IP address</li>
+        <li>Browser type</li>
+        <li>Device information</li>
+        <li>Pages visited</li>
+        <li>Time spent on the website</li>
+      </ul>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="legal-box fade-in">
+      <strong>2. Cookies and Third‑Party Services</strong>
+      <p>Our website may use cookies to improve navigation and analyze traffic. Third‑party services such as Google Analytics or Google AdSense (if activated) may also use cookies.</p>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="legal-box fade-in">
+      <strong>3. Google AdSense</strong>
+      <p>If Google AdSense is active, Google may use cookies (including the DoubleClick cookie) to show relevant ads and measure performance. Users may opt out of personalized advertising at:</p>
+      <p style="text-align: center; margin-top: 15px;">
+        <strong>https://www.google.com/settings/ads</strong>
+      </p>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="legal-box fade-in">
+      <strong>4. External Links</strong>
+      <p>Our website may contain links to external sites, including educational resources or affiliate products. We are not responsible for the privacy practices of those websites.</p>
+    </div>
+
+    <!-- SECTION 5 -->
+    <div class="legal-box fade-in">
+      <strong>5. Affiliate Links</strong>
+      <p>Some pages may include affiliate links (e.g., Amazon, Awin, Etsy). If you make a purchase through these links, we may earn a small commission at no extra cost to you. This helps support the website and allows us to continue offering free educational content, al‑ḥamdu lillāh.</p>
+    </div>
+
+    <!-- SECTION 6 -->
+    <div class="legal-box fade-in">
+      <strong>6. Data Protection</strong>
+      <p>We do not sell or share your personal information with third parties. We take reasonable measures to protect any data collected through this website.</p>
+    </div>
+
+    <!-- SECTION 7 -->
+    <div class="legal-box fade-in">
+      <strong>7. Children's Privacy</strong>
+      <p>This website is intended for general audiences and does not knowingly collect personal information from children under 13.</p>
+    </div>
+
+    <!-- SECTION 8 -->
+    <div class="legal-box fade-in">
+      <strong>8. Changes to This Policy</strong>
+      <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated date.</p>
+    </div>
+
+    <!-- SECTION 9 -->
+    <div class="legal-box fade-in">
+      <strong>9. Contact Us</strong>
+      <p>If you have questions about this Privacy Policy, you can contact us at:</p>
+      <p style="text-align: center; margin-top: 15px;">📧 <strong>contact@beyondislam.com</strong></p>
+    </div>
+
+    <!-- BACK LINK -->
+    <div style="text-align: center; margin: 40px 0;">
+      <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="page-footer">
+    <p>© Beyond Islam | Privacy Policy | Educational Islamic Platform</p>
+    <p style="margin-top: 10px; font-size: 0.9em; color: #2d5016;">Knowledge • Understanding • Respect • Wisdom</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      const hamburger = document.querySelector('.hamburger');
+      menu.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    }
+
+    // Add animations to legal boxes on scroll
+    document.addEventListener('DOMContentLoaded', function() {
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, observerOptions);
+
+      // Observe all legal boxes and feature cards
+      document.querySelectorAll('.legal-box, .feature-card').forEach(box => {
+        box.style.opacity = '0';
+        box.style.transform = 'translateY(20px)';
+        box.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(box);
+      });
+    });
+  </script>
+
+</body>
+</html>

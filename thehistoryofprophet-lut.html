@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prophet Lut (A.S) - Moral Courage & Divine Justice</title>
+  
+  <meta name="description" content="Discover Prophet Lut's unwavering stand against corruption: his mission to Sodom, society's moral decay, divine punishment, and eternal lessons on justice and righteousness.">
+  <meta name="keywords" content="Prophet Lut, Sodom and Gomorrah, Islamic prophets, Quran stories, moral corruption, divine punishment, Islamic morality">
+
+  <!-- AdSense Friendly Structure -->
+  <style>
+    /* RESET & BASE STYLES */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: beige;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: green;
+      line-height: 1.6;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    /* NAVBAR - FIXED FOR BETTER UX */
+    .navbar {
+      background-color: #f0e6d2;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid #d4c7a1;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .links-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .nav-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px 20px;
+    }
+
+    .nav-row a {
+      color: green;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95em;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .nav-row a:hover {
+      color: #006400;
+      background-color: rgba(0, 100, 0, 0.08);
+      transform: translateY(-1px);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1001;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: green;
+      margin: 3px 0;
+      transition: 0.3s;
+    }
+
+    /* MOBILE OPTIMIZATION */
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 10px 15px;
+      }
+      
+      .links-wrapper {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f0e6d2;
+        padding: 15px 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid #d4c7a1;
+      }
+
+      .links-wrapper.active {
+        display: flex;
+      }
+
+      .nav-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+      }
+
+      .nav-row a {
+        padding: 10px 15px;
+        font-size: 1em;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+      
+      .hamburger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      
+      .hamburger.active div:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburger.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    }
+
+    /* MAIN CONTENT - AD-FRIENDLY LAYOUT */
+    main.content {
+      padding: 30px 20px;
+      text-align: center;
+      color: green;
+    }
+
+    h1 {
+      color: green;
+      margin: 20px 0 30px;
+      font-size: 2.2em;
+      line-height: 1.3;
+      text-align: center;
+      padding-bottom: 15px;
+      border-bottom: 2px solid rgba(0, 100, 0, 0.15);
+    }
+
+    h2 {
+      color: green;
+      margin: 35px 0 20px;
+      text-align: center;
+      font-size: 1.6em;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    h3 {
+      color: #006400;
+      margin: 25px 0 15px;
+      font-size: 1.3em;
+    }
+
+    p {
+      margin: 18px auto;
+      text-align: center;
+      max-width: 800px;
+      line-height: 1.7;
+      font-size: 1.05em;
+      color: #2d5016;
+    }
+
+    /* QURAN VERSES - OPTIMIZED FOR READABILITY - INGRANDITE */
+    .quran-box {
+      background-color: #f0e6d2;
+      padding: 25px;
+      margin: 30px auto;
+      width: 90%;
+      border-left: 5px solid green;
+      border-radius: 8px;
+      text-align: center;
+      max-width: 900px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .quran-box strong {
+      color: #006400;
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 15px;
+      font-weight: 700;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(0, 100, 0, 0.2);
+    }
+
+    .arabic-verse {
+      font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+      font-size: 1.8em;
+      margin: 20px 0;
+      text-align: center;
+      direction: rtl;
+      line-height: 2.2;
+      color: #1a4508;
+      font-weight: 600;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    .verse-translation {
+      font-style: italic;
+      margin-top: 20px;
+      color: green;
+      text-align: center;
+      font-size: 1.15em;
+      line-height: 1.7;
+      padding: 15px 20px;
+      background-color: rgba(240, 230, 210, 0.4);
+      border-radius: 5px;
+      border-left: 3px solid #006400;
+    }
+
+    /* Aggiunta: numero del versetto */
+    .verse-number {
+      display: inline-block;
+      background-color: #006400;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* AD-FRIENDLY SECTIONS */
+    .section-divider {
+      height: 2px;
+      background: linear-gradient(to right, transparent, rgba(0, 100, 0, 0.3), transparent);
+      margin: 40px auto;
+      width: 85%;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, rgba(240, 230, 210, 0.6), rgba(240, 230, 210, 0.3));
+      padding: 30px 25px;
+      border-radius: 10px;
+      margin: 0 auto 40px;
+      max-width: 900px;
+      text-align: center;
+      border: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin: 35px auto;
+      max-width: 950px;
+    }
+
+    .feature-card {
+      background-color: #f0e6d2;
+      padding: 25px 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+      border: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-icon {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+      display: block;
+      color: #006400;
+    }
+
+    .feature-card strong {
+      color: #006400;
+      display: block;
+      margin-bottom: 12px;
+      font-size: 1.15em;
+      font-weight: 600;
+    }
+
+    /* CONTENT SECTIONS WITH AD SPACE */
+    .content-block {
+      margin-bottom: 45px;
+      padding: 0 15px;
+    }
+
+    .lesson-box {
+      background-color: rgba(240, 230, 210, 0.4);
+      padding: 22px;
+      border-radius: 8px;
+      margin: 25px auto;
+      max-width: 800px;
+      border-left: 4px solid #006400;
+    }
+
+    .lesson-box strong {
+      color: #006400;
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    /* LISTS STYLING */
+    ul {
+      list-style-position: inside;
+      max-width: 750px;
+      margin: 20px auto;
+      text-align: left;
+      display: inline-block;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 10px 0;
+      line-height: 1.6;
+      color: #2d5016;
+      font-size: 1.05em;
+    }
+
+    /* AD SPACE INDICATORS (Replace with actual AdSense code) */
+    .ad-space {
+      background: linear-gradient(135deg, rgba(240, 230, 210, 0.2), rgba(240, 230, 210, 0.1));
+      border: 2px dashed rgba(0, 100, 0, 0.3);
+      border-radius: 8px;
+      padding: 25px;
+      margin: 30px auto;
+      text-align: center;
+      color: #006400;
+      font-style: italic;
+      max-width: 728px;
+      min-height: 90px;
+    }
+
+    /* RESPONSIVE IMAGE CONTAINER */
+    .image-container {
+      max-width: 600px;
+      margin: 25px auto;
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* FOOTER STYLING */
+    .page-footer {
+      text-align: center;
+      padding: 25px 20px;
+      margin-top: 40px;
+      border-top: 2px solid rgba(0, 100, 0, 0.2);
+      color: #2d5016;
+      font-size: 0.95em;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeIn 0.6s ease-out;
+    }
+
+    /* PRINT STYLES */
+    @media print {
+      .navbar, .ad-space, .hamburger {
+        display: none;
+      }
+      
+      body {
+        color: #000;
+        background: white;
+      }
+      
+      .quran-box {
+        border: 2px solid #000;
+        background: #fff;
+      }
+      
+      .arabic-verse {
+        font-size: 1.5em;
+        color: #000;
+      }
+    }
+
+    /* MOBILE ADJUSTMENTS FOR LARGER TEXT */
+    @media (max-width: 768px) {
+      .arabic-verse {
+        font-size: 1.6em;
+        line-height: 2;
+        padding: 12px;
+      }
+      
+      .quran-box {
+        padding: 20px 15px;
+        margin: 25px auto;
+      }
+      
+      .verse-translation {
+        font-size: 1.1em;
+        padding: 12px 15px;
+      }
+    }
+
+    /* DARK MODE SUPPORT */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #1a1a1a;
+        color: #90ee90;
+      }
+      
+      .navbar {
+        background-color: #2a2a2a;
+        border-bottom-color: #444;
+      }
+      
+      .quran-box, .feature-card {
+        background-color: #2a2a2a;
+        border-color: #90ee90;
+      }
+      
+      .hero-section {
+        background: rgba(42, 42, 42, 0.6);
+        border-color: #444;
+      }
+      
+      .arabic-verse {
+        color: #c8ffc8;
+        background-color: rgba(42, 42, 42, 0.5);
+      }
+      
+      .verse-translation {
+        color: #90ee90;
+        background-color: rgba(42, 42, 42, 0.5);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- OPTIMIZED NAVBAR -->
+<nav class="navbar">
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="links-wrapper" id="menu">
+    <div class="nav-row">
+      <a href="whatisislam.html">📘 What Is Islam</a>
+      <a href="islammorethanyouthink.html">🌟 Islam: More Than You Think</a>
+      <a href="thehistoryofprophet-muhammad.html">🕋 Prophet Muhammad (S.A.W)</a>
+      <a href="thehistoryofprophet-ibrahim.html">🔥 Prophet Ibrahim (A.S)</a>
+      <a href="thehistoryofprophet-adam.html">🌱 Prophet Adam (A.S)</a>
+      <a href="thehistoryofprophet-sulayman.html">👑 Prophet Sulayman (A.S)</a>
+      <a href="thehistoryofprophet-ismail.html">💧 Prophet Ismail (A.S)</a>
+    </div>
+
+    <div class="nav-row">
+      <a href="thehistoryofprophet-musa.html">🌊 Prophet Musa (A.S)</a>
+      <a href="thehistoryofprophet-isa.html">🕊️ Prophet Isa (A.S)</a>
+      <a href="thehistoryofprophet-yusuf.html">🌙 Prophet Yusuf (A.S)</a>
+      <a href="thehistoryofprophet-nuh.html">🛶 Prophet Nuh (A.S)</a>
+      <a href="thehistoryofprophet-dawud.html">👑 Prophet Dawud (A.S)</a>
+      <a href="thehistoryofprophet-zakaria.html">🌿 Prophet Zakaria (A.S)</a>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="content">
+  
+  <!-- HERO SECTION -->
+  <div class="hero-section fade-in">
+    <h1>🌋 Prophet Lut (A.S) - Moral Courage & Divine Justice</h1>
+    <p>Discover Prophet Lut's unwavering stand against corruption: his lonely mission to Sodom, confronting unprecedented societal decay, and the ultimate demonstration of divine justice that remains a timeless warning for all humanity.</p>
+  </div>
+
+  <!-- FEATURE HIGHLIGHTS -->
+  <div class="feature-grid">
+    <div class="feature-card">
+      <span class="feature-icon">💪</span>
+      <strong>Lone Voice of Truth</strong>
+      One man against entire corrupt society
+    </div>
+    
+    <div class="feature-card">
+      <span class="feature-icon">⚖️</span>
+      <strong>Divine Justice</strong>
+      Ultimate consequence of moral corruption
+    </div>
+    
+    <div class="feature-card">
+      <span class="feature-icon">📜</span>
+      <strong>Eternal Warning</strong>
+      Timeless lesson for all civilizations
+    </div>
+  </div>
+
+  <!-- SECTION 1: PROPHET'S MISSION -->
+  <div class="content-block fade-in">
+    <h2>🌟 Lut's Appointment as Warner</h2>
+    <p>Prophet Lut (A.S), nephew of Prophet Ibrahim, was chosen by Allah to guide the people of Sodom and Gomorrah - a society that had descended into unprecedented moral corruption and public indecency.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Ankabut 29:26</strong>
+      <div class="arabic-verse">فَآمَنَ لَهُ لُوطٌ ۘ وَقَالَ إِنِّي مُهَاجِرٌ إِلَىٰ رَبِّي ۖ إِنَّهُ هُوَ الْعَزِيزُ الْحَكِيمُ</div>
+      <div class="verse-translation">"So Lut believed in him. And he said, 'Indeed, I am a migrant to my Lord. Indeed, He is the Exalted in Might, the Wise.'"</div>
+      <div class="verse-number">Verse 26</div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>Historical Context:</strong>
+      <p>Sodom was a prosperous city that became the first civilization in recorded history to normalize and institutionalize homosexuality, turning it from private sin into public lifestyle.</p>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 2: UNPRECEDENTED CORRUPTION -->
+  <div class="content-block fade-in">
+    <h2>🏙️ The Depths of Societal Corruption</h2>
+    <p>The people of Sodom didn't merely commit sins privately; they established corruption as their social norm, celebrating deviance and persecuting anyone who called for righteousness.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Al-A'raf 7:80-81</strong>
+      <div class="arabic-verse">وَلُوطًا إِذْ قَالَ لِقَوْمِهِ أَتَأْتُونَ الْفَاحِشَةَ مَا سَبَقَكُم بِهَا مِنْ أَحَدٍ مِّنَ الْعَالَمِينَ  إِنَّكُمْ لَتَأْتُونَ الرِّجَالَ شَهْوَةً مِّن دُونِ النِّسَاءِ ۚ بَلْ أَنتُمْ قَوْمٌ مُّسْرِفُونَ</div>
+      <div class="verse-translation">"And Lut, when he said to his people, 'Do you commit such immorality as no one in the worlds before you ever committed? Indeed, you approach men with desire instead of women. Rather, you are a transgressing people.'"</div>
+      <div class="verse-number">Verses 80-81</div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">⚠️</span>
+        <strong>Public Indecency</strong>
+        Immorality practiced openly
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🚫</span>
+        <strong>Rejected Nature</strong>
+        Abandoned natural relationships
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">💀</span>
+        <strong>Criminal Violence</strong>
+        Robbed and assaulted travelers
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: LUT'S COURAGEOUS STAND -->
+  <div class="content-block fade-in">
+    <h2>📢 The Prophet's Lonely Struggle</h2>
+    <p>For years, Lut (A.S) patiently warned his people, calling them to worship Allah alone and abandon their corrupt practices. He appealed to their reason, their dignity, and their fear of Allah's punishment.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Ash-Shu'ara 26:165-166</strong>
+      <div class="arabic-verse">أَتَأْتُونَ الذُّكْرَانَ مِنَ الْعَالَمِينَ  وَتَذَرُونَ مَا خَلَقَ لَكُمْ رَبُّكُم مِّنْ أَزْوَاجِكُم ۚ بَلْ أَنتُمْ قَوْمٌ عَادُونَ</div>
+      <div class="verse-translation">"Do you approach men among all creatures, and leave what your Lord has created for you as spouses? But you are a people transgressing."</div>
+      <div class="verse-number">Verses 165-166</div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>Their Response:</strong>
+      <p>Rather than reflecting, they threatened: "Expel the family of Lut from your city! Indeed, they are people who keep themselves pure!" They viewed purity as a crime and morality as weakness.</p>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 4: ANGELIC MESSENGERS -->
+  <div class="content-block fade-in">
+    <h2>👼 Divine Intervention: Angels as Test</h2>
+    <p>When warnings were repeatedly rejected, Allah sent angels in human form to test Sodom's people and give Lut's family a final opportunity for escape.</p>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">👁️</span>
+        <strong>Final Test</strong>
+        Angels appeared as handsome visitors
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🚨</span>
+        <strong>Citywide Mob</strong>
+        Entire population surrounded the house
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🛡️</span>
+        <strong>Divine Protection</strong>
+        Angels blinded the attackers
+      </div>
+    </div>
+    
+    <div class="quran-box">
+      <strong>Surah Hud 11:81</strong>
+      <div class="arabic-verse">قَالُوا يَا لُوطُ إِنَّا رُسُلُ رَبِّكَ لَن يَصِلُوا إِلَيْكَ ۖ فَأَسْرِ بِأَهْلِكَ بِقِطْعٍ مِّنَ اللَّيْلِ وَلَا يَلْتَفِتْ مِنكُمْ أَحَدٌ إِلَّا امْرَأَتَكَ ۖ إِنَّهُ مُصِيبُهَا مَا أَصَابَهُمْ ۚ إِنَّ مَوْعِدَهُمُ الصُّبْحُ ۚ أَلَيْسَ الصُّبْحُ بِقَرِيبٍ</div>
+      <div class="verse-translation">"They said, 'O Lut, indeed we are messengers of your Lord; they will never reach you. So set out with your family during a portion of the night and let not any among you look back except your wife; indeed, she will be struck by that which strikes them. Indeed, their appointment is the morning. Is not the morning near?'"</div>
+      <div class="verse-number">Verse 81</div>
+    </div>
+  </div>
+
+  <!-- SECTION 5: DIVINE PUNISHMENT -->
+  <div class="content-block fade-in">
+    <h2>🌋 The Cataclysmic Destruction</h2>
+    <p>At dawn, divine punishment descended upon Sodom in multiple forms, utterly annihilating the corrupt civilization as a warning for future generations.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Hud 11:82-83</strong>
+      <div class="arabic-verse">فَلَمَّا جَاءَ أَمْرُنَا جَعَلْنَا عَالِيَهَا سَافِلَهَا وَأَمْطَرْنَا عَلَيْهَا حِجَارَةً مِّن سِجِّيلٍ مَّنضُودٍ  مُّسَوَّمَةً عِندَ رَبِّكَ ۖ وَمَا هِيَ مِنَ الظَّالِمِينَ بِبَعِيدٍ</div>
+      <div class="verse-translation">"So when Our command came, We made its highest part its lowest and rained upon them stones of layered hard clay, sent down in succession from your Lord. And it is not far from the wrongdoers."</div>
+      <div class="verse-number">Verses 82-83</div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🌋</span>
+        <strong>Earthquake</strong>
+        Ground overturned cities
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">☄️</span>
+        <strong>Stone Rain</strong>
+        Baked clay stones from sky
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">💀</span>
+        <strong>Complete Annihilation</strong>
+        No survivors except believers
+      </div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>The Warning Ignored:</strong>
+      <p>Lut's wife, who sympathized with the corrupt society and betrayed their escape plan by alerting the mob, was destroyed with the people she chose over righteousness.</p>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 6: ETERNAL GEOGRAPHIC SIGN -->
+  <div class="content-block fade-in">
+    <h2>🌊 The Dead Sea: Permanent Testament</h2>
+    <p>The region of Sodom corresponds to today's Dead Sea - the lowest point on Earth, with hypersaline water where nothing lives, standing as Allah's eternal sign of divine punishment.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Hijr 15:76-77</strong>
+      <div class="arabic-verse">وَإِنَّهَا لَبِسَبِيلٍ مُّقِيمٍ  إِنَّ فِي ذَٰلِكَ لَآيَةً لِّلْمُؤْمِنِينَ</div>
+      <div class="verse-translation">"And indeed, it lies on an established road. Indeed in that is a sign for the believers."</div>
+      <div class="verse-number">Verses 76-77</div>
+    </div>
+    
+    <p>Millions of travelers pass this barren landscape annually, witnessing the physical consequences of moral corruption that Allah preserved as a lesson for all humanity.</p>
+  </div>
+
+  <!-- SECTION 7: TIMELESS MORAL LESSONS -->
+  <div class="content-block fade-in">
+    <h2>📚 Essential Lessons for Humanity</h2>
+    
+    <div class="lesson-box">
+      <strong>Core Principles from Lut's Story:</strong>
+      <ul>
+        <li>Societies can gradually normalize evil until it becomes "culture"</li>
+        <li>Moral courage means standing alone for truth when necessary</li>
+        <li>Divine justice is precise, certain, and proportionate</li>
+        <li>Natural law (fitrah) exists, and violating it has consequences</li>
+        <li>Hospitality and protection of guests is sacred in Islam</li>
+        <li>Allah's warnings always precede His punishment</li>
+        <li>Purity is strength, not weakness, in Allah's sight</li>
+      </ul>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🏛️</span>
+        <strong>Societal Foundations</strong>
+        Moral values sustain civilizations
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">👨‍👩‍👧‍👦</span>
+        <strong>Family Sanctity</strong>
+        Natural family structure is divine design
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🛡️</span>
+        <strong>Spiritual Resilience</strong>
+        Faith under societal pressure
+      </div>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 8: CONTEMPORARY RELEVANCE -->
+  <div class="content-block fade-in">
+    <h2>🕯️ Relevance for Modern Societies</h2>
+    <p>The story of Lut (A.S) remains critically relevant as contemporary societies face similar moral challenges and questions about the limits of personal freedom versus divine guidance.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Qamar 54:40</strong>
+      <div class="arabic-verse">وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ</div>
+      <div class="verse-translation">"And We have certainly made the Quran easy for remembrance, so is there any who will remember?"</div>
+      <div class="verse-number">Verse 40</div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>Modern Applications:</strong>
+      <p>The story teaches us to distinguish between tolerance of individuals and normalization of what Allah has prohibited, between compassion for people and acceptance of sinful ideologies, and between personal freedom and societal preservation.</p>
+    </div>
+  </div>
+
+  <!-- FINAL REFLECTION -->
+  <div class="hero-section" style="margin-top: 40px;">
+    <h3>⚖️ Lut's Legacy: Justice & Warning</h3>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">📖</span>
+        <strong>Quranic Narrative</strong>
+        Mentioned 27 times in Quran
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🌍</span>
+        <strong>Universal Lesson</strong>
+        For all times and places
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🕊️</span>
+        <strong>Hope & Warning</strong>
+        Allah saves the righteous
+      </div>
+    </div>
+    
+    <p style="margin-top: 20px; font-style: italic; font-size: 1.1em;">
+      Prophet Lut's (A.S) story stands as an eternal pillar of Islamic moral teaching - demonstrating that societal corruption inevitably leads to collapse, while faith, purity, and moral courage lead to divine protection and eternal success.
+    </p>
+  </div>
+  
+  <!-- AD SPACE -->
+  <div class="ad-space">
+    <!-- AdSense Code Here -->
+    Advertisement Space: 728x90
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="page-footer">
+  <p>© Islamic Stories Collection | Exploring the Lives of Prophets Through Quranic Narratives</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    const hamburger = document.querySelector('.hamburger');
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  }
+
+  // Smooth scrolling for better UX
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Highlight Quran boxes on hover
+  document.addEventListener('DOMContentLoaded', function() {
+    const quranBoxes = document.querySelectorAll('.quran-box');
+    quranBoxes.forEach(box => {
+      box.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.02)';
+        this.style.boxShadow = '0 5px 20px rgba(0, 100, 0, 0.15)';
+      });
+      
+      box.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1)';
+        this.style.boxShadow = '0 3px 15px rgba(0, 0, 0, 0.08)';
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

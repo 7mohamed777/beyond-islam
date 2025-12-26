@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Islam: More Than You Think - Beyond Stereotypes to True Understanding</title>
+
+<meta name="description" content="Discover Islam beyond stereotypes: explore its teachings, values, prophets, and the spiritual path that has guided humanity for over 1,400 years.">
+<meta name="keywords" content="Islam understanding, Islamic teachings, Muslim values, spiritual path, Quran wisdom, Prophet stories, Islamic spirituality">
+
+<style>
+    /* RESET & BASE STYLES */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: beige;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: green;
+      line-height: 1.6;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    /* NAVBAR - FIXED FOR BETTER UX */
+    .navbar {
+      background-color: #f0e6d2;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid #d4c7a1;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .links-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .nav-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px 20px;
+    }
+
+    .nav-row a {
+      color: green;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95em;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .nav-row a:hover {
+      color: #006400;
+      background-color: rgba(0, 100, 0, 0.08);
+      transform: translateY(-1px);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1001;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: green;
+      margin: 3px 0;
+      transition: 0.3s;
+    }
+
+    /* MOBILE OPTIMIZATION */
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 10px 15px;
+      }
+      
+      .links-wrapper {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f0e6d2;
+        padding: 15px 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid #d4c7a1;
+      }
+
+      .links-wrapper.active {
+        display: flex;
+      }
+
+      .nav-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+      }
+
+      .nav-row a {
+        padding: 10px 15px;
+        font-size: 1em;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+      
+      .hamburger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      
+      .hamburger.active div:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburger.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    }
+
+    /* MAIN CONTENT */
+    main.content {
+      padding: 30px 20px;
+      text-align: center;
+      color: green;
+    }
+
+    h1 {
+      color: green;
+      margin: 20px 0 30px;
+      font-size: 2.2em;
+      line-height: 1.3;
+      text-align: center;
+      padding-bottom: 15px;
+      border-bottom: 2px solid rgba(0, 100, 0, 0.15);
+    }
+
+    h2 {
+      color: green;
+      margin: 35px 0 20px;
+      text-align: center;
+      font-size: 1.6em;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    h3 {
+      color: #006400;
+      margin: 25px 0 15px;
+      font-size: 1.3em;
+    }
+
+    p {
+      margin: 18px auto;
+      text-align: center;
+      max-width: 800px;
+      line-height: 1.7;
+      font-size: 1.05em;
+      color: #2d5016;
+    }
+
+    /* QURAN VERSES - OPTIMIZED FOR READABILITY - INGRANDITE */
+    .quran-box {
+      background-color: #f0e6d2;
+      padding: 25px;
+      margin: 30px auto;
+      width: 90%;
+      border-left: 5px solid green;
+      border-radius: 8px;
+      text-align: center;
+      max-width: 900px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .quran-box strong {
+      color: #006400;
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 15px;
+      font-weight: 700;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(0, 100, 0, 0.2);
+    }
+
+    .arabic-verse {
+      font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+      font-size: 1.8em; /* INGRANDITO */
+      margin: 20px 0;
+      text-align: center;
+      direction: rtl;
+      line-height: 2.2;
+      color: #1a4508;
+      font-weight: 600;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    .verse-translation {
+      font-style: italic;
+      margin-top: 20px;
+      color: green;
+      text-align: center;
+      font-size: 1.15em;
+      line-height: 1.7;
+      padding: 15px 20px;
+      background-color: rgba(240, 230, 210, 0.4);
+      border-radius: 5px;
+      border-left: 3px solid #006400;
+    }
+
+    .verse-number {
+      display: inline-block;
+      background-color: #006400;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* SECTION DIVIDERS */
+    .section-divider {
+      height: 2px;
+      background: linear-gradient(to right, transparent, rgba(0, 100, 0, 0.3), transparent);
+      margin: 40px auto;
+      width: 85%;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, rgba(240, 230, 210, 0.6), rgba(240, 230, 210, 0.3));
+      padding: 30px 25px;
+      border-radius: 10px;
+      margin: 0 auto 40px;
+      max-width: 900px;
+      text-align: center;
+      border: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin: 35px auto;
+      max-width: 950px;
+    }
+
+    .feature-card {
+      background-color: #f0e6d2;
+      padding: 25px 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+      border: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-icon {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+      display: block;
+      color: #006400;
+    }
+
+    .feature-card strong {
+      color: #006400;
+      display: block;
+      margin-bottom: 12px;
+      font-size: 1.15em;
+      font-weight: 600;
+    }
+
+    /* CONTENT SECTIONS */
+    .content-block {
+      margin-bottom: 45px;
+      padding: 0 15px;
+    }
+
+    .lesson-box {
+      background-color: rgba(240, 230, 210, 0.4);
+      padding: 22px;
+      border-radius: 8px;
+      margin: 25px auto;
+      max-width: 800px;
+      border-left: 4px solid #006400;
+    }
+
+    .lesson-box strong {
+      color: #006400;
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    /* HIGHLIGHT BOX */
+    .highlight-box {
+      background-color: #f0e6d2;
+      padding: 25px;
+      margin: 30px auto;
+      width: 90%;
+      border-left: 5px solid green;
+      border-radius: 8px;
+      text-align: center;
+      max-width: 850px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .highlight-box strong {
+      color: #006400;
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    /* AD SPACE - SOLO 1 ALLA FINE */
+    .ad-space {
+      background: linear-gradient(135deg, rgba(240, 230, 210, 0.2), rgba(240, 230, 210, 0.1));
+      border: 2px dashed rgba(0, 100, 0, 0.3);
+      border-radius: 8px;
+      padding: 25px;
+      margin: 50px auto 30px;
+      text-align: center;
+      color: #006400;
+      font-style: italic;
+      max-width: 728px;
+      min-height: 90px;
+    }
+
+    /* FOOTER STYLING */
+    .page-footer {
+      text-align: center;
+      padding: 25px 20px;
+      margin-top: 40px;
+      border-top: 2px solid rgba(0, 100, 0, 0.2);
+      color: #2d5016;
+      font-size: 0.95em;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeIn 0.6s ease-out;
+    }
+
+    /* MOBILE ADJUSTMENTS */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+      
+      h2 {
+        font-size: 1.4em;
+      }
+      
+      .arabic-verse {
+        font-size: 1.6em;
+        line-height: 2;
+        padding: 12px;
+      }
+      
+      .quran-box {
+        padding: 20px 15px;
+        margin: 25px auto;
+      }
+      
+      .verse-translation {
+        font-size: 1.1em;
+        padding: 12px 15px;
+      }
+      
+      .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+
+    /* DARK MODE SUPPORT */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #1a1a1a;
+        color: #90ee90;
+      }
+      
+      .navbar {
+        background-color: #2a2a2a;
+        border-bottom-color: #444;
+      }
+      
+      .feature-card, .highlight-box, .quran-box {
+        background-color: #2a2a2a;
+        border-color: #90ee90;
+      }
+      
+      .hero-section {
+        background: rgba(42, 42, 42, 0.6);
+        border-color: #444;
+      }
+      
+      .arabic-verse {
+        color: #c8ffc8;
+        background-color: rgba(42, 42, 42, 0.5);
+      }
+      
+      .verse-translation {
+        color: #90ee90;
+        background-color: rgba(42, 42, 42, 0.5);
+      }
+    }
+</style>
+</head>
+<body>
+
+<!-- OPTIMIZED NAVBAR -->
+<nav class="navbar">
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="links-wrapper" id="menu">
+    <div class="nav-row">
+      <a href="whatisislam.html">📘 What Is Islam</a>
+      <a href="thehistoryofprophet-muhammad.html">🕋 Prophet Muhammad (S.A.W)</a>
+      <a href="thehistoryofprophet-ibrahim.html">🔥 Prophet Ibrahim (A.S)</a>
+      <a href="thehistoryofprophet-adam.html">🌱 Prophet Adam (A.S)</a>
+      <a href="thehistoryofprophet-sulayman.html">👑 Prophet Sulayman (A.S)</a>
+      <a href="thehistoryofprophet-ismail.html">💧 Prophet Ismail (A.S)</a>
+    </div>
+
+    <div class="nav-row">
+      <a href="thehistoryofprophet-musa.html">🌊 Prophet Musa (A.S)</a>
+      <a href="thehistoryofprophet-isa.html">🕊️ Prophet Isa (A.S)</a>
+      <a href="thehistoryofprophet-yusuf.html">🌙 Prophet Yusuf (A.S)</a>
+      <a href="thehistoryofprophet-nuh.html">🛶 Prophet Nuh (A.S)</a>
+      <a href="thehistoryofprophet-dawud.html">👑 Prophet Dawud (A.S)</a>
+      <a href="thehistoryofprophet-lut.html">🌋 Prophet Lut (A.S)</a>
+      <a href="thehistoryofprophet-zakaria.html">🌿 Prophet Zakaria (A.S)</a>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="content">
+  
+  <!-- HERO SECTION -->
+  <div class="hero-section fade-in">
+    <h1>🌙 Islam: More Than You Think</h1>
+    <p>
+      Discover Islam beyond stereotypes: explore its teachings, values, prophets, and the spiritual path that has guided humanity for over 1,400 years.
+    </p>
+  </div>
+
+  <!-- DISCOVERING THE ESSENCE -->
+  <div class="content-block fade-in">
+    <h2>🧭 Discovering the Essence</h2>
+    <p>
+      When people hear the word <strong>"Islam"</strong>, many different images may come to mind — news headlines, unfamiliar traditions, or strict rules.  
+      Yet Islam is far deeper, richer, and more beautiful than what stereotypes or media portrayals often suggest.
+    </p>
+    
+    <div class="highlight-box">
+      <strong>The Core Principle</strong>
+      <p style="margin-top: 10px;">
+        ✨ At its core, Islam is a complete way of life founded on <strong>peace, mercy, justice</strong>, and a sincere, personal relationship with <strong>Allah</strong>.
+      </p>
+    </div>
+
+    <div class="quran-box">
+      <strong>Surah Al-Baqarah 2:256</strong>
+      <div class="arabic-verse">لَا إِكْرَاهَ فِي الدِّينِ ۖ قَد تَّبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ</div>
+      <div class="verse-translation">"There shall be no compulsion in [acceptance of] the religion. The right course has become clear from the wrong."</div>
+      <div class="verse-number">Verse 256</div>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- LEGACY OF WISDOM -->
+  <div class="content-block fade-in">
+    <h2>📜 A Legacy of Wisdom</h2>
+    <p>
+      For more than <strong>1,400 years</strong>, Islam has been a source of guidance, hope, and purpose for over a billion people worldwide.  
+      It shapes how Muslims think, speak, act, and treat others — not only in worship, but in every aspect of daily life.
+    </p>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">💚</span>
+        <strong>Universal Values</strong>
+        Kindness to neighbors, honesty in speech, patience during hardship
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🤝</span>
+        <strong>Social Ethics</strong>
+        Generosity toward the poor, respect for all living beings
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">⚖️</span>
+        <strong>Justice</strong>
+        Fairness and equity in all dealings and relationships
+      </div>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- PATH OF KNOWLEDGE -->
+  <div class="content-block fade-in">
+    <h2>📚 A Path of Knowledge</h2>
+    <p>
+      Islam encourages <strong>reflection, learning, and personal growth</strong>.  
+      Seeking knowledge is not only encouraged — it is considered a <em>sacred duty</em>.
+    </p>
+    
+    <div class="highlight-box">
+      <strong>Approaching the World</strong>
+      <p style="margin-top: 10px;">
+        Whether through reading the Qur'an, observing the natural world, or learning from life's experiences, Islam inspires believers to approach the world with <strong>curiosity, humility, and purpose</strong>.
+      </p>
+    </div>
+
+    <div class="lesson-box">
+      <strong>Balance in Life:</strong>
+      <p>Islam teaches balance: nurturing the soul while fulfilling responsibilities toward family, society, and creation.</p>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- EVERYDAY SPIRITUALITY -->
+  <div class="content-block fade-in">
+    <h2>🌅 Everyday Spirituality</h2>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🌄</span>
+        <strong>Quiet Moments</strong>
+        Found in dawn prayers and shared meals
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🤲</span>
+        <strong>Acts of Worship</strong>
+        Charity, fair dealings, care for environment
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🕊️</span>
+        <strong>Framework for Living</strong>
+        Integrity, dignity, and love
+      </div>
+    </div>
+
+    <div class="quran-box">
+      <strong>Surah Ar-Ra'd 13:28</strong>
+      <div class="arabic-verse">الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُم بِذِكْرِ اللَّهِ ۗ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ</div>
+      <div class="verse-translation">"Those who have believed and whose hearts are assured by the remembrance of Allah. Unquestionably, by the remembrance of Allah hearts are assured."</div>
+      <div class="verse-number">Verse 28</div>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- INVITATION TO EXPLORE -->
+  <div class="content-block fade-in">
+    <h2>🤝 An Invitation to Explore</h2>
+    <p>
+      This website invites you to discover Islam with <strong>clarity and openness</strong>.  
+      Through sincere reflections, accessible explanations, and meaningful stories, we aim to create a space where <strong>understanding replaces assumptions</strong> and <strong>curiosity leads to connection</strong>.
+    </p>
+
+    <div class="highlight-box">
+      <strong>Our Promise</strong>
+      <p style="margin-top: 10px;">
+        🌟 Take a moment to explore — you may find something that speaks to your heart.
+      </p>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- JOURNEY TOWARD MEANING -->
+  <div class="content-block fade-in">
+    <h2>💫 A Journey Toward Meaning</h2>
+    <p>
+      Islam is more than you think. It is not only a religion, but a <strong>path toward meaning, peace, and a deeper relationship with the Divine</strong>.
+    </p>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🕌</span>
+        <strong>Comprehensive Guidance</strong>
+        Spiritual, moral, and social well-being
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">📖</span>
+        <strong>Timeless Wisdom</strong>
+        Relevant for all times and places
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">❤️</span>
+        <strong>Heart-Centered</strong>
+        Purifying the heart and strengthening faith
+      </div>
+    </div>
+
+    <div class="quran-box">
+      <strong>Surah Al-Hujurat 49:13</strong>
+      <div class="arabic-verse">يَا أَيُّهَا النَّاسُ إِنَّا خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا</div>
+      <div class="verse-translation">"O mankind, indeed We have created you from male and female and made you peoples and tribes that you may know one another."</div>
+      <div class="verse-number">Verse 13</div>
+    </div>
+  </div>
+
+  <!-- FINAL REFLECTION -->
+  <div class="hero-section" style="margin-top: 40px;">
+    <h3>🕊️ Final Reflection</h3>
+    <p style="font-style: italic; margin-top: 15px; font-size: 1.1em;">
+      Islam invites you to a journey of discovery — not just of a religion, but of a way of life that brings peace, purpose, and connection to the Creator and His creation.
+    </p>
+    
+    <div class="lesson-box" style="margin-top: 25px;">
+      <strong>Prophetic Wisdom:</strong>
+      <p>"The best among you are those who have the best manners and character." - Prophet Muhammad (S.A.W)</p>
+    </div>
+  </div>
+
+  <!-- AD SPACE - SOLO 1 ALLA FINE -->
+  <div class="ad-space">
+    <!-- AdSense Code Here -->
+    Advertisement Space: 728x90
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="page-footer">
+  <p>© Islamic Understanding Hub | Discovering the True Essence of Islam Beyond Stereotypes</p>
+  <p style="margin-top: 10px; font-size: 0.9em; color: #2d5016;">Understanding • Respect • Wisdom • Peace</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    const hamburger = document.querySelector('.hamburger');
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  }
+
+  // Highlight Quran boxes on hover
+  document.addEventListener('DOMContentLoaded', function() {
+    const quranBoxes = document.querySelectorAll('.quran-box');
+    quranBoxes.forEach(box => {
+      box.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.02)';
+        this.style.boxShadow = '0 5px 20px rgba(0, 100, 0, 0.15)';
+      });
+      
+      box.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1)';
+        this.style.boxShadow = '0 3px 15px rgba(0, 0, 0, 0.08)';
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
