@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Third Pillar of Islam: Zakat - Obligatory Charity</title>
+  
+  <meta name="description" content="Complete guide to Zakat, the third pillar of Islam: meaning, calculation, distribution, importance, and spiritual benefits of obligatory charity.">
+  <meta name="keywords" content="Zakat, third pillar, obligatory charity, Islamic giving, wealth purification, Zakat calculation, charity in Islam">
+
+  <!-- AdSense Friendly Structure -->
+  <style>
+    /* RESET & BASE STYLES */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: beige;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: green;
+      line-height: 1.6;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    /* NAVBAR - FIXED FOR BETTER UX */
+    .navbar {
+      background-color: #f0e6d2;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid #d4c7a1;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .links-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .nav-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px 20px;
+    }
+
+    .nav-row a {
+      color: green;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95em;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .nav-row a:hover {
+      color: #006400;
+      background-color: rgba(0, 100, 0, 0.08);
+      transform: translateY(-1px);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1001;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: green;
+      margin: 3px 0;
+      transition: 0.3s;
+    }
+
+    /* MOBILE OPTIMIZATION */
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 10px 15px;
+      }
+      
+      .links-wrapper {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f0e6d2;
+        padding: 15px 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid #d4c7a1;
+      }
+
+      .links-wrapper.active {
+        display: flex;
+      }
+
+      .nav-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+      }
+
+      .nav-row a {
+        padding: 10px 15px;
+        font-size: 1em;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+      
+      .hamburger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      
+      .hamburger.active div:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburger.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    }
+
+    /* MAIN CONTENT - AD-FRIENDLY LAYOUT */
+    main.content {
+      padding: 30px 20px;
+      text-align: center;
+      color: green;
+    }
+
+    h1 {
+      color: green;
+      margin: 20px 0 30px;
+      font-size: 2.2em;
+      line-height: 1.3;
+      text-align: center;
+      padding-bottom: 15px;
+      border-bottom: 2px solid rgba(0, 100, 0, 0.15);
+    }
+
+    h2 {
+      color: green;
+      margin: 35px 0 20px;
+      text-align: center;
+      font-size: 1.6em;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    h3 {
+      color: #006400;
+      margin: 25px 0 15px;
+      font-size: 1.3em;
+    }
+
+    p {
+      margin: 18px auto;
+      text-align: center;
+      max-width: 800px;
+      line-height: 1.7;
+      font-size: 1.05em;
+      color: #2d5016;
+    }
+
+    /* QURAN VERSES - OPTIMIZED FOR READABILITY */
+    .quran-box {
+      background-color: #f0e6d2;
+      padding: 25px;
+      margin: 30px auto;
+      width: 90%;
+      border-left: 5px solid green;
+      border-radius: 8px;
+      text-align: center;
+      max-width: 900px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .quran-box strong {
+      color: #006400;
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 15px;
+      font-weight: 700;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(0, 100, 0, 0.2);
+    }
+
+    .arabic-verse {
+      font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+      font-size: 1.8em;
+      margin: 20px 0;
+      text-align: center;
+      direction: rtl;
+      line-height: 2.2;
+      color: #1a4508;
+      font-weight: 600;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    .verse-translation {
+      font-style: italic;
+      margin-top: 20px;
+      color: green;
+      text-align: center;
+      font-size: 1.15em;
+      line-height: 1.7;
+      padding: 15px 20px;
+      background-color: rgba(240, 230, 210, 0.4);
+      border-radius: 5px;
+      border-left: 3px solid #006400;
+    }
+
+    /* Verse number */
+    .verse-number {
+      display: inline-block;
+      background-color: #006400;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* AD-FRIENDLY SECTIONS */
+    .section-divider {
+      height: 2px;
+      background: linear-gradient(to right, transparent, rgba(0, 100, 0, 0.3), transparent);
+      margin: 40px auto;
+      width: 85%;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, rgba(240, 230, 210, 0.6), rgba(240, 230, 210, 0.3));
+      padding: 30px 25px;
+      border-radius: 10px;
+      margin: 0 auto 40px;
+      max-width: 900px;
+      text-align: center;
+      border: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin: 35px auto;
+      max-width: 950px;
+    }
+
+    .feature-card {
+      background-color: #f0e6d2;
+      padding: 25px 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+      border: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-icon {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+      display: block;
+      color: #006400;
+    }
+
+    .feature-card strong {
+      color: #006400;
+      display: block;
+      margin-bottom: 12px;
+      font-size: 1.15em;
+      font-weight: 600;
+    }
+
+    /* CONTENT SECTIONS WITH AD SPACE */
+    .content-block {
+      margin-bottom: 45px;
+      padding: 0 15px;
+    }
+
+    .lesson-box {
+      background-color: rgba(240, 230, 210, 0.4);
+      padding: 22px;
+      border-radius: 8px;
+      margin: 25px auto;
+      max-width: 800px;
+      border-left: 4px solid #006400;
+    }
+
+    .lesson-box strong {
+      color: #006400;
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    /* LISTS STYLING */
+    ul {
+      list-style-position: inside;
+      max-width: 750px;
+      margin: 20px auto;
+      text-align: left;
+      display: inline-block;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 10px 0;
+      line-height: 1.6;
+      color: #2d5016;
+      font-size: 1.05em;
+    }
+
+    /* AD SPACE INDICATORS (Replace with actual AdSense code) */
+    .ad-space {
+      background: linear-gradient(135deg, rgba(240, 230, 210, 0.2), rgba(240, 230, 210, 0.1));
+      border: 2px dashed rgba(0, 100, 0, 0.3);
+      border-radius: 8px;
+      padding: 25px;
+      margin: 30px auto;
+      text-align: center;
+      color: #006400;
+      font-style: italic;
+      max-width: 728px;
+      min-height: 90px;
+    }
+
+    /* TABLE STYLING */
+    .zakat-table {
+      width: 100%;
+      max-width: 800px;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: #f0e6d2;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .zakat-table th {
+      background-color: #006400;
+      color: white;
+      padding: 15px;
+      font-size: 1.1em;
+    }
+
+    .zakat-table td {
+      padding: 15px;
+      border-bottom: 1px solid rgba(0, 100, 0, 0.1);
+      font-size: 1.05em;
+    }
+
+    .zakat-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .zakat-table tr:hover {
+      background-color: rgba(240, 230, 210, 0.8);
+    }
+
+    .zakat-icon {
+      font-size: 1.5em;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    /* STEP STYLING */
+    .zakat-step {
+      background-color: #f0e6d2;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 700px;
+      border-radius: 8px;
+      border-left: 4px solid #006400;
+      text-align: left;
+    }
+
+    .step-number {
+      display: inline-block;
+      background-color: #006400;
+      color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 30px;
+      margin-right: 15px;
+      font-weight: bold;
+    }
+
+    /* CALCULATION BOX */
+    .calc-box {
+      background: linear-gradient(135deg, rgba(240, 230, 210, 0.8), rgba(240, 230, 210, 0.4));
+      padding: 25px;
+      margin: 30px auto;
+      border-radius: 8px;
+      border: 2px solid #006400;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .calc-formula {
+      font-family: monospace;
+      font-size: 1.3em;
+      background-color: rgba(255, 255, 255, 0.3);
+      padding: 15px;
+      border-radius: 5px;
+      margin: 15px 0;
+      color: #006400;
+      font-weight: bold;
+    }
+
+    /* FOOTER STYLING */
+    .page-footer {
+      text-align: center;
+      padding: 25px 20px;
+      margin-top: 40px;
+      border-top: 2px solid rgba(0, 100, 0, 0.2);
+      color: #2d5016;
+      font-size: 0.95em;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeIn 0.6s ease-out;
+    }
+
+    /* PRINT STYLES */
+    @media print {
+      .navbar, .ad-space, .hamburger {
+        display: none;
+      }
+      
+      body {
+        color: #000;
+        background: white;
+      }
+      
+      .quran-box {
+        border: 2px solid #000;
+        background: #fff;
+      }
+      
+      .arabic-verse {
+        font-size: 1.5em;
+        color: #000;
+      }
+    }
+
+    /* MOBILE ADJUSTMENTS */
+    @media (max-width: 768px) {
+      .arabic-verse {
+        font-size: 1.6em;
+        line-height: 2;
+        padding: 12px;
+      }
+      
+      .quran-box {
+        padding: 20px 15px;
+        margin: 25px auto;
+      }
+      
+      .verse-translation {
+        font-size: 1.1em;
+        padding: 12px 15px;
+      }
+      
+      .zakat-table {
+        font-size: 0.9em;
+      }
+      
+      .zakat-table th, .zakat-table td {
+        padding: 10px 5px;
+      }
+    }
+
+    /* DARK MODE SUPPORT */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #1a1a1a;
+        color: #90ee90;
+      }
+      
+      .navbar {
+        background-color: #2a2a2a;
+        border-bottom-color: #444;
+      }
+      
+      .quran-box, .feature-card, .zakat-table, .zakat-step, .calc-box {
+        background-color: #2a2a2a;
+        border-color: #90ee90;
+      }
+      
+      .hero-section {
+        background: rgba(42, 42, 42, 0.6);
+        border-color: #444;
+      }
+      
+      .arabic-verse {
+        color: #c8ffc8;
+        background-color: rgba(42, 42, 42, 0.5);
+      }
+      
+      .verse-translation {
+        color: #90ee90;
+        background-color: rgba(42, 42, 42, 0.5);
+      }
+      
+      .zakat-table th {
+        background-color: #004d00;
+      }
+      
+      .step-number {
+        background-color: #004d00;
+      }
+      
+      .calc-formula {
+        color: #90ee90;
+        background-color: rgba(42, 42, 42, 0.3);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- OPTIMIZED NAVBAR -->
+<nav class="navbar">
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+    <div class="links-wrapper" id="menu">
+    <div class="nav-row">
+      <a href="index.html">🏠 Home</a>
+      <a href="whatisislam.html">📘 What Is Islam</a>
+      <a href="islammorethanyouthink.html">🌟 Islam: More Than You Think</a>
+      <a href="shahada.html">☝️ Shahada</a>
+      <a href="the5dailyprayers.html">🙏 The 5 Daily Prayers</a>
+      <a href="thehistoryofprophet-muhammad.html">🕋 Prophet Muhammad (S.A.W)</a>
+      <a href="thehistoryofprophet-adam.html">🌱 Prophet Adam (A.S)</a>
+    </div>
+
+    <div class="nav-row">
+      <a href="thehistoryofprophet-ibrahim.html">🔥 Prophet Ibrahim (A.S)</a>
+      <a href="thehistoryofprophet-ismail.html">💧 Prophet Ismail (A.S)</a>
+      <a href="thehistoryofprophet-nuh.html">🛶 Prophet Nuh (A.S)</a>
+      <a href="thehistoryofprophet-musa.html">🌊 Prophet Musa (A.S)</a>
+      <a href="thehistoryofprophet-isa.html">🕊️ Prophet Isa (A.S)</a>
+      <a href="thehistoryofprophet-yusuf.html">🌙 Prophet Yusuf (A.S)</a>
+      <a href="thehistoryofprophet-sulayman.html">👑 Prophet Sulayman (A.S)</a>
+    </div>
+
+    <div class="nav-row">
+      <a href="thehistoryofprophet-dawud.html">🎵 Prophet Dawud (A.S)</a>
+      <a href="thehistoryofprophet-lut.html">🌋 Prophet Lut (A.S)</a>
+      <a href="thehistoryofprophet-yaqub.html">⭐ Prophet Yaqub (A.S)</a>
+      <a href="thehistoryofprophet-yahya.html">✨ Prophet Yahya (A.S)</a>
+      <a href="thehistoryofprophet-yunus.html">🐋 Prophet Yunus (A.S)</a>
+      <a href="thehistoryofprophet-ayyub.html">🤲 Prophet Ayyub (A.S)</a>
+      <a href="thehistoryofprophet-zakaria.html">🌿 Prophet Zakaria (A.S)</a>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="content">
+  
+  <!-- HERO SECTION -->
+  <div class="hero-section fade-in">
+    <h1>🤲 The Third Pillar of Islam: Zakat - Obligatory Charity</h1>
+    <p>Zakat is the third pillar of Islam and a fundamental act of worship that purifies wealth, supports the needy, and strengthens the Muslim community. It is a mandatory charity paid annually by eligible Muslims on their surplus wealth.</p>
+  </div>
+
+  <!-- FEATURE HIGHLIGHTS -->
+  <div class="feature-grid">
+    <div class="feature-card">
+      <span class="feature-icon">💰</span>
+      <strong>Wealth Purification</strong>
+      Cleanses wealth and soul
+    </div>
+    
+    <div class="feature-card">
+      <span class="feature-icon">🤝</span>
+      <strong>Social Justice</strong>
+      Redistributes wealth in society
+    </div>
+    
+    <div class="feature-card">
+      <span class="feature-icon">🔄</span>
+      <strong>Economic Balance</strong>
+      Strengthens community bonds
+    </div>
+  </div>
+
+  <!-- SECTION 1: QURANIC FOUNDATION -->
+  <div class="content-block fade-in">
+    <h2>📖 Divine Commandment in the Quran</h2>
+    <p>Zakat is mentioned 32 times in the Quran, often paired with Salah (prayer), highlighting its importance in Islamic worship and social structure.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Baqarah 2:277</strong>
+      <div class="arabic-verse">إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَأَقَامُوا الصَّلَاةَ وَآتَوُا الزَّكَاةَ لَهُمْ أَجْرُهُمْ عِندَ رَبِّهِمْ</div>
+      <div class="verse-translation">"Indeed, those who believe and do righteous deeds and establish prayer and give Zakat will have their reward with their Lord."</div>
+      <div class="verse-number">Verse 277</div>
+    </div>
+    
+    <div class="quran-box">
+      <strong>Surah At-Tawbah 9:103</strong>
+      <div class="arabic-verse">خُذْ مِنْ أَمْوَالِهِمْ صَدَقَةً تُطَهِّرُهُمْ وَتُزَكِّيهِم بِهَا وَصَلِّ عَلَيْهِمْ</div>
+      <div class="verse-translation">"Take from their wealth a charity by which you purify them and cause them to increase, and invoke blessings upon them."</div>
+      <div class="verse-number">Verse 103</div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>The Meaning of Zakat:</strong>
+      <p>The word "Zakat" means purification, growth, and blessing. It purifies wealth from greed and selfishness, allows it to grow through blessings, and purifies the giver's soul from sins.</p>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 2: WHO MUST PAY ZAKAT -->
+  <div class="content-block fade-in">
+    <h2>✅ Conditions for Zakat Obligation</h2>
+    
+    <table class="zakat-table">
+      <thead>
+        <tr>
+          <th>Condition</th>
+          <th>Description</th>
+          <th>Minimum Requirement</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="zakat-icon">☪️</span> <strong>Muslim</strong></td>
+          <td>Only obligatory for Muslims</td>
+          <td>Adult, sane, free Muslim</td>
+        </tr>
+        <tr>
+          <td><span class="zakat-icon">💎</span> <strong>Nisab</strong></td>
+          <td>Minimum wealth threshold</td>
+          <td>Equivalent to 85g gold/595g silver</td>
+        </tr>
+        <tr>
+          <td><span class="zakat-icon">📅</span> <strong>Hawl</strong></td>
+          <td>Lunar year ownership</td>
+          <td>Full Islamic year (354 days)</td>
+        </tr>
+        <tr>
+          <td><span class="zakat-icon">💼</span> <strong>Surplus Wealth</strong></td>
+          <td>Beyond basic needs</td>
+          <td>After necessities and debts</td>
+        </tr>
+        <tr>
+          <td><span class="zakat-icon">📈</span> <strong>Growing Wealth</strong></td>
+          <td>Productive assets</td>
+          <td>Gold, silver, cash, business goods</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div class="lesson-box">
+      <strong>Exemptions from Zakat:</strong>
+      <ul>
+        <li>Personal residence and essential clothing</li>
+        <li>Vehicles for personal use</li>
+        <li>Household furniture and appliances</li>
+        <li>Tools of trade for personal livelihood</li>
+        <li>Debts owed to others</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SECTION 3: CALCULATION OF ZAKAT -->
+  <div class="content-block fade-in">
+    <h2>🧮 How to Calculate Zakat</h2>
+    
+    <div class="calc-box">
+      <strong>Standard Zakat Rate</strong>
+      <div class="calc-formula">2.5% of Total Wealth</div>
+      <p>This is the standard rate for most types of wealth. Special rates apply to agricultural products and minerals.</p>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">💰</span>
+        <strong>Cash & Savings</strong>
+        2.5% of total amount
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🏦</span>
+        <strong>Gold & Silver</strong>
+        2.5% of market value
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🏢</span>
+        <strong>Business Assets</strong>
+        2.5% of inventory value
+      </div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🐄</span>
+        <strong>Livestock</strong>
+        Varies by number and type
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🌾</span>
+        <strong>Agricultural Produce</strong>
+        5% or 10% depending on irrigation
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">💎</span>
+        <strong>Minerals & Treasure</strong>
+        20% of extracted value
+      </div>
+    </div>
+    
+    <div class="zakat-step">
+      <div class="step-number">1</div>
+      <strong>Calculate Total Wealth</strong>
+      <p>Add up all cash, savings, gold, silver, business inventory, and investments.</p>
+    </div>
+    
+    <div class="zakat-step">
+      <div class="step-number">2</div>
+      <strong>Subtract Debts</strong>
+      <p>Deduct any immediate debts and outstanding loans you owe.</p>
+    </div>
+    
+    <div class="zakat-step">
+      <div class="step-number">3</div>
+      <strong>Check Nisab</strong>
+      <p>Ensure remaining amount exceeds Nisab (85g gold or 595g silver value).</p>
+    </div>
+    
+    <div class="zakat-step">
+      <div class="step-number">4</div>
+      <strong>Calculate 2.5%</strong>
+      <p>Multiply the zakatable wealth by 0.025 (or divide by 40).</p>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 4: ELIGIBLE RECIPIENTS -->
+  <div class="content-block fade-in">
+    <h2>🤲 The Eight Categories of Zakat Recipients</h2>
+    
+    <table class="zakat-table">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Arabic Term</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="zakat-icon">🆘</span> <strong>The Poor</strong></td>
+          <td>Fuqara</td>
+          <td>Those with insufficient means</td>
+        </tr>
+        <tr>
+          <td><span class="zakat-icon">🆘</span> <strong>The Needy</strong></td>
+          <td>Masakin</td>
+          <td>Those with no means at all</td>
+        </tr>
+        <tr>
+          <td><span class="zakat-icon">⚙️</span> <strong>Zakat Collectors</strong></td>
+          <td>Amilin</td>
+          <td>Those employed to collect Zakat</td>
+        </tr>
+        <tr>
+          <td><span class="zakat-icon">🤝</span> <strong>New Muslims</strong></td>
+          <td>Mu'allafat</td>
+          <td>To reconcile their hearts to Islam</td>
+        </tr>
+        <tr>
+          <td><span class="zakat-icon">🔗</span> <strong>Freeing Slaves</strong></td>
+          <td>Riqab</td>
+          <td>Freeing captives and slaves</td>
+        </tr>
+        <tr>
+          <td><span class="zakat-icon">🏦</span> <strong>Debt Relief</strong></td>
+          <td>Gharimin</td>
+          <td>Those burdened by debts</td>
+        </tr>
+        <tr>
+          <td><span class="zakat-icon">🛡️</span> <strong>In Allah's Cause</strong></td>
+          <td>Fi Sabilillah</td>
+          <td>Those striving for Islam</td>
+        </tr>
+        <tr>
+          <td><span class="zakat-icon">🛣️</span> <strong>Wayfarers</strong></td>
+          <td>Ibn Sabil</td>
+          <td>Stranded travelers</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div class="quran-box">
+      <strong>Surah At-Tawbah 9:60</strong>
+      <div class="arabic-verse">إِنَّمَا الصَّدَقَاتُ لِلْفُقَرَاءِ وَالْمَسَاكِينِ وَالْعَامِلِينَ عَلَيْهَا وَالْمُؤَلَّفَةِ قُلُوبُهُمْ وَفِي الرِّقَابِ وَالْغَارِمِينَ وَفِي سَبِيلِ اللَّهِ وَابْنِ السَّبِيلِ</div>
+      <div class="verse-translation">"Zakat expenditures are only for the poor, the needy, those employed to collect it, for bringing hearts together, for freeing captives, for those in debt, for the cause of Allah, and for the traveler."</div>
+      <div class="verse-number">Verse 60</div>
+    </div>
+  </div>
+
+  <!-- SECTION 5: TYPES OF ZAKAT -->
+  <div class="content-block fade-in">
+    <h2>📦 Different Types of Zakat</h2>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">💰</span>
+        <strong>Zakat al-Mal</strong>
+        Wealth on savings and assets
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🌾</span>
+        <strong>Zakat al-Fitr</strong>
+        Charity before Eid al-Fitr
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🐄</span>
+        <strong>Zakat al-An'am</strong>
+        On livestock and animals
+      </div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🏢</span>
+        <strong>Zakat al-Tijarah</strong>
+        On business merchandise
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">💎</span>
+        <strong>Zakat al-Rikaz</strong>
+        On buried treasure and minerals
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🌱</span>
+        <strong>Zakat al-Zuru'</strong>
+        On agricultural produce
+      </div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>Zakat al-Fitr (Fitrana):</strong>
+      <ul>
+        <li>Obligatory on every Muslim, young or old, male or female</li>
+        <li>Paid before Eid al-Fitr prayer</li>
+        <li>Purifies fasting person from shortcomings</li>
+        <li>Provides food for the poor on Eid day</li>
+        <li>Approximately 3kg of staple food per person</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 6: VIRTUES AND BENEFITS -->
+  <div class="content-block fade-in">
+    <h2>🌟 Spiritual and Social Benefits</h2>
+    
+    <div class="quran-box">
+      <strong>Surah Ar-Rum 30:39</strong>
+      <div class="arabic-verse">وَمَا آتَيْتُم مِّن رِّبًا لِّيَرْبُوَ فِي أَمْوَالِ النَّاسِ فَلَا يَرْبُو عِندَ اللَّهِ ۖ وَمَا آتَيْتُم مِّن زَكَاةٍ تُرِيدُونَ وَجْهَ اللَّهِ فَأُولَٰئِكَ هُمُ الْمُضْعِفُونَ</div>
+      <div class="verse-translation">"And whatever you give for interest to increase within the wealth of people will not increase with Allah. But what you give in Zakat, desiring the countenance of Allah - those are the multipliers."</div>
+      <div class="verse-number">Verse 39</div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🧹</span>
+        <strong>Purification</strong>
+        Cleanses wealth and soul from greed
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">📈</span>
+        <strong>Blessings</strong>
+        Increases barakah in remaining wealth
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">❤️</span>
+        <strong>Compassion</strong>
+        Develops empathy for the less fortunate
+      </div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🤝</span>
+        <strong>Social Harmony</strong>
+        Reduces class differences and resentment
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🛡️</span>
+        <strong>Protection</strong>
+        Shields from calamities and disasters
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🔄</span>
+        <strong>Economic Circulation</strong>
+        Keeps wealth flowing in society
+      </div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>Hadith on Zakat's Benefits:</strong>
+      <ul>
+        <li>"Protect your wealth by paying Zakat" (Bayhaqi)</li>
+        <li>"Zakat is a purification for the giver" (Tirmidhi)</li>
+        <li>"Charity extinguishes sin as water extinguishes fire" (Tirmidhi)</li>
+        <li>"The wealth that is spent in the way of Allah is the only wealth that remains" (Bukhari)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SECTION 7: WHEN TO PAY ZAKAT -->
+  <div class="content-block fade-in">
+    <h2>📅 Timing and Frequency of Zakat</h2>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">📆</span>
+        <strong>Annual Obligation</strong>
+        Once every Islamic lunar year
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🌙</span>
+        <strong>Ramadan Preference</strong>
+        Best time to pay for multiplied rewards
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">⚡</span>
+        <strong>Immediate Payment</strong>
+        Due as soon as conditions are met
+      </div>
+    </div>
+    
+    <div class="zakat-step">
+      <div class="step-number">1</div>
+      <strong>Determine Zakat Date</strong>
+      <p>Mark the date when your wealth first reached Nisab (this is your Zakat anniversary).</p>
+    </div>
+    
+    <div class="zakat-step">
+      <div class="step-number">2</div>
+      <strong>Annual Calculation</strong>
+      <p>Each year on this date, calculate your zakatable wealth and pay 2.5%.</p>
+    </div>
+    
+    <div class="zakat-step">
+      <div class="step-number">3</div>
+      <strong>New Wealth</strong>
+      <p>Newly acquired wealth joins the existing Zakat cycle from your anniversary date.</p>
+    </div>
+    
+    <div class="zakat-step">
+      <div class="step-number">4</div>
+      <strong>Early Payment</strong>
+      <p>Zakat can be paid in advance if you wish, but not delayed without valid reason.</p>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>Important Notes on Timing:</strong>
+      <ul>
+        <li>Zakat becomes due exactly one lunar year after wealth reaches Nisab</li>
+        <li>Delaying Zakat without valid reason is a sin</li>
+        <li>If wealth drops below Nisab during the year, reset the calculation period</li>
+        <li>Zakat al-Fitr must be paid before Eid prayer</li>
+        <li>Many scholars recommend paying Zakat during Ramadan for maximum reward</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 8: MODERN ZAKAT PRACTICES -->
+  <div class="content-block fade-in">
+    <h2>🏢 Zakat in the Modern World</h2>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">💳</span>
+        <strong>Digital Payments</strong>
+        Online Zakat calculators and payments
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🏛️</span>
+        <strong>Zakat Institutions</strong>
+        Trusted organizations for distribution
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">📱</span>
+        <strong>Mobile Apps</strong>
+        Zakat calculation and payment apps
+      </div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🏥</span>
+        <strong>Healthcare Zakat</strong>
+        Medical treatment for the poor
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🎓</span>
+        <strong>Education Zakat</strong>
+        Scholarships for needy students
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🏠</span>
+        <strong>Housing Zakat</strong>
+        Shelter for homeless families
+      </div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>Contemporary Zakat Issues:</strong>
+      <ul>
+        <li><strong>Stocks and Shares:</strong> Zakat on market value of investments</li>
+        <li><strong>Retirement Funds:</strong> Zakat on accessible portions</li>
+        <li><strong>Business Partnerships:</strong> Each partner pays on their share</li>
+        <li><strong>Cryptocurrency:</strong> Treated like currency for Zakat purposes</li>
+        <li><strong>Rental Properties:</strong> Zakat on rental income, not property value</li>
+        <li><strong>Insurance Policies:</strong> Zakat on cash value if accessible</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FINAL REFLECTION -->
+  <div class="hero-section" style="margin-top: 40px;">
+    <h3>💫 Zakat: The Social Pillar of Islam</h3>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Munafiqun 63:10</strong>
+      <div class="arabic-verse">وَأَنفِقُوا مِن مَّا رَزَقْنَاكُم مِّن قَبْلِ أَن يَأْتِيَ أَحَدَكُمُ الْمَوْتُ فَيَقُولَ رَبِّ لَوْلَا أَخَّرْتَنِي إِلَىٰ أَجَلٍ قَرِيبٍ فَأَصَّدَّقَ وَأَكُن مِّنَ الصَّالِحِينَ</div>
+      <div class="verse-translation">"And spend from what We have provided for you before death comes to one of you and he says, 'My Lord, if only You would delay me for a brief term so I would give charity and be among the righteous.'"</div>
+      <div class="verse-number">Verse 10</div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🔄</span>
+        <strong>Wealth Circulation</strong>
+        Prevents hoarding and stagnation
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🤲</span>
+        <strong>Community Solidarity</strong>
+        Creates bonds between rich and poor
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">⚖️</span>
+        <strong>Economic Justice</strong>
+        Islamic solution to poverty
+      </div>
+    </div>
+    
+    <p style="margin-top: 20px; font-style: italic; font-size: 1.1em;">
+      Zakat represents Islam's comprehensive solution to economic inequality and social injustice. It transforms charity from voluntary goodwill to obligatory social responsibility, ensuring that wealth circulates within society and reaches those in genuine need. By purifying wealth and souls, Zakat creates a balanced community where the wealthy acknowledge their responsibility toward the less fortunate, and the needy receive their rights with dignity. In an age of unprecedented wealth disparity, the Islamic system of Zakat offers timeless wisdom for creating compassionate, equitable societies grounded in spiritual values and social justice.
+    </p>
+  </div>
+  
+  <!-- AD SPACE -->
+  <div class="ad-space">
+    <!-- AdSense Code Here -->
+    Advertisement Space: 728x90
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="page-footer">
+  <p>© Islamic Stories Collection | Exploring Islamic Teachings and Practices</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    const hamburger = document.querySelector('.hamburger');
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  }
+
+  // Smooth scrolling for better UX
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Highlight Quran boxes on hover
+  document.addEventListener('DOMContentLoaded', function() {
+    const quranBoxes = document.querySelectorAll('.quran-box');
+    quranBoxes.forEach(box => {
+      box.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.02)';
+        this.style.boxShadow = '0 5px 20px rgba(0, 100, 0, 0.15)';
+      });
+      
+      box.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1)';
+        this.style.boxShadow = '0 3px 15px rgba(0, 0, 0, 0.08)';
+      });
+    });
+    
+    // Table row highlighting
+    const tableRows = document.querySelectorAll('.zakat-table tr');
+    tableRows.forEach(row => {
+      row.addEventListener('mouseenter', function() {
+        this.style.backgroundColor = 'rgba(240, 230, 210, 0.8)';
+      });
+      
+      row.addEventListener('mouseleave', function() {
+        this.style.backgroundColor = '';
+      });
+    });
+    
+    // Interactive calculation example
+    const calcBox = document.querySelector('.calc-box');
+    if (calcBox) {
+      calcBox.addEventListener('click', function() {
+        const formula = document.querySelector('.calc-formula');
+        formula.style.transform = 'scale(1.05)';
+        formula.style.backgroundColor = 'rgba(0, 100, 0, 0.1)';
+        setTimeout(() => {
+          formula.style.transform = 'scale(1)';
+          formula.style.backgroundColor = '';
+        }, 300);
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
