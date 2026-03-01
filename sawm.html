@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sawm (Fasting) in Islam - Complete Guide</title>
+  
+  <meta name="description" content="Complete guide to Sawm (fasting) in Islam: Ramadan fasting, spiritual benefits, rules, exemptions, and significance of the fourth pillar of Islam.">
+  <meta name="keywords" content="Sawm, fasting, Ramadan, Islamic fasting, fourth pillar, spiritual purification, Muslim fasting rules">
+
+  <!-- AdSense Friendly Structure -->
+  <style>
+    /* RESET & BASE STYLES */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: beige;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: green;
+      line-height: 1.6;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    /* NAVBAR - FIXED FOR BETTER UX */
+    .navbar {
+      background-color: #f0e6d2;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid #d4c7a1;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .links-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .nav-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px 20px;
+    }
+
+    .nav-row a {
+      color: green;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95em;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .nav-row a:hover {
+      color: #006400;
+      background-color: rgba(0, 100, 0, 0.08);
+      transform: translateY(-1px);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1001;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: green;
+      margin: 3px 0;
+      transition: 0.3s;
+    }
+
+    /* MOBILE OPTIMIZATION */
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 10px 15px;
+      }
+      
+      .links-wrapper {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f0e6d2;
+        padding: 15px 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid #d4c7a1;
+      }
+
+      .links-wrapper.active {
+        display: flex;
+      }
+
+      .nav-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+      }
+
+      .nav-row a {
+        padding: 10px 15px;
+        font-size: 1em;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+      
+      .hamburger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      
+      .hamburger.active div:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburger.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    }
+
+    /* MAIN CONTENT - AD-FRIENDLY LAYOUT */
+    main.content {
+      padding: 30px 20px;
+      text-align: center;
+      color: green;
+    }
+
+    h1 {
+      color: green;
+      margin: 20px 0 30px;
+      font-size: 2.2em;
+      line-height: 1.3;
+      text-align: center;
+      padding-bottom: 15px;
+      border-bottom: 2px solid rgba(0, 100, 0, 0.15);
+    }
+
+    h2 {
+      color: green;
+      margin: 35px 0 20px;
+      text-align: center;
+      font-size: 1.6em;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    h3 {
+      color: #006400;
+      margin: 25px 0 15px;
+      font-size: 1.3em;
+    }
+
+    p {
+      margin: 18px auto;
+      text-align: center;
+      max-width: 800px;
+      line-height: 1.7;
+      font-size: 1.05em;
+      color: #2d5016;
+    }
+
+    /* QURAN VERSES - OPTIMIZED FOR READABILITY - INGRANDITE */
+    .quran-box {
+      background-color: #f0e6d2;
+      padding: 25px;
+      margin: 30px auto;
+      width: 90%;
+      border-left: 5px solid green;
+      border-radius: 8px;
+      text-align: center;
+      max-width: 900px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .quran-box strong {
+      color: #006400;
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 15px;
+      font-weight: 700;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(0, 100, 0, 0.2);
+    }
+
+    .arabic-verse {
+      font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+      font-size: 1.8em;
+      margin: 20px 0;
+      text-align: center;
+      direction: rtl;
+      line-height: 2.2;
+      color: #1a4508;
+      font-weight: 600;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    .verse-translation {
+      font-style: italic;
+      margin-top: 20px;
+      color: green;
+      text-align: center;
+      font-size: 1.15em;
+      line-height: 1.7;
+      padding: 15px 20px;
+      background-color: rgba(240, 230, 210, 0.4);
+      border-radius: 5px;
+      border-left: 3px solid #006400;
+    }
+
+    .verse-number {
+      display: inline-block;
+      background-color: #006400;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* HADITH BOX - COMPLEMENTARY STYLE */
+    .hadith-box {
+      background-color: rgba(240, 230, 210, 0.3);
+      padding: 25px;
+      margin: 30px auto;
+      width: 90%;
+      border-right: 5px solid #006400;
+      border-radius: 8px;
+      text-align: center;
+      max-width: 900px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .hadith-box strong {
+      color: #006400;
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .hadith-text {
+      font-style: italic;
+      margin-top: 15px;
+      color: #2d5016;
+      text-align: center;
+      font-size: 1.1em;
+      line-height: 1.7;
+    }
+
+    .hadith-source {
+      display: inline-block;
+      background-color: #006400;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* AD-FRIENDLY SECTIONS */
+    .section-divider {
+      height: 2px;
+      background: linear-gradient(to right, transparent, rgba(0, 100, 0, 0.3), transparent);
+      margin: 40px auto;
+      width: 85%;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, rgba(240, 230, 210, 0.6), rgba(240, 230, 210, 0.3));
+      padding: 30px 25px;
+      border-radius: 10px;
+      margin: 0 auto 40px;
+      max-width: 900px;
+      text-align: center;
+      border: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin: 35px auto;
+      max-width: 950px;
+    }
+
+    .feature-card {
+      background-color: #f0e6d2;
+      padding: 25px 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+      border: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-icon {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+      display: block;
+      color: #006400;
+    }
+
+    .feature-card strong {
+      color: #006400;
+      display: block;
+      margin-bottom: 12px;
+      font-size: 1.15em;
+      font-weight: 600;
+    }
+
+    /* CONTENT SECTIONS */
+    .content-block {
+      margin-bottom: 45px;
+      padding: 0 15px;
+    }
+
+    .lesson-box {
+      background-color: rgba(240, 230, 210, 0.4);
+      padding: 22px;
+      border-radius: 8px;
+      margin: 25px auto;
+      max-width: 800px;
+      border-left: 4px solid #006400;
+    }
+
+    .lesson-box strong {
+      color: #006400;
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    /* LISTS STYLING */
+    ul {
+      list-style-position: inside;
+      max-width: 750px;
+      margin: 20px auto;
+      text-align: left;
+      display: inline-block;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 10px 0;
+      line-height: 1.6;
+      color: #2d5016;
+      font-size: 1.05em;
+    }
+
+    /* AD SPACE INDICATORS */
+    .ad-space {
+      background: linear-gradient(135deg, rgba(240, 230, 210, 0.2), rgba(240, 230, 210, 0.1));
+      border: 2px dashed rgba(0, 100, 0, 0.3);
+      border-radius: 8px;
+      padding: 25px;
+      margin: 30px auto;
+      text-align: center;
+      color: #006400;
+      font-style: italic;
+      max-width: 728px;
+      min-height: 90px;
+    }
+
+    /* FASTING TIMETABLE STYLING */
+    .fasting-table {
+      width: 100%;
+      max-width: 900px;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: #f0e6d2;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .fasting-table th {
+      background-color: #006400;
+      color: white;
+      padding: 15px;
+      font-size: 1.1em;
+    }
+
+    .fasting-table td {
+      padding: 12px;
+      border-bottom: 1px solid rgba(0, 100, 0, 0.1);
+      font-size: 1.05em;
+    }
+
+    .fasting-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .fasting-table tr:hover {
+      background-color: rgba(240, 230, 210, 0.8);
+    }
+
+    .fasting-icon {
+      font-size: 1.5em;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    /* TIMELINE STYLING FOR RAMADAN */
+    .timeline-item {
+      background-color: #f0e6d2;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 700px;
+      border-radius: 8px;
+      border-left: 4px solid #006400;
+      text-align: left;
+    }
+
+    .timeline-time {
+      display: inline-block;
+      background-color: #006400;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      margin-right: 15px;
+      font-weight: bold;
+    }
+
+    /* EXEMPTION CARDS */
+    .exemption-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin: 30px auto;
+      max-width: 900px;
+    }
+
+    .exemption-card {
+      background-color: #f0e6d2;
+      padding: 20px 15px;
+      border-radius: 8px;
+      text-align: center;
+      border: 1px solid rgba(0, 100, 0, 0.1);
+    }
+
+    .exemption-icon {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #006400;
+    }
+
+    /* FOOTER STYLING */
+    .page-footer {
+      text-align: center;
+      padding: 25px 20px;
+      margin-top: 40px;
+      border-top: 2px solid rgba(0, 100, 0, 0.2);
+      color: #2d5016;
+      font-size: 0.95em;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeIn 0.6s ease-out;
+    }
+
+    /* PRINT STYLES */
+    @media print {
+      .navbar, .ad-space, .hamburger {
+        display: none;
+      }
+      
+      body {
+        color: #000;
+        background: white;
+      }
+      
+      .quran-box {
+        border: 2px solid #000;
+        background: #fff;
+      }
+      
+      .arabic-verse {
+        font-size: 1.5em;
+        color: #000;
+      }
+    }
+
+    /* MOBILE ADJUSTMENTS */
+    @media (max-width: 768px) {
+      .arabic-verse {
+        font-size: 1.6em;
+        line-height: 2;
+        padding: 12px;
+      }
+      
+      .quran-box {
+        padding: 20px 15px;
+        margin: 25px auto;
+      }
+      
+      .verse-translation {
+        font-size: 1.1em;
+        padding: 12px 15px;
+      }
+      
+      .fasting-table {
+        font-size: 0.9em;
+      }
+      
+      .fasting-table th, .fasting-table td {
+        padding: 8px 5px;
+      }
+    }
+
+    /* DARK MODE SUPPORT */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #1a1a1a;
+        color: #90ee90;
+      }
+      
+      .navbar {
+        background-color: #2a2a2a;
+        border-bottom-color: #444;
+      }
+      
+      .quran-box, .feature-card, .fasting-table, .timeline-item, .exemption-card {
+        background-color: #2a2a2a;
+        border-color: #90ee90;
+      }
+      
+      .hero-section {
+        background: rgba(42, 42, 42, 0.6);
+        border-color: #444;
+      }
+      
+      .arabic-verse {
+        color: #c8ffc8;
+        background-color: rgba(42, 42, 42, 0.5);
+      }
+      
+      .verse-translation {
+        color: #90ee90;
+        background-color: rgba(42, 42, 42, 0.5);
+      }
+      
+      .fasting-table th {
+        background-color: #004d00;
+      }
+      
+      .timeline-time {
+        background-color: #004d00;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- OPTIMIZED NAVBAR -->
+<nav class="navbar">
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+    <div class="links-wrapper" id="menu">
+    <div class="nav-row">
+      <a href="index.html">🏠 Home</a>
+      <a href="whatisislam.html">📘 What Is Islam</a>
+      <a href="islammorethanyouthink.html">🌟 Islam: More Than You Think</a>
+      <a href="shahada.html">☝️ Shahada</a>
+      <a href="the5dailyprayers.html">🙏 The 5 Daily Prayers</a>
+      <a href="zakat.html">💰 Zakat</a>
+      <a href="hajj.html">🕋 Hajj (Pilgrimage)</a>
+    </div>
+
+    <div class="nav-row">
+      <a href="thehistoryofprophet-muhammad.html">🕌 Prophet Muhammad (S.A.W)</a>
+      <a href="thehistoryofprophet-adam.html">🌱 Prophet Adam (A.S)</a>
+      <a href="thehistoryofprophet-ibrahim.html">🔥 Prophet Ibrahim (A.S)</a>
+      <a href="thehistoryofprophet-ismail.html">💧 Prophet Ismail (A.S)</a>
+      <a href="thehistoryofprophet-nuh.html">🛶 Prophet Nuh (A.S)</a>
+      <a href="thehistoryofprophet-musa.html">🌊 Prophet Musa (A.S)</a>
+      <a href="thehistoryofprophet-isa.html">🕊️ Prophet Isa (A.S)</a>
+    </div>
+
+    <div class="nav-row">
+      <a href="thehistoryofprophet-yusuf.html">⭐ Prophet Yusuf (A.S)</a>
+      <a href="thehistoryofprophet-sulayman.html">👑 Prophet Sulayman (A.S)</a>
+      <a href="thehistoryofprophet-dawud.html">🎵 Prophet Dawud (A.S)</a>
+      <a href="thehistoryofprophet-lut.html">🌋 Prophet Lut (A.S)</a>
+      <a href="thehistoryofprophet-yaqub.html">🌿 Prophet Yaqub (A.S)</a>
+      <a href="thehistoryofprophet-yahya.html">✨ Prophet Yahya (A.S)</a>
+      <a href="thehistoryofprophet-yunus.html">🐋 Prophet Yunus (A.S)</a>
+    </div>
+
+    <div class="nav-row">
+      <a href="thehistoryofprophet-ayyub.html">🤲 Prophet Ayyub (A.S)</a>
+      <a href="thehistoryofprophet-zakaria.html">🌿 Prophet Zakaria (A.S)</a>
+      <a href="aboutus.html">ℹ️ About Us</a>
+      <a href="privacy.html">🔒 Privacy Policy</a>
+      <a href="terms.html">📜 Terms of Service</a>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="content">
+  
+  <!-- HERO SECTION -->
+  <div class="hero-section fade-in">
+    <h1>🌙 Sawm (Fasting) in Islam - The Fourth Pillar</h1>
+    <p>Sawm (fasting) during the month of Ramadan is the fourth pillar of Islam. It is a profound act of worship that combines physical discipline with spiritual elevation, teaching self-restraint, empathy for the poor, and sincere devotion to Allah. Fasting from dawn to sunset, Muslims abstain from food, drink, and marital relations while focusing on prayer, Quran, and charity.</p>
+  </div>
+
+  <!-- FEATURE HIGHLIGHTS -->
+  <div class="feature-grid">
+    <div class="feature-card">
+      <span class="feature-icon">🌙</span>
+      <strong>Fourth Pillar</strong>
+      Obligatory for all adult Muslims
+    </div>
+    
+    <div class="feature-card">
+      <span class="feature-icon">🤲</span>
+      <strong>Spiritual Purification</strong>
+      Cleanses the soul and increases taqwa
+    </div>
+    
+    <div class="feature-card">
+      <span class="feature-icon">❤️</span>
+      <strong>Empathy & Charity</strong>
+      Understanding hunger of the poor
+    </div>
+  </div>
+
+  <!-- SECTION 1: QURANIC FOUNDATION -->
+  <div class="content-block fade-in">
+    <h2>📖 The Divine Command in the Quran</h2>
+    <p>Fasting was prescribed for Muslims as it was for previous nations, establishing it as a universal practice of faith across all divine revelations.</p>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Baqarah 2:183</strong>
+      <div class="arabic-verse">يَا أَيُّهَا الَّذِينَ آمَنُوا كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ</div>
+      <div class="verse-translation">"O you who have believed, decreed upon you is fasting as it was decreed upon those before you that you may become righteous."</div>
+      <div class="verse-number">Verse 183</div>
+    </div>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Baqarah 2:185</strong>
+      <div class="arabic-verse">شَهْرُ رَمَضَانَ الَّذِي أُنزِلَ فِيهِ الْقُرْآنُ هُدًى لِّلنَّاسِ وَبَيِّنَاتٍ مِّنَ الْهُدَىٰ وَالْفُرْقَانِ ۚ فَمَن شَهِدَ مِنكُمُ الشَّهْرَ فَلْيَصُمْهُ</div>
+      <div class="verse-translation">"The month of Ramadan in which was revealed the Quran, a guidance for mankind and clear proofs of guidance and criterion. So whoever sights the month, let him fast it."</div>
+      <div class="verse-number">Verse 185</div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>Purpose of Fasting:</strong>
+      <p>The ultimate goal of fasting is to attain "taqwa" - God-consciousness, righteousness, and awareness of Allah in all aspects of life. Fasting trains the soul to prioritize divine commands over physical desires.</p>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 2: THE MONTH OF RAMADAN -->
+  <div class="content-block fade-in">
+    <h2>🌙 Ramadan: The Month of Quran and Mercy</h2>
+    <p>Ramadan is the holiest month in the Islamic calendar - the month when the Quran was first revealed, when the gates of Paradise are opened, the gates of Hellfire are closed, and the devils are chained.</p>
+    
+    <div class="hadith-box">
+      <strong>Prophetic Hadith</strong>
+      <div class="hadith-text">
+        "When Ramadan begins, the gates of Paradise are opened, the gates of Hell are closed, and the devils are chained."
+      </div>
+      <div class="hadith-source">Bukhari & Muslim</div>
+    </div>
+    
+    <div class="hadith-box">
+      <strong>Virtue of Ramadan</strong>
+      <div class="hadith-text">
+        "Whoever fasts Ramadan out of faith and seeking reward, his previous sins will be forgiven."
+      </div>
+      <div class="hadith-source">Bukhari & Muslim</div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">📖</span>
+        <strong>Quran Revealed</strong>
+        First revelation in Laylatul Qadr
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🌟</span>
+        <strong>Night of Power</strong>
+        Better than 1000 months
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🤲</span>
+        <strong>Forgiveness</strong>
+        Sins forgiven with sincere fasting
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: DAILY FASTING TIMELINE -->
+  <div class="content-block fade-in">
+    <h2>⏰ A Day in Ramadan: From Dawn to Sunset</h2>
+    
+    <div class="timeline-item">
+      <span class="timeline-time">🌅 Suhoor (Pre-dawn)</span>
+      <p><strong>Last meal before fasting begins.</strong> The Prophet (S.A.W) recommended delaying Suhoor as close to Fajr as possible and said: "Take Suhoor, for in Suhoor there is blessing."</p>
+    </div>
+    
+    <div class="timeline-item">
+      <span class="timeline-time">🕐 Fajr (Dawn)</span>
+      <p><strong>Fasting begins.</strong> From this moment until sunset, the fasting person must abstain from food, drink, and marital relations.</p>
+    </div>
+    
+    <div class="timeline-item">
+      <span class="timeline-time">☀️ Daylight Hours</span>
+      <p><strong>Time of fasting, prayer, and good deeds.</strong> Increased recitation of Quran, additional prayers, charity, and avoiding sinful speech and actions.</p>
+    </div>
+    
+    <div class="timeline-item">
+      <span class="timeline-time">🌆 Maghrib (Sunset)</span>
+      <p><strong>Iftar - Breaking the fast.</strong> Traditionally with dates and water, following the Prophet's example. The dua for breaking fast: "Dhahaba al-zama' wa abtalat al-'uruq wa thabata al-ajr insha'Allah" (The thirst is gone, the veins are moistened, and the reward is certain, if Allah wills).</p>
+    </div>
+    
+    <div class="timeline-item">
+      <span class="timeline-time">🌃 Isha & Taraweeh</span>
+      <p><strong>Night prayer.</strong> Special Ramadan prayers (Taraweeh) are performed in congregation, where long portions of Quran are recited throughout the month.</p>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 4: WHO MUST FAST? EXEMPTIONS -->
+  <div class="content-block fade-in">
+    <h2>✅ Obligation and Exemptions</h2>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">👤</span>
+        <strong>Required for:</strong>
+        Every sane, adult Muslim who is physically able
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">👶</span>
+        <strong>Not required:</strong>
+        Children (not yet reached puberty)
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🧠</span>
+        <strong>Not required:</strong>
+        Those with mental incapacity
+      </div>
+    </div>
+    
+    <h3 style="margin-top: 40px;">🩺 Legitimate Exemptions with Make-up or Fidyah</h3>
+    
+    <div class="exemption-grid">
+      <div class="exemption-card">
+        <span class="exemption-icon">✈️</span>
+        <strong>Traveler</strong>
+        May break fast, make up later
+      </div>
+      
+      <div class="exemption-card">
+        <span class="exemption-icon">🤒</span>
+        <strong>Temporary Illness</strong>
+        May break fast, make up later
+      </div>
+      
+      <div class="exemption-card">
+        <span class="exemption-icon">🤰</span>
+        <strong>Pregnancy</strong>
+        May break if fasting harms mother/child, make up later
+      </div>
+      
+      <div class="exemption-card">
+        <span class="exemption-icon">🤱</span>
+        <strong>Breastfeeding</strong>
+        May break if fasting affects milk, make up later
+      </div>
+      
+      <div class="exemption-card">
+        <span class="exemption-icon">👵</span>
+        <strong>Elderly (permanent)</strong>
+        Feed a poor person for each missed day (fidyah)
+      </div>
+      
+      <div class="exemption-card">
+        <span class="exemption-icon">💊</span>
+        <strong>Chronic Illness</strong>
+        Feed a poor person for each missed day (fidyah)
+      </div>
+    </div>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Baqarah 2:184</strong>
+      <div class="arabic-verse">فَمَن كَانَ مِنكُم مَّرِيضًا أَوْ عَلَىٰ سَفَرٍ فَعِدَّةٌ مِّنْ أَيَّامٍ أُخَرَ ۚ وَعَلَى الَّذِينَ يُطِيقُونَهُ فِدْيَةٌ طَعَامُ مِسْكِينٍ</div>
+      <div class="verse-translation">"And whoever is ill or on a journey, then an equal number of other days. And upon those who are able [but with hardship] - a ransom of feeding a poor person."</div>
+      <div class="verse-number">Verse 184</div>
+    </div>
+  </div>
+
+  <!-- SECTION 5: WHAT BREAKS THE FAST -->
+  <div class="content-block fade-in">
+    <h2>🚫 Actions That Invalidate the Fast</h2>
+    
+    <table class="fasting-table">
+      <thead>
+        <tr>
+          <th>Action</th>
+          <th>Status</th>
+          <th>Requirement</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Intentional eating/drinking</td>
+          <td>Breaks fast</td>
+          <td>Make up + expiation (if sexual)</td>
+        </tr>
+        <tr>
+          <td>Intentional vomiting</td>
+          <td>Breaks fast</td>
+          <td>Make up only</td>
+        </tr>
+        <tr>
+          <td>Menstruation/postpartum bleeding</td>
+          <td>Breaks fast</td>
+          <td>Make up only (cannot fast in this state)</td>
+        </tr>
+        <tr>
+          <td>Intentional marital relations</td>
+          <td>Breaks fast</td>
+          <td>Make up + severe expiation (fast 60 days or feed 60 poor)</td>
+        </tr>
+        <tr>
+          <td>Smoking/inhalants</td>
+          <td>Breaks fast</td>
+          <td>Make up only</td>
+        </tr>
+        <tr>
+          <td>Injections (nutritional)</td>
+          <td>Breaks fast</td>
+          <td>Make up only</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div class="lesson-box">
+      <strong>What Does NOT Break the Fast:</strong>
+      <ul>
+        <li>Eating/drinking by mistake or forgetfulness</li>
+        <li>Unintentional vomiting</li>
+        <li>Taking a shower or swimming (without swallowing water)</li>
+        <li>Using miswak or toothbrush (without swallowing)</li>
+        <li>Tasting food with the tip of the tongue (without swallowing)</li>
+        <li>Injections (non-nutritional, like medicine)</li>
+        <li>Eye drops, ear drops, nose drops (unless reaching throat)</li>
+        <li>Kissing spouse (if self-control maintained)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 6: SPIRITUAL DIMENSIONS -->
+  <div class="content-block fade-in">
+    <h2>💫 Beyond Hunger: The Spiritual Fast</h2>
+    
+    <div class="hadith-box">
+      <strong>Warning from the Prophet</strong>
+      <div class="hadith-text">
+        "Whoever does not give up false speech and acting upon it, Allah has no need of his giving up food and drink."
+      </div>
+      <div class="hadith-source">Bukhari</div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">👅</span>
+        <strong>Guard the Tongue</strong>
+        No lying, backbiting, gossip
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">👁️</span>
+        <strong>Guard the Eyes</strong>
+        Lower gaze from forbidden
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">👂</span>
+        <strong>Guard the Ears</strong>
+        Avoid listening to evil
+      </div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">📖</span>
+        <strong>Increase Quran</strong>
+        Recite, reflect, implement
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🤲</span>
+        <strong>Increase Dua</strong>
+        Supplications readily accepted
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">💰</span>
+        <strong>Increase Charity</strong>
+        Feed others, give generously
+      </div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>The Two Joys of a Fasting Person:</strong>
+      <p>The Prophet (S.A.W) said: "The fasting person has two moments of joy: one when he breaks his fast, and one when he meets his Lord." The first is the physical joy of satisfying hunger, and the second is the ultimate spiritual joy of receiving Allah's reward.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 7: RECOMMENDED ACTS -->
+  <div class="content-block fade-in">
+    <h2>🌟 Sunnah Practices During Fasting</h2>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🌅</span>
+        <strong>Delay Suhoor</strong>
+        Eat just before Fajr
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🌆</span>
+        <strong>Hasten Iftar</strong>
+        Break fast immediately at sunset
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🍯</span>
+        <strong>Break with Dates</strong>
+        Odd number (1, 3, 5) with water
+      </div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🤲</span>
+        <strong>Dua at Iftar</strong>
+        Supplication before breaking fast
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🕌</span>
+        <strong>Taraweeh Prayer</strong>
+        Night prayers in congregation
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">📿</span>
+        <strong>I'tikaf</strong>
+        Seclusion in mosque last 10 days
+      </div>
+    </div>
+    
+    <div class="hadith-box">
+      <strong>Dua for Breaking Fast</strong>
+      <div class="arabic-verse" style="font-size: 1.5em;">ذَهَبَ الظَّمَأُ وَابْتَلَّتِ الْعُرُوقُ وَثَبَتَ الأَجْرُ إِنْ شَاءَ اللَّهُ</div>
+      <div class="hadith-text">"Dhahaba al-zama' wa abtalat al-'uruq wa thabata al-ajr insha'Allah"<br>(The thirst is gone, the veins are moistened, and the reward is certain, if Allah wills)</div>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 8: LAYLATUL QADR - THE NIGHT OF POWER -->
+  <div class="content-block fade-in">
+    <h2>🌟 Laylatul Qadr: Better Than 1000 Months</h2>
+    
+    <div class="quran-box">
+      <strong>Surah Al-Qadr 97:1-5</strong>
+      <div class="arabic-verse">إِنَّا أَنزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ  وَمَا أَدْرَاكَ مَا لَيْلَةُ الْقَدْرِ  لَيْلَةُ الْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ  تَنَزَّلُ الْمَلَائِكَةُ وَالرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ  سَلَامٌ هِيَ حَتَّىٰ مَطْلَعِ الْفَجْرِ</div>
+      <div class="verse-translation">"Indeed, We sent it down during the Night of Decree. And what can make you know what the Night of Decree is? The Night of Decree is better than a thousand months. The angels and the Spirit descend therein by permission of their Lord for every matter. Peace it is until the emergence of dawn."</div>
+      <div class="verse-number">Verses 1-5</div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">📅</span>
+        <strong>Last 10 Nights</strong>
+        Seek it in odd nights (21,23,25,27,29)
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🌃</span>
+        <strong>Night Worship</strong>
+        Prayer, Quran, dua throughout night
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🕊️</span>
+        <strong>Angels Descend</strong>
+        Peace until dawn
+      </div>
+    </div>
+    
+    <div class="hadith-box">
+      <strong>Recommended Dua for Laylatul Qadr</strong>
+      <div class="arabic-verse" style="font-size: 1.5em;">اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي</div>
+      <div class="hadith-text">"Allahumma innaka 'afuwwun tuhibbul 'afwa fa'fu 'anni"<br>(O Allah, You are Forgiving and love forgiveness, so forgive me)</div>
+    </div>
+  </div>
+
+  <!-- SECTION 9: HEALTH BENEFITS -->
+  <div class="content-block fade-in">
+    <h2>🩺 Physical and Mental Benefits of Fasting</h2>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">💪</span>
+        <strong>Detoxification</strong>
+        Body cleanses toxins
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">⚡</span>
+        <strong>Cellular Repair</strong>
+        Autophagy removes damaged cells
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">❤️</span>
+        <strong>Heart Health</strong>
+        Reduces cholesterol, blood pressure
+      </div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🧠</span>
+        <strong>Brain Function</strong>
+        Increased focus and clarity
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">⚖️</span>
+        <strong>Weight Management</strong>
+        Healthy reset for eating habits
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🔄</span>
+        <strong>Digestive Rest</strong>
+        System reset and repair
+      </div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>Islamic Perspective on Health:</strong>
+      <p>While spiritual benefits are primary, Islam recognizes the physical benefits as additional blessings. The Prophet (S.A.W) said: "Fast, and you will be healthy." The holistic approach of Islam integrates spiritual and physical well-being.</p>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 10: VOLUNTARY FASTS -->
+  <div class="content-block fade-in">
+    <h2>📅 Recommended Voluntary Fasts Throughout the Year</h2>
+    
+    <table class="fasting-table">
+      <thead>
+        <tr>
+          <th>Fast</th>
+          <th>Timing</th>
+          <th>Virtue</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mondays & Thursdays</td>
+          <td>Every week</td>
+          <td>Deeds presented to Allah on these days</td>
+        </tr>
+        <tr>
+          <td>White Days (Ayyam al-Beed)</td>
+          <td>13th, 14th, 15th of each lunar month</td>
+          <td>Like fasting the entire month</td>
+        </tr>
+        <tr>
+          <td>Day of Arafah</td>
+          <td>9th of Dhul Hijjah</td>
+          <td>Forgives sins of previous and coming year</td>
+        </tr>
+        <tr>
+          <td>Day of Ashura</td>
+          <td>10th of Muharram</td>
+          <td>Forgives sins of previous year</td>
+        </tr>
+        <tr>
+          <td>Six days of Shawwal</td>
+          <td>Any six days after Ramadan</td>
+          <td>Like fasting the entire year</td>
+        </tr>
+        <tr>
+          <td>Month of Shaban</td>
+          <td>Frequently fasted by Prophet</td>
+          <td>Preparation for Ramadan</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div class="hadith-box">
+      <strong>Virtue of Voluntary Fasts</strong>
+      <div class="hadith-text">
+        "Whoever fasts Ramadan and follows it with six days of Shawwal, it is as if he fasted the entire year." (Muslim)
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 11: COMMON MISTAKES AND SOLUTIONS -->
+  <div class="content-block fade-in">
+    <h2>⚠️ Common Mistakes During Ramadan</h2>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🍽️</span>
+        <strong>Overeating at Iftar</strong>
+        Eat moderately, follow Sunnah
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">😴</span>
+        <strong>Sleeping All Day</strong>
+        Balance rest and worship
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">📺</span>
+        <strong>Wasting Time</strong>
+        Avoid excessive TV/entertainment
+      </div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">💬</span>
+        <strong>Backbiting/Gossip</strong>
+        Guard tongue strictly
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">😤</span>
+        <strong>Anger & Arguments</strong>
+        "I am fasting" as response
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🛍️</span>
+        <strong>Excessive Shopping</strong>
+        Focus on worship, not consumerism
+      </div>
+    </div>
+    
+    <div class="lesson-box">
+      <strong>Prophetic Guidance on Anger:</strong>
+      <p>The Prophet (S.A.W) said: "If someone fights or argues with you, say: 'I am fasting, I am fasting.'" This reminder helps maintain the spiritual state of fasting even when provoked.</p>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- SECTION 12: EID AL-FITR - CELEBRATION OF COMPLETION -->
+  <div class="content-block fade-in">
+    <h2>🎉 Eid al-Fitr: The Festival of Breaking Fast</h2>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🤲</span>
+        <strong>Zakat al-Fitr</strong>
+        Purification of the fast
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🕌</span>
+        <strong>Eid Prayer</strong>
+        Congregational prayer in morning
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">❤️</span>
+        <strong>Community Celebration</strong>
+        Joy, food, family, gifts
+      </div>
+    </div>
+    
+    <div class="hadith-box">
+      <strong>Zakat al-Fitr</strong>
+      <div class="hadith-text">
+        "The Messenger of Allah (S.A.W) made Zakat al-Fitr obligatory as purification for the fasting person from idle talk and obscenities, and to feed the poor." (Abu Dawud)
+      </div>
+      <div class="hadith-text" style="margin-top: 15px;">
+        It is given before Eid prayer, approximately the equivalent of one meal (3 kg of staple food) per person.
+      </div>
+    </div>
+  </div>
+
+  <!-- FINAL REFLECTION -->
+  <div class="hero-section" style="margin-top: 40px;">
+    <h3>🌙 Sawm: The Shield and the School of the Soul</h3>
+    
+    <div class="hadith-box">
+      <strong>Fasting as Protection</strong>
+      <div class="hadith-text">
+        "Fasting is a shield (or protection) from the Fire and from committing sins." (Bukhari)
+      </div>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🛡️</span>
+        <strong>Spiritual Shield</strong>
+        Protects from sin and Hellfire
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🏫</span>
+        <strong>School of Discipline</strong>
+        Trains soul in self-control
+      </div>
+      
+      <div class="feature-card">
+        <span class="feature-icon">🤝</span>
+        <strong>Community Builder</strong>
+        Unites Muslims worldwide
+      </div>
+    </div>
+    
+    <p style="margin-top: 20px; font-style: italic; font-size: 1.1em;">
+      Sawm is far more than abstaining from food and drink. It is a comprehensive training program for the soul - teaching self-discipline, empathy for the less fortunate, gratitude for Allah's blessings, and sincere devotion. Through fasting, Muslims worldwide unite in worship, experiencing hunger together and breaking their fast together, symbolizing the universal brotherhood of Islam. As the Prophet (S.A.W) said: "There is a gate in Paradise called Ar-Rayyan, through which those who fasted will enter on the Day of Resurrection, and no one else will enter through it." (Bukhari)
+    </p>
+  </div>
+  
+  <!-- AD SPACE -->
+  <div class="ad-space">
+    <!-- AdSense Code Here -->
+    Advertisement Space: 728x90
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="page-footer">
+  <p>© Islamic Stories Collection | Exploring Islamic Teachings and Practices</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    const hamburger = document.querySelector('.hamburger');
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  }
+
+  // Smooth scrolling for better UX
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Highlight Quran boxes and Hadith boxes on hover
+  document.addEventListener('DOMContentLoaded', function() {
+    const quranBoxes = document.querySelectorAll('.quran-box');
+    quranBoxes.forEach(box => {
+      box.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.02)';
+        this.style.boxShadow = '0 5px 20px rgba(0, 100, 0, 0.15)';
+      });
+      
+      box.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1)';
+        this.style.boxShadow = '0 3px 15px rgba(0, 0, 0, 0.08)';
+      });
+    });
+    
+    const hadithBoxes = document.querySelectorAll('.hadith-box');
+    hadithBoxes.forEach(box => {
+      box.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.02)';
+        this.style.boxShadow = '0 5px 20px rgba(0, 100, 0, 0.1)';
+      });
+      
+      box.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1)';
+        this.style.boxShadow = '0 3px 15px rgba(0, 0, 0, 0.05)';
+      });
+    });
+    
+    // Table row highlighting
+    const tableRows = document.querySelectorAll('.fasting-table tr');
+    tableRows.forEach(row => {
+      row.addEventListener('mouseenter', function() {
+        this.style.backgroundColor = 'rgba(240, 230, 210, 0.8)';
+      });
+      
+      row.addEventListener('mouseleave', function() {
+        this.style.backgroundColor = '';
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

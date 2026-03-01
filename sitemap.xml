@@ -16,45 +16,28 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Tutte le altre pagine con priority 0.8 -->
-
   <url>
-    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-ismail.html</loc>
+    <loc>https://7mohamed777.github.io/beyond-islam/shahada.html</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-sulayman.html</loc>
+    <loc>https://7mohamed777.github.io/beyond-islam/the5dailyprayers.html</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-zakaria.html</loc>
+    <loc>https://7mohamed777.github.io/beyond-islam/zakat.html</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-isa.html</loc>
+    <loc>https://7mohamed777.github.io/beyond-islam/sawm.html</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-ibrahim.html</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-musa.html</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-yusuf.html</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-adam.html</loc>
+    <loc>https://7mohamed777.github.io/beyond-islam/hajj.html</loc>
     <priority>0.8</priority>
   </url>
 
@@ -64,7 +47,47 @@
   </url>
 
   <url>
+    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-adam.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-ibrahim.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-ismail.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-nuh.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-musa.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-isa.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-yusuf.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-sulayman.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-dawud.html</loc>
     <priority>0.8</priority>
   </url>
 
@@ -74,17 +97,43 @@
   </url>
 
   <url>
-    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-dawud.html</loc>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
     <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-yaqub.html</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-dawud.html</loc>
+    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-yahya.html</loc>
     <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-yunus.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-ayyub.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://7mohamed777.github.io/beyond-islam/thehistoryofprophet-zakaria.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://7mohamed777.github.io/beyond-islam/aboutus.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://7mohamed777.github.io/beyond-islam/privacy.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://7mohamed777.github.io/beyond-islam/terms.html</loc>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
